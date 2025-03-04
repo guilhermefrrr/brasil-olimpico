@@ -110,8 +110,8 @@ table edicao
 		mode: import
 		source =
 				let
-				    Fonte = MySQL.Database("127.0.0.1:3306", "olympics", [ReturnSingleDatabase=true]),
-				    newschema_edicao = Fonte{[Schema="olympics",Item="edicao"]}[Data],
+				    Fonte = MySQL.Database("127.0.0.1:3306", "jogosolimpicos", [ReturnSingleDatabase=true]),
+				    newschema_edicao = Fonte{[Schema="jogosolimpicos",Item="edicao"]}[Data],
 				    #"Tipo Alterado" = Table.TransformColumnTypes(newschema_edicao,{{"Ano", type text}})
 				in
 				    #"Tipo Alterado"

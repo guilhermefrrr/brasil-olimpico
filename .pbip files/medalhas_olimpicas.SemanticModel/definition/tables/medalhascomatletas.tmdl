@@ -91,8 +91,8 @@ table medalhascomatletas
 		mode: import
 		source =
 				let
-				    Fonte = MySQL.Database("127.0.0.1:3306", "olympics", [ReturnSingleDatabase=true]),
-				    newschema_medalhascomatletas = Fonte{[Schema="olympics",Item="medalhascomatletas"]}[Data],
+				    Fonte = MySQL.Database("127.0.0.1:3306", "jogosolimpicos", [ReturnSingleDatabase=true]),
+				    newschema_medalhascomatletas = Fonte{[Schema="jogosolimpicos",Item="medalhascomatletas"]}[Data],
 				    #"Consultas Mescladas" = Table.NestedJoin(newschema_medalhascomatletas, {"AtletaID"}, atleta, {"AtletaID"}, "atleta", JoinKind.LeftOuter),
 				    #"atleta Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "atleta", {"Data_Nascimento"}, {"atleta.Data_Nascimento"}),
 				    #"Consultas Mescladas1" = Table.NestedJoin(#"atleta Expandido", {"MedalhaID"}, medalha, {"MedalhaID"}, "medalha", JoinKind.LeftOuter),

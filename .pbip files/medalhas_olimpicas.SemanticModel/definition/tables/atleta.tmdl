@@ -94,9 +94,9 @@ table atleta
 		mode: import
 		source =
 				let
-				    Fonte = MySQL.Database("127.0.0.1:3306", "olympics", [ReturnSingleDatabase=true]),
-				    newschema_atleta = Fonte{[Schema="olympics",Item="atleta"]}[Data],
-				    #"Linhas Classificadas" = Table.Sort(newschema_atleta,{{"AtletaID", Order.Ascending}})
+				    Fonte = MySQL.Database("127.0.0.1:3306", "jogosolimpicos", [ReturnSingleDatabase=true]),
+				    olympics_atleta = Fonte{[Schema="jogosolimpicos",Item="atleta"]}[Data],
+				    #"Linhas Classificadas" = Table.Sort(olympics_atleta,{{"AtletaID", Order.Ascending}})
 				in
 				    #"Linhas Classificadas"
 
