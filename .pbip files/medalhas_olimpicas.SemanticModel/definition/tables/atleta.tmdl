@@ -1,0 +1,106 @@
+table atleta
+	lineageTag: 9c5b89d4-1251-47b7-bcbc-508491241c26
+
+	column AtletaID
+		dataType: int64
+		formatString: 0
+		lineageTag: 71676b4c-0171-43d5-aa73-c56befee48f9
+		summarizeBy: none
+		sourceColumn: AtletaID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sexo
+		dataType: string
+		lineageTag: 2fc569da-3f4e-43c4-a35f-5ba9c89d89d5
+		summarizeBy: none
+		sourceColumn: Sexo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data_Nascimento
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: acfdedf9-ae87-48d9-b8d8-578074da8a82
+		summarizeBy: none
+		sourceColumn: Data_Nascimento
+
+		variation Variation
+			isDefault
+			relationship: d50cd9f8-c54f-4fb4-928a-945df20396f4
+			defaultHierarchy: LocalDateTable_3c2809a3-33bd-46ab-9fb9-90f0625f913d.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Data_Morte
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c97e86d1-edc9-43da-8f10-0eb17288ea33
+		summarizeBy: none
+		sourceColumn: Data_Morte
+
+		variation Variation
+			isDefault
+			relationship: 96323572-f1d0-42f3-9ceb-355c725e1000
+			defaultHierarchy: LocalDateTable_18776e18-1db1-4e59-abc1-53304d5c64da.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Cidade_Nascimento
+		dataType: string
+		lineageTag: 7692e3e8-1c77-4242-935e-470721e9648a
+		summarizeBy: none
+		sourceColumn: Cidade_Nascimento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado_Nascimento
+		dataType: string
+		lineageTag: c326460a-0879-4d15-928e-e13b2aa98ad4
+		summarizeBy: none
+		sourceColumn: Estado_Nascimento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pais_Nascimento
+		dataType: string
+		lineageTag: 48b1213e-6573-4036-befb-b8970d4400f3
+		summarizeBy: none
+		sourceColumn: Pais_Nascimento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nome_Principal
+		dataType: string
+		lineageTag: a52d3b4c-6c2d-4d4f-8aaa-13b5da9a0927
+		summarizeBy: none
+		sourceColumn: Nome_Principal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nome_Complemento
+		dataType: string
+		lineageTag: 92f490a4-affb-42d9-8f82-76b3edb05f09
+		summarizeBy: none
+		sourceColumn: Nome_Complemento
+
+		annotation SummarizationSetBy = Automatic
+
+	partition atleta = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("127.0.0.1:3306", "olympics", [ReturnSingleDatabase=true]),
+				    newschema_atleta = Fonte{[Schema="olympics",Item="atleta"]}[Data],
+				    #"Linhas Classificadas" = Table.Sort(newschema_atleta,{{"AtletaID", Order.Ascending}})
+				in
+				    #"Linhas Classificadas"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

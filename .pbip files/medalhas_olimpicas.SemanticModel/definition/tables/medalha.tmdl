@@ -1,0 +1,167 @@
+table medalha
+	lineageTag: 32e208fb-5b40-4729-95f8-1142a626fc70
+
+	column MedalhaID
+		dataType: int64
+		formatString: 0
+		lineageTag: 85fbc463-a5fd-4f63-9f2c-2b9980f6bad5
+		summarizeBy: none
+		sourceColumn: MedalhaID
+
+		annotation SummarizationSetBy = Automatic
+
+	column EdicaoID
+		dataType: int64
+		formatString: 0
+		lineageTag: 3fa28d14-5dcd-41ca-b3d9-c0b22363e5d2
+		summarizeBy: count
+		sourceColumn: EdicaoID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 20495824-fcb6-4ef5-8f3a-36ccf4c416ae
+		summarizeBy: none
+		sourceColumn: Data
+
+		variation Variation
+			isDefault
+			relationship: 53e275a9-359f-4de8-a29b-6864e1628479
+			defaultHierarchy: LocalDateTable_76894a84-5b7c-44c0-8ec0-5c7cc48c1eb8.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Medalha
+		dataType: string
+		lineageTag: 711718e8-8ac6-42ce-90cd-195c26abfbf3
+		summarizeBy: none
+		sourceColumn: Medalha
+		sortByColumn: Medalha_Ordem
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Individual_Coletivo
+		dataType: string
+		lineageTag: c121906b-1739-444b-abff-9a3649060544
+		summarizeBy: none
+		sourceColumn: Individual_Coletivo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Modalidade
+		dataType: string
+		lineageTag: 35d1f6d3-4241-4fa3-bfab-81356ef442a2
+		summarizeBy: none
+		sourceColumn: Modalidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column Evento
+		dataType: string
+		lineageTag: a5c66845-6123-44dc-a44c-74afbb079cae
+		summarizeBy: none
+		sourceColumn: Evento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Genero
+		dataType: string
+		lineageTag: e0be8cd5-6455-486b-8707-5b38339682b4
+		summarizeBy: none
+		sourceColumn: Genero
+
+		annotation SummarizationSetBy = Automatic
+
+	column Medalha_Ordem
+		dataType: string
+		lineageTag: 2c361748-5502-4ae9-a8c4-a1082031b36e
+		summarizeBy: none
+		sourceColumn: Medalha_Ordem
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'edicao.Abertura'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b73ae1b3-fe40-48d6-ab70-d0dbeae7e1f0
+		summarizeBy: none
+		sourceColumn: edicao.Abertura
+
+		variation Variation
+			isDefault
+			relationship: 36b0ebc9-0cc6-41a7-9f11-3d980ed74fb4
+			defaultHierarchy: LocalDateTable_e7f0c899-cb39-40d9-88e6-b9ea71fa226c.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Dias_Após_Abertura
+		dataType: int64
+		formatString: 0
+		lineageTag: f9007fa5-c703-4bb4-bdad-7be289bd6471
+		summarizeBy: sum
+		sourceColumn: Dias_Após_Abertura
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"medalha","TableItemName":"Dias_Após_Abertura (grupos)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column 'Dias_Após_Abertura (grupos)' =
+			SWITCH(
+				TRUE,
+				ISBLANK('medalha'[Dias_Após_Abertura]),
+				"(Em branco)",
+				'medalha'[Dias_Após_Abertura] IN {-12},
+				"-12",
+				"Outro"
+			)
+		formatString: 0
+		lineageTag: 61763e98-a960-4672-a7b1-8d219f975468
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "medalha"
+				          }
+				        },
+				        "Property": "Dias_Após_Abertura"
+				      }
+				    }
+				  ]
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"m","Entity":"medalha"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"m"}},"Property":"Dias_Após_Abertura"}}],"GroupItems":[{"DisplayName":"(Em branco)","BlankDefaultPlaceholder":true},{"DisplayName":"-12","Expression":{"In":{"Expressions":[{"Column":{"Expression":{"SourceRef":{"Source":"m"}},"Property":"Dias_Após_Abertura"}}],"Values":[[{"Literal":{"Value":"-12L"}}]]}}},{"DisplayName":"Outro"}]}
+
+		annotation SummarizationSetBy = Automatic
+
+	partition medalha = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("127.0.0.1:3306", "olympics", [ReturnSingleDatabase=true]),
+				    newschema_medalha = Fonte{[Schema="olympics",Item="medalha"]}[Data],
+				    #"Coluna Condicional Adicionada" = Table.AddColumn(newschema_medalha, "Medalha_Ordem", each if [Medalha] = "Ouro" then 1 else if [Medalha] = "Prata" then 2 else if [Medalha] = "Bronze" then 3 else null),
+				    #"Consultas Mescladas" = Table.NestedJoin(#"Coluna Condicional Adicionada", {"EdicaoID"}, edicao, {"EdicaoID"}, "edicao", JoinKind.LeftOuter),
+				    #"edicao Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "edicao", {"Abertura"}, {"edicao.Abertura"}),
+				    #"Personalização Adicionada" = Table.AddColumn(#"edicao Expandido", "Dias_Após_Abertura", each [Data] - [edicao.Abertura]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Personalização Adicionada",{{"Dias_Após_Abertura", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

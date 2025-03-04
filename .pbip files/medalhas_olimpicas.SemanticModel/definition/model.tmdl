@@ -1,0 +1,38 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["atleta","edicao","medalha","medalhascomatletas","Medidas"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.140.1205.0 (25.02)+2ab3defe107764e1cf486b42122d9362df7f34ea
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table atleta
+ref table DateTableTemplate_18cfab80-4f5a-4295-840b-a5cb195671ca
+ref table LocalDateTable_3c2809a3-33bd-46ab-9fb9-90f0625f913d
+ref table LocalDateTable_18776e18-1db1-4e59-abc1-53304d5c64da
+ref table edicao
+ref table LocalDateTable_e65e9f2a-9491-47e5-980b-89389ba3b95e
+ref table LocalDateTable_9f96ef54-594a-4101-b187-18e813dde193
+ref table medalha
+ref table LocalDateTable_76894a84-5b7c-44c0-8ec0-5c7cc48c1eb8
+ref table medalhascomatletas
+ref table quadroatletas
+ref table quadroedicoes
+ref table Medidas
+ref table LocalDateTable_daac00e6-fbc6-4f22-abd7-48be5a253741
+ref table LocalDateTable_aab3c143-5313-455c-9d16-80d2504c5683
+ref table LocalDateTable_e7f0c899-cb39-40d9-88e6-b9ea71fa226c
+ref table quadromodalidades
+ref table LocalDateTable_2ccb0d6a-6d35-4351-97a1-ddfbac9985af
+ref table LocalDateTable_7b8367f8-12dc-4616-9771-8a9f9514b7cf
+
+ref cultureInfo pt-BR
+

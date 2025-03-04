@@ -1,0 +1,81 @@
+table Medidas
+	lineageTag: b11c0fd9-89f8-4a16-8100-69ccb178718b
+
+	measure 'Atl. com med.' = COALESCE(DISTINCTCOUNT('medalhascomatletas'[AtletaID]), 0)
+		formatString: 0
+		lineageTag: 63add3f6-3d4d-4f37-acb6-b28b8bbae2dd
+
+	measure Bronzes = COALESCE(CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Bronze"), 0)
+		formatString: 0
+		lineageTag: 195e8a2f-4279-45b3-8c7e-cab010b2756a
+
+	measure 'Max Med.' = MAX(quadroedicoes[Total])
+		formatString: 0
+		lineageTag: 1cc9d821-13dd-4666-9e77-8d75c0bc2af7
+
+	measure 'Max Med. Ouro' = COALESCE(MAX(quadroedicoes[Ouros]), 0)
+		formatString: 0
+		lineageTag: 79f9bf35-324d-4f07-a09a-4267fc530d2c
+
+	measure Ouros = COALESCE(CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Ouro"), 0)
+		formatString: 0
+		lineageTag: 79b8bd8e-01f4-442f-bbd4-259b25190351
+
+	measure Pratas = COALESCE(CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Prata"), 0)
+		formatString: 0
+		lineageTag: 599ecd9d-9819-4ff2-ad74-999873af02a6
+
+	measure 'Mod. com med.' = COALESCE(DISTINCTCOUNT('medalha'[Modalidade]), 0)
+		formatString: 0
+		lineageTag: 483c72f6-35f8-432a-94cb-2879e9879395
+
+	measure Total = COALESCE(COUNTROWS('medalha'), 0)
+		formatString: 0
+		lineageTag: 23d8d729-5289-40e9-832e-6daa9fd02874
+
+	measure 'Nº Atletas' = COALESCE(COUNTROWS('atleta'), 0)
+		formatString: 0
+		lineageTag: 7ccc57a8-adc3-4091-9e8b-18cf7e0740ad
+
+	measure 'Dias após abertura' =
+			
+			VAR DataMedalha = SELECTEDVALUE('medalha'[Data])
+			VAR DataAbertura = SELECTEDVALUE('edicao'[Abertura])
+			RETURN
+			DATEDIFF(DataAbertura, DataMedalha, DAY)
+		formatString: 0
+		lineageTag: b8901fbb-51c2-4819-b52f-defae140b545
+
+	measure Ranking = ```
+			RANK(
+			    DENSE, 
+			    ALLSELECTED(medalha), 
+			    ORDERBY( medalha[Data], ASC, medalha[MedalhaID], ASC)
+			    )
+			```
+		formatString: 0
+		lineageTag: 4f21b188-1a62-4e7d-86c2-a74b88931267
+
+	column 'Coluna 1'
+		dataType: string
+		isHidden
+		lineageTag: b31e4545-704f-4e93-9c06-f1c34e9fdc5e
+		summarizeBy: none
+		sourceColumn: Coluna 1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t])
+				in
+				    Fonte
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

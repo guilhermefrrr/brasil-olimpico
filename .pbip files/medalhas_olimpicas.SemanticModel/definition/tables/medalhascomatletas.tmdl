@@ -1,0 +1,113 @@
+table medalhascomatletas
+	lineageTag: 3504e078-1a1f-45cb-ad83-70127a8bba11
+
+	column ID
+		dataType: int64
+		formatString: 0
+		lineageTag: a89584ae-3654-4cdc-96dd-53f4f6677ecc
+		summarizeBy: count
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column MedalhaID
+		dataType: int64
+		formatString: 0
+		lineageTag: 46724300-dcc3-400f-bf10-948ff1034e82
+		summarizeBy: none
+		sourceColumn: MedalhaID
+
+		annotation SummarizationSetBy = Automatic
+
+	column AtletaID
+		dataType: int64
+		formatString: 0
+		lineageTag: 6751f6e3-2d87-4a54-aa69-61dd729f8fbc
+		summarizeBy: none
+		sourceColumn: AtletaID
+
+		annotation SummarizationSetBy = Automatic
+
+	column EdicaoID
+		dataType: int64
+		formatString: 0
+		lineageTag: 085492d8-8ddf-49f6-9407-a11f445eef1d
+		summarizeBy: none
+		sourceColumn: EdicaoID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'atleta.Data_Nascimento'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2618ee2c-c566-4c97-80b1-a05a11fe57ea
+		summarizeBy: none
+		sourceColumn: atleta.Data_Nascimento
+
+		variation Variation
+			isDefault
+			relationship: 390a6874-193e-4b67-8b0d-71c97f058f5a
+			defaultHierarchy: LocalDateTable_2ccb0d6a-6d35-4351-97a1-ddfbac9985af.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'medalha.Data'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 79bb45e0-5e81-4c2f-a4e0-ea01317d5336
+		summarizeBy: none
+		sourceColumn: medalha.Data
+
+		variation Variation
+			isDefault
+			relationship: 80a80d3f-a015-4069-a981-66a392671928
+			defaultHierarchy: LocalDateTable_7b8367f8-12dc-4616-9771-8a9f9514b7cf.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Idade_Atleta
+		dataType: double
+		formatString: 0
+		lineageTag: af4222f4-e658-4553-882d-f93f0eec84e6
+		summarizeBy: sum
+		sourceColumn: Idade_Atleta
+
+		annotation SummarizationSetBy = Automatic
+
+	column Idade_Atleta_Anos
+		dataType: int64
+		formatString: 0
+		lineageTag: 5f6bd421-d40d-4f10-ac57-de8213f4c044
+		summarizeBy: sum
+		sourceColumn: Idade_Atleta_Anos
+
+		annotation SummarizationSetBy = Automatic
+
+	partition medalhascomatletas = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("127.0.0.1:3306", "olympics", [ReturnSingleDatabase=true]),
+				    newschema_medalhascomatletas = Fonte{[Schema="olympics",Item="medalhascomatletas"]}[Data],
+				    #"Consultas Mescladas" = Table.NestedJoin(newschema_medalhascomatletas, {"AtletaID"}, atleta, {"AtletaID"}, "atleta", JoinKind.LeftOuter),
+				    #"atleta Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "atleta", {"Data_Nascimento"}, {"atleta.Data_Nascimento"}),
+				    #"Consultas Mescladas1" = Table.NestedJoin(#"atleta Expandido", {"MedalhaID"}, medalha, {"MedalhaID"}, "medalha", JoinKind.LeftOuter),
+				    #"medalha Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas1", "medalha", {"Data"}, {"medalha.Data"}),
+				    #"Personalização Adicionada" = Table.AddColumn(#"medalha Expandido", "Idade_Atleta", each [medalha.Data] - [atleta.Data_Nascimento]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Personalização Adicionada",{{"Idade_Atleta", type duration}}),
+				    #"Coluna Duplicada" = Table.DuplicateColumn(#"Tipo Alterado", "Idade_Atleta", "Idade_Atleta - Copiar"),
+				    #"Total de Anos Calculado" = Table.TransformColumns(#"Coluna Duplicada",{{"Idade_Atleta - Copiar", each Duration.TotalDays(_) / 365, type number}}),
+				    #"Arredondado para Baixo" = Table.TransformColumns(#"Total de Anos Calculado",{{"Idade_Atleta - Copiar", Number.RoundDown, Int64.Type}}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Arredondado para Baixo",{{"Idade_Atleta - Copiar", "Idade_Atleta_Anos"}}),
+				    #"Total de Anos Calculado1" = Table.TransformColumns(#"Colunas Renomeadas",{{"Idade_Atleta", each Duration.TotalDays(_) / 365, type number}})
+				in
+				    #"Total de Anos Calculado1"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

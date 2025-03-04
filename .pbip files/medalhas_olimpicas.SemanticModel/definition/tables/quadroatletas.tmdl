@@ -1,0 +1,60 @@
+table quadroatletas
+	lineageTag: ad533da8-a84a-40ce-a9f5-6a5037a8c6f4
+
+	column Ouros
+		formatString: 0
+		lineageTag: 2ebc50b3-ee3c-4e7d-aaa8-70d6e63ac59c
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ouros]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pratas
+		formatString: 0
+		lineageTag: de4d88f8-5c34-42c6-a34b-ca73fc1a8fab
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Pratas]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Bronzes
+		formatString: 0
+		lineageTag: 5d696582-368e-4a3b-9438-fec856be827c
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Bronzes]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nome_Principal
+		lineageTag: 8292d80c-1bc2-4dc3-ac9a-fafb36021bee
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: atleta[Nome_Principal]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Total
+		formatString: 0
+		lineageTag: 8f938e4b-9011-477e-bd86-b95117a49dd9
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Total]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition quadroatletas = calculated
+		mode: import
+		source =
+				SUMMARIZE(
+				    'medalhascomatletas',
+				    atleta[Nome_Principal],
+				    "Ouros", CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Ouro"),
+				    "Pratas", CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Prata"),
+				    "Bronzes", CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Bronze"),
+				    "Total", COUNTROWS('medalha'))
+
+	annotation PBI_Id = 64c4e77e3a49480db318945120bef0e9
+

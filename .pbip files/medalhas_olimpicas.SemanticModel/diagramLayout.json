@@ -1,0 +1,122 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 437.96297709147143,
+        "y": 642.59257846408434
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 592.86512659325626,
+            "y": 237.37810779301176
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "b11c0fd9-89f8-4a16-8100-69ccb178718b",
+          "size": {
+            "height": 145,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 932.5,
+            "y": 528.34573578455456
+          },
+          "nodeIndex": "atleta",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1301.3292101416987,
+            "y": 245.98859429819237
+          },
+          "nodeIndex": "edicao",
+          "nodeLineageTag": "10a74a19-9fda-4b32-b116-60ef593a10c5",
+          "size": {
+            "height": 155.5,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1679.9762377043673,
+            "y": 530.963534191741
+          },
+          "nodeIndex": "medalha",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1296.2070334504772,
+            "y": 580.467577925438
+          },
+          "nodeIndex": "medalhascomatletas",
+          "size": {
+            "height": 208.5,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 597.5,
+            "y": 564.28224509184315
+          },
+          "nodeIndex": "quadroatletas",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1310.6032218313512,
+            "y": 0
+          },
+          "nodeIndex": "quadroedicoes",
+          "nodeLineageTag": "f8a6fb6a-bd73-4742-bc0e-58fa7ffc9f3a",
+          "size": {
+            "height": 150,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1719.2540154821452,
+            "y": 912.50159263451826
+          },
+          "nodeIndex": "quadromodalidades",
+          "nodeLineageTag": "abe442e6-a8d3-458b-a301-53ed2d1e07da",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 7
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 71.999999999999986,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

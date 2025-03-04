@@ -1,0 +1,86 @@
+relationship d50cd9f8-c54f-4fb4-928a-945df20396f4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: atleta.Data_Nascimento
+	toColumn: LocalDateTable_3c2809a3-33bd-46ab-9fb9-90f0625f913d.Date
+
+relationship 96323572-f1d0-42f3-9ceb-355c725e1000
+	joinOnDateBehavior: datePartOnly
+	fromColumn: atleta.Data_Morte
+	toColumn: LocalDateTable_18776e18-1db1-4e59-abc1-53304d5c64da.Date
+
+relationship 82559913-cf88-4614-a3d5-1f4c9f2ab5d2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: edicao.Inicio
+	toColumn: LocalDateTable_e65e9f2a-9491-47e5-980b-89389ba3b95e.Date
+
+relationship 4819ffa9-1128-4aa3-acda-5d47e261cb59
+	joinOnDateBehavior: datePartOnly
+	fromColumn: edicao.Fim
+	toColumn: LocalDateTable_9f96ef54-594a-4101-b187-18e813dde193.Date
+
+relationship 53e275a9-359f-4de8-a29b-6864e1628479
+	joinOnDateBehavior: datePartOnly
+	fromColumn: medalha.Data
+	toColumn: LocalDateTable_76894a84-5b7c-44c0-8ec0-5c7cc48c1eb8.Date
+
+relationship AutoDetected_d46f915b-98bf-41f6-b503-011aa5562673
+	crossFilteringBehavior: bothDirections
+	fromColumn: medalhascomatletas.AtletaID
+	toColumn: atleta.AtletaID
+
+relationship AutoDetected_049a1e9d-5140-4082-b237-5c3f666ff331
+	isActive: false
+	fromColumn: medalha.EdicaoID
+	toColumn: edicao.EdicaoID
+
+relationship AutoDetected_59350851-1358-4642-897e-94216954c127
+	fromColumn: medalhascomatletas.EdicaoID
+	toColumn: edicao.EdicaoID
+
+relationship AutoDetected_17aa3c6c-cf22-452e-bfaf-8d6b3f1befe5
+	crossFilteringBehavior: bothDirections
+	fromColumn: medalhascomatletas.MedalhaID
+	toColumn: medalha.MedalhaID
+
+relationship d91af79e-2e4a-4705-9606-47b993312050
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: edicao.Ano
+	toColumn: quadroedicoes.Ano
+
+relationship 922ca6e6-400d-4a43-bcb9-41fd3ad01d4e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: edicao.Abertura
+	toColumn: LocalDateTable_daac00e6-fbc6-4f22-abd7-48be5a253741.Date
+
+relationship 2d73f580-842c-4d48-a37d-d9379ec52761
+	joinOnDateBehavior: datePartOnly
+	fromColumn: edicao.Encerramento
+	toColumn: LocalDateTable_aab3c143-5313-455c-9d16-80d2504c5683.Date
+
+relationship 36b0ebc9-0cc6-41a7-9f11-3d980ed74fb4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: medalha.'edicao.Abertura'
+	toColumn: LocalDateTable_e7f0c899-cb39-40d9-88e6-b9ea71fa226c.Date
+
+relationship 5a70fd39-1547-430d-8b63-7884226437e1
+	crossFilteringBehavior: bothDirections
+	fromColumn: medalha.Modalidade
+	toColumn: quadromodalidades.Modalidade
+
+relationship 390a6874-193e-4b67-8b0d-71c97f058f5a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: medalhascomatletas.'atleta.Data_Nascimento'
+	toColumn: LocalDateTable_2ccb0d6a-6d35-4351-97a1-ddfbac9985af.Date
+
+relationship 80a80d3f-a015-4069-a981-66a392671928
+	joinOnDateBehavior: datePartOnly
+	fromColumn: medalhascomatletas.'medalha.Data'
+	toColumn: LocalDateTable_7b8367f8-12dc-4616-9771-8a9f9514b7cf.Date
+
+relationship b6baa54b-308a-449d-b828-e9e7c6b9448e
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: atleta.Nome_Principal
+	toColumn: quadroatletas.Nome_Principal
+

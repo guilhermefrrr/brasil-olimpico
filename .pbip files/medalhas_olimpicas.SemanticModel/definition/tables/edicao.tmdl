@@ -1,0 +1,122 @@
+table edicao
+	lineageTag: 10a74a19-9fda-4b32-b116-60ef593a10c5
+
+	column EdicaoID
+		dataType: int64
+		formatString: 0
+		lineageTag: 0379d3ed-1465-4d4b-9bc5-5d73436296bb
+		summarizeBy: none
+		sourceColumn: EdicaoID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cidade
+		dataType: string
+		lineageTag: b93b266c-555c-4511-bd19-127f5256dc0e
+		summarizeBy: none
+		sourceColumn: Cidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pais
+		dataType: string
+		lineageTag: 12969568-d5ac-4911-bc3f-c2bf23b60240
+		summarizeBy: none
+		sourceColumn: Pais
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano
+		dataType: string
+		lineageTag: 38705365-9178-49d7-a67b-84f8ebba5c71
+		summarizeBy: none
+		sourceColumn: Ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column Verao_Inverno
+		dataType: string
+		lineageTag: 7d859576-47ec-4bb4-8aa0-8e80fa72acbb
+		summarizeBy: none
+		sourceColumn: Verao_Inverno
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inicio
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9a4df820-02ec-4e4d-adf6-494a6175801a
+		summarizeBy: none
+		sourceColumn: Inicio
+
+		variation Variation
+			isDefault
+			relationship: 82559913-cf88-4614-a3d5-1f4c9f2ab5d2
+			defaultHierarchy: LocalDateTable_e65e9f2a-9491-47e5-980b-89389ba3b95e.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Fim
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5fe0fb8c-5229-4409-be5c-661e205c5166
+		summarizeBy: none
+		sourceColumn: Fim
+
+		variation Variation
+			isDefault
+			relationship: 4819ffa9-1128-4aa3-acda-5d47e261cb59
+			defaultHierarchy: LocalDateTable_9f96ef54-594a-4101-b187-18e813dde193.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Abertura
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: cb20669b-e222-4492-9e34-f442c79affb6
+		summarizeBy: none
+		sourceColumn: Abertura
+
+		variation Variation
+			isDefault
+			relationship: 922ca6e6-400d-4a43-bcb9-41fd3ad01d4e
+			defaultHierarchy: LocalDateTable_daac00e6-fbc6-4f22-abd7-48be5a253741.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Encerramento
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2458079b-1d2f-4b13-84fc-f64e4a370417
+		summarizeBy: none
+		sourceColumn: Encerramento
+
+		variation Variation
+			isDefault
+			relationship: 2d73f580-842c-4d48-a37d-d9379ec52761
+			defaultHierarchy: LocalDateTable_aab3c143-5313-455c-9d16-80d2504c5683.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition edicao = m
+		mode: import
+		source =
+				let
+				    Fonte = MySQL.Database("127.0.0.1:3306", "olympics", [ReturnSingleDatabase=true]),
+				    newschema_edicao = Fonte{[Schema="olympics",Item="edicao"]}[Data],
+				    #"Tipo Alterado" = Table.TransformColumnTypes(newschema_edicao,{{"Ano", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "medalhas_olimpicas"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "37809746-f083-416a-8fd2-29f917d5edfa"
+  }
+}
