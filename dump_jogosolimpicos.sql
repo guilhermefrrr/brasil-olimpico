@@ -1,8 +1,10 @@
--- MySQL dump 10.13  Distrib 8.0.36, for Win64 (x86_64)
+CREATE DATABASE  IF NOT EXISTS `jogosolimpicos` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `jogosolimpicos`;
+-- MySQL dump 10.13  Distrib 8.0.40, for Win64 (x86_64)
 --
--- Host: localhost    Database: newschema
+-- Host: localhost    Database: jogosolimpicos
 -- ------------------------------------------------------
--- Server version	8.0.36
+-- Server version	8.0.40
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -136,12 +138,41 @@ INSERT INTO `medalhascomatletas` VALUES (1,1,1,6),(2,1,2,6),(3,1,3,6),(4,1,4,6),
 UNLOCK TABLES;
 
 --
--- Dumping events for database 'newschema'
+-- Temporary view structure for view `quadro_modalidades`
+--
+
+DROP TABLE IF EXISTS `quadro_modalidades`;
+/*!50001 DROP VIEW IF EXISTS `quadro_modalidades`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `quadro_modalidades` AS SELECT 
+ 1 AS `modalidade`,
+ 1 AS `ouros`,
+ 1 AS `pratas`,
+ 1 AS `bronzes`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Dumping routines for database 'jogosolimpicos'
 --
 
 --
--- Dumping routines for database 'newschema'
+-- Final view structure for view `quadro_modalidades`
 --
+
+/*!50001 DROP VIEW IF EXISTS `quadro_modalidades`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `quadro_modalidades` AS with `tabela_modalidades` as (select distinct `medalha`.`Modalidade` AS `modalidade_com_medalha` from `medalha`), `tabela_ouros` as (select `medalha`.`Modalidade` AS `modalidade`,count(0) AS `ouros` from `medalha` where (`medalha`.`Medalha` = 'Ouro') group by `medalha`.`Modalidade`), `tabela_pratas` as (select `medalha`.`Modalidade` AS `modalidade`,count(0) AS `pratas` from `medalha` where (`medalha`.`Medalha` = 'Prata') group by `medalha`.`Modalidade`), `tabela_bronzes` as (select `medalha`.`Modalidade` AS `modalidade`,count(0) AS `bronzes` from `medalha` where (`medalha`.`Medalha` = 'Bronze') group by `medalha`.`Modalidade`) select `m`.`modalidade_com_medalha` AS `modalidade`,coalesce(`o`.`ouros`,0) AS `ouros`,coalesce(`p`.`pratas`,0) AS `pratas`,coalesce(`b`.`bronzes`,0) AS `bronzes` from (((`tabela_modalidades` `m` left join `tabela_ouros` `o` on((`m`.`modalidade_com_medalha` = `o`.`modalidade`))) left join `tabela_pratas` `p` on((`m`.`modalidade_com_medalha` = `p`.`modalidade`))) left join `tabela_bronzes` `b` on((`m`.`modalidade_com_medalha` = `b`.`modalidade`))) order by coalesce(`o`.`ouros`,0) desc,coalesce(`p`.`pratas`,0) desc,coalesce(`b`.`bronzes`,0) desc */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -152,4 +183,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-08-13 19:36:03
+-- Dump completed on 2025-09-29 17:01:10
