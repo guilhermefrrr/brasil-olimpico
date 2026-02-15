@@ -4726,16 +4726,6 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "Ouros": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "O": {
 			            "State": "Suggested",
 			            "Source": {
@@ -4759,16 +4749,6 @@ cultureInfo pt-BR
 			        {
 			          "prata": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Pratas": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        },
 			        {
@@ -4895,16 +4875,6 @@ cultureInfo pt-BR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "Bronzes": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        },
 			        {
@@ -5650,16 +5620,6 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "Total de nedalhas": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "Total de medalhas": {
 			            "State": "Suggested",
 			            "Source": {
@@ -5671,6 +5631,16 @@ cultureInfo pt-BR
 			        },
 			        {
 			          "Número de medalhas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Total de nedalhas": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
