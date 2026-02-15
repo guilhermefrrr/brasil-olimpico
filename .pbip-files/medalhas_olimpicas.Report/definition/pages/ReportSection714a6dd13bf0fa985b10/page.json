@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "ReportSection714a6dd13bf0fa985b10",
+  "displayName": "Idade e gênero",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#E9DEAF'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "4e92cc1687ba5d32890e",
+      "target": "f16c3fad3f6a016ac096",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f16c3fad3f6a016ac096",
+      "target": "652360877a9b9225f2a1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f16c3fad3f6a016ac096",
+      "target": "d97334a13d241022bf87",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f16c3fad3f6a016ac096",
+      "target": "4e92cc1687ba5d32890e",
+      "type": "NoFilter"
+    }
+  ]
+}

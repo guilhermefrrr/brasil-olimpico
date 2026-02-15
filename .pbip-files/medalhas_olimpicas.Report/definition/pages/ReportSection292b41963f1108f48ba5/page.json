@@ -1,0 +1,71 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "ReportSection292b41963f1108f48ba5",
+  "displayName": "Lista de medalhas",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#E9DEAF'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "9e45c2e5be7c9d74c7cd",
+      "target": "ad2ad1a697b5ad474e31",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ad2ad1a697b5ad474e31",
+      "target": "9e45c2e5be7c9d74c7cd",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ad2ad1a697b5ad474e31",
+      "target": "a80b86b1113ab0f8b61c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ad2ad1a697b5ad474e31",
+      "target": "be16c5e3703787e1cf95",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ad2ad1a697b5ad474e31",
+      "target": "c09b5909de2c154737e0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ad2ad1a697b5ad474e31",
+      "target": "7fdc1e37ebf291c3462a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "ad2ad1a697b5ad474e31",
+      "target": "c253a7c0410fc2c145fd",
+      "type": "NoFilter"
+    }
+  ]
+}

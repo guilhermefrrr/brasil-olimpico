@@ -1,0 +1,1287 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.0.0/schema.json",
+  "displayName": "Limpar seleções 3",
+  "name": "Bookmark818a8b5ca96bf7fa13cd",
+  "options": {
+    "applyOnlyToTargetVisuals": true,
+    "targetVisualNames": [
+      "39dc678c508bd1bc302c",
+      "27f001039adcbce40d46",
+      "66691816da08dbdb0d09",
+      "7ff2e12012275a597610",
+      "a7e4117c9a2a717750dd",
+      "e09b6403fa2c50542ef1",
+      "d0e6a97a1f4817f3d785",
+      "75e4540600ee4be5447c",
+      "c37ca7e6e7384fcca96a",
+      "1e8aa141eb31a0d4a2d5",
+      "4181b3138e013754ad1f",
+      "a07bd245d6a72e51691d",
+      "ae37b52d1d4d795dce8c",
+      "0d8590776eb98c82ea16",
+      "a08fe7d5c10324fc1360",
+      "6b89364f86b096f4c020"
+    ]
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection338b3b6900613942e4b9",
+    "sections": {
+      "ReportSection338b3b6900613942e4b9": {
+        "visualContainers": {
+          "39dc678c508bd1bc302c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "fa7bf2dde370de256bc0",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "atleta"
+                        }
+                      },
+                      "Property": "Estado_Nascimento"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "30f7d46521d56564f1c8",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "atleta"
+                            }
+                          },
+                          "Property": "Estado_Nascimento"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "map",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "atleta"
+                        }
+                      },
+                      "Property": "Estado_Nascimento"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "27f001039adcbce40d46": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b205b39c196f84875e14",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "atleta"
+                        }
+                      },
+                      "Property": "Estado_Nascimento"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "2e49b2ce4eed19abbdd5",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "atleta"
+                            }
+                          },
+                          "Property": "Estado_Nascimento"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "cbdd614f3ee69142133a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "atleta"
+                        }
+                      },
+                      "Property": "Cidade_Nascimento"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "atleta"
+                            }
+                          },
+                          "Property": "Estado_Nascimento"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "atleta"
+                        }
+                      },
+                      "Property": "Estado_Nascimento"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "newschema atleta.Estado_Nascimento"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "atleta"
+                              }
+                            },
+                            "Property": "Estado_Nascimento"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "atleta.Cidade_Nascimento"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": null
+                  }
+                }
+              ]
+            }
+          },
+          "66691816da08dbdb0d09": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter66b208c3c28d98015215",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "n",
+                        "Entity": "atleta",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "n"
+                                        }
+                                      },
+                                      "Property": "Pais_Nascimento"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'Brasil'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "atleta"
+                        }
+                      },
+                      "Property": "Pais_Nascimento"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "66afbc1394ddaf217196",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "atleta"
+                        }
+                      },
+                      "Property": "Nome_Principal"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a93ff7e5aab3a0d9768d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Modalidade"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c86bbc132bcb2b0f6e24",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "atleta"
+                        }
+                      },
+                      "Property": "Cidade_Nascimento"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "atleta"
+                        }
+                      },
+                      "Property": "Nome_Principal"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "7ff2e12012275a597610": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter9362d1137230799734cd",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "n",
+                        "Entity": "atleta",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "n"
+                                        }
+                                      },
+                                      "Property": "Pais_Nascimento"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'Brasil'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "atleta"
+                        }
+                      },
+                      "Property": "Pais_Nascimento"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "e1c72c167aaf92e4cc96",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Nº Atletas"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Nº Atletas"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "a7e4117c9a2a717750dd": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "5991d37a01705a8c5402",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "atleta"
+                        }
+                      },
+                      "Property": "Nome_Principal"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f8ced3af30edb0770f48",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Modalidade"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "atleta"
+                        }
+                      },
+                      "Property": "Nome_Principal"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "e09b6403fa2c50542ef1": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "da62b5b740669e0539dd",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroedicoes"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "78432c9668c6b26ef053",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroedicoes"
+                        }
+                      },
+                      "Property": "Ouros"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6a38244d7d17e40c2bff",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroedicoes"
+                        }
+                      },
+                      "Property": "Pratas"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "605e795a8e2591cf6909",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroedicoes"
+                        }
+                      },
+                      "Property": "Bronzes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "563637fa9ce54fc49a08",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "quadroedicoes"
+                            }
+                          },
+                          "Property": "Total"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroedicoes"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "d0e6a97a1f4817f3d785": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter64430dd79e0171921092",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "n",
+                        "Entity": "medalha",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "n"
+                                    }
+                                  },
+                                  "Property": "Medalha"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Ouro'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Medalha"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "371202bd46fae4e0d957",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Ouros"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Ouros"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "75e4540600ee4be5447c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter32ad2e28437058670652",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "n",
+                        "Entity": "medalha",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "n"
+                                    }
+                                  },
+                                  "Property": "Medalha"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Prata'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Medalha"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "0f3a736cfc15b494c542",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Pratas"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Pratas"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "c37ca7e6e7384fcca96a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter78c0007b47ce3ce1e762",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "n",
+                        "Entity": "medalha",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "n"
+                                    }
+                                  },
+                                  "Property": "Medalha"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Bronze'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Medalha"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "4b701d02c7ccf3950cbb",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Bronzes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Bronzes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "1e8aa141eb31a0d4a2d5": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f3c71b1a90cb88b9c07f",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Total"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Total"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "4181b3138e013754ad1f": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "a07bd245d6a72e51691d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "694dc788a5abae45d1e0",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Medalha"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Medalha"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "ae37b52d1d4d795dce8c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "c7bb892a337170f9312e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Genero"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Genero"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "0d8590776eb98c82ea16": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ed6c9c388799f2f9dccd",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Modalidade"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Modalidade"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "a08fe7d5c10324fc1360": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "baa8c171a02db65680d1",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Individual_Coletivo"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Individual_Coletivo"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "6b89364f86b096f4c020": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter3f425c0a2240ad8912ae",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "e",
+                        "Entity": "edicao",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "e"
+                                    }
+                                  },
+                                  "Property": "Verao_Inverno"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Verão'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "edicao"
+                        }
+                      },
+                      "Property": "Verao_Inverno"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "d74b1fb702fe73d24fbd",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "edicao"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "edicao"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

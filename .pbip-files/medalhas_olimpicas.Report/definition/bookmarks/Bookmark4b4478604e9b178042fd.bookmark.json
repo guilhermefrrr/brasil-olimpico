@@ -1,0 +1,1261 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.0.0/schema.json",
+  "displayName": "Limpar seleções 1",
+  "name": "Bookmark4b4478604e9b178042fd",
+  "options": {
+    "targetVisualNames": [
+      "9e45c2e5be7c9d74c7cd",
+      "be16c5e3703787e1cf95",
+      "7fdc1e37ebf291c3462a",
+      "c253a7c0410fc2c145fd",
+      "ad2ad1a697b5ad474e31",
+      "36373ee73b46a41b4977",
+      "6d377b2807593321ba35",
+      "fd6776d9e19994229427",
+      "febcce3029098ccfba15",
+      "65f5e5e1c357f2ace497",
+      "c09b5909de2c154737e0",
+      "a80b86b1113ab0f8b61c",
+      "5181e420ea521ba9b495",
+      "1ca21376396f78573236",
+      "5fba3277ee89d72fa1e7",
+      "397d53bc739e75ce1506",
+      "93f5b734be207086073c"
+    ]
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection292b41963f1108f48ba5",
+    "sections": {
+      "ReportSection292b41963f1108f48ba5": {
+        "visualContainers": {
+          "9e45c2e5be7c9d74c7cd": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "c744d63c44a4ea9cb7dd",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "edicao"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9bf7e64f27e3886a7bde",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "edicao"
+                        }
+                      },
+                      "Property": "Cidade"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "719a96a8af48557311bf",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Medalha"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "fbcbd17e90752a731837",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Evento"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "fed3b865f91a9d433b12",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Individual_Coletivo"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "4b0dec319bc732f8a82e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Genero"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7212a7d617e54894ca3b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Modalidade"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ce2d69ff25b666960690",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Ranking"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Ranking"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "be16c5e3703787e1cf95": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d727b30c16e91b547a58",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroatletas"
+                        }
+                      },
+                      "Property": "Ouros"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a06baa68a4d40c650226",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroatletas"
+                        }
+                      },
+                      "Property": "Pratas"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9a7cde328224ce72f213",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroatletas"
+                        }
+                      },
+                      "Property": "Bronzes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "2ab7855204f232c1894b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroatletas"
+                        }
+                      },
+                      "Property": "Total"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "54de1d0c8432c03cc7e5",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroatletas"
+                        }
+                      },
+                      "Property": "Nome_Principal"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroatletas"
+                        }
+                      },
+                      "Property": "Ouros"
+                    }
+                  }
+                },
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroatletas"
+                        }
+                      },
+                      "Property": "Pratas"
+                    }
+                  }
+                },
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroatletas"
+                        }
+                      },
+                      "Property": "Bronzes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "7fdc1e37ebf291c3462a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0a985ce9464f9d7d8807",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Mod. com med."
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Mod. com med."
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "c253a7c0410fc2c145fd": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a4e35b32ab13c1251ef1",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Atl. com med."
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Atl. com med."
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "ad2ad1a697b5ad474e31": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "937439d6080f1c5b0560",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroedicoes"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "b4e33c2808e38c212466",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroedicoes"
+                        }
+                      },
+                      "Property": "Ouros"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a4d852d1879ffacc3402",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroedicoes"
+                        }
+                      },
+                      "Property": "Pratas"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "be47cdb7693aa2ca0121",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroedicoes"
+                        }
+                      },
+                      "Property": "Bronzes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "360c8df9565341ae35bd",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "quadroedicoes"
+                            }
+                          },
+                          "Property": "Total"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "quadroedicoes"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "36373ee73b46a41b4977": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter64430dd79e0171921092",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "n",
+                        "Entity": "medalha",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "n"
+                                    }
+                                  },
+                                  "Property": "Medalha"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Ouro'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Medalha"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "cf8b71a7a0d4c3cbbb21",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Ouros"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Ouros"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "6d377b2807593321ba35": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter32ad2e28437058670652",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "n",
+                        "Entity": "medalha",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "n"
+                                    }
+                                  },
+                                  "Property": "Medalha"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Prata'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Medalha"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "c9b474a9d92daaee3dc0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Pratas"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Pratas"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "fd6776d9e19994229427": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter78c0007b47ce3ce1e762",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "n",
+                        "Entity": "medalha",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "n"
+                                    }
+                                  },
+                                  "Property": "Medalha"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Bronze'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Medalha"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "cf80d5acac3eeeae82b0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Bronzes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Bronzes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "febcce3029098ccfba15": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "918405bfb9c497b0f7a1",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Total"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "Total"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "65f5e5e1c357f2ace497": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "c09b5909de2c154737e0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ca57ea5138d9860e076b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Modalidade"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Modalidade"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "a80b86b1113ab0f8b61c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "adceb2a210de28d881e1",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "atleta"
+                        }
+                      },
+                      "Property": "Nome_Principal"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "atleta"
+                        }
+                      },
+                      "Property": "Nome_Principal"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "5181e420ea521ba9b495": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e5a7eaa06448d347ca7b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Medalha"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Medalha"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "1ca21376396f78573236": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a3d2fdffed995ae0d51b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Genero"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Genero"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "5fba3277ee89d72fa1e7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "fca0ee093c519fc5c843",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Modalidade"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Modalidade"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "397d53bc739e75ce1506": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e9648d0b660ab5508663",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Individual_Coletivo"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "medalha"
+                        }
+                      },
+                      "Property": "Individual_Coletivo"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "93f5b734be207086073c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter3f425c0a2240ad8912ae",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "e",
+                        "Entity": "edicao",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "e"
+                                    }
+                                  },
+                                  "Property": "Verao_Inverno"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Verão'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "edicao"
+                        }
+                      },
+                      "Property": "Verao_Inverno"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "0d54da06be1cc16e93c5",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "edicao"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "edicao"
+                        }
+                      },
+                      "Property": "Ano"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
