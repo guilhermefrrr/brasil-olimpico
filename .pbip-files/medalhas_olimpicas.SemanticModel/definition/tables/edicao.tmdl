@@ -106,6 +106,15 @@ table edicao
 
 		annotation UnderlyingDateTimeDataType = Date
 
+	column Ano_Sede = edicao[Ano] & " - " & edicao[Cidade]
+		lineageTag: 408ce83f-8d38-4506-84c7-e1432a8ba96a
+		summarizeBy: none
+		sortByColumn: EdicaoID
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
 	partition edicao = m
 		mode: import
 		source =

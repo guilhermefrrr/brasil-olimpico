@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "441d7ecb1592ee88dad5",
+  "name": "ff20d57801193d2f02f3",
   "position": {
-    "x": 674.28571428571433,
-    "y": 80,
-    "z": 9000,
-    "height": 58.571428571428577,
-    "width": 155.71428571428572,
-    "tabOrder": 10000
+    "x": 980,
+    "y": 81.25,
+    "z": 18001,
+    "height": 57.5,
+    "width": 155,
+    "tabOrder": 19001
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "medalha"
+                      "Entity": "edicao"
                     }
                   },
-                  "Property": "Genero"
+                  "Property": "Verao_Inverno"
                 }
               },
-              "queryRef": "newschema medalha.Genero",
-              "nativeQueryRef": "Genero",
+              "queryRef": "edicao.Verao_Inverno",
+              "nativeQueryRef": "Verao_Inverno",
               "active": true
             }
           ]
@@ -142,7 +142,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Feminino (F) | Masculino (M)'"
+                  "Value": "'Verão | Inverno'"
                 }
               }
             },
@@ -240,5 +240,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "6cd38617a7bd04602733",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "edicao"
+              }
+            },
+            "Property": "Verao_Inverno"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

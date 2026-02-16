@@ -2,7 +2,7 @@ cultureInfo pt-BR
 
 	linguisticMetadata =
 			{
-			  "Version": "3.5.0",
+			  "Version": "4.1.0",
 			  "Language": "en-US",
 			  "Entities": {
 			    "atleta": {
@@ -206,7 +206,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "atleta.data_nascimento.variation.hierarquia_de_data": {
+			    "atleta.data_nascimento.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "atleta",
@@ -294,7 +294,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta.data_nascimento.variation.hierarquia_de_data.ano": {
+			    "atleta.data_nascimento.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "atleta",
@@ -388,7 +388,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta.data_nascimento.variation.hierarquia_de_data.trimestre": {
+			    "atleta.data_nascimento.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "atleta",
@@ -482,7 +482,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta.data_nascimento.variation.hierarquia_de_data.mê": {
+			    "atleta.data_nascimento.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "atleta",
@@ -576,7 +576,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta.data_nascimento.variation.hierarquia_de_data.dia": {
+			    "atleta.data_nascimento.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "atleta",
@@ -770,7 +770,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "atleta.data_morte.variation.hierarquia_de_data": {
+			    "atleta.data_morte.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "atleta",
@@ -858,7 +858,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta.data_morte.variation.hierarquia_de_data.ano": {
+			    "atleta.data_morte.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "atleta",
@@ -952,7 +952,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta.data_morte.variation.hierarquia_de_data.trimestre": {
+			    "atleta.data_morte.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "atleta",
@@ -1046,7 +1046,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta.data_morte.variation.hierarquia_de_data.mê": {
+			    "atleta.data_morte.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "atleta",
@@ -1140,7 +1140,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta.data_morte.variation.hierarquia_de_data.dia": {
+			    "atleta.data_morte.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "atleta",
@@ -1671,6 +1671,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Verão | Inverno": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1697,7 +1707,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "edicao.inicio.variation.hierarquia_de_data": {
+			    "edicao.inicio.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -1785,7 +1795,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.inicio.variation.hierarquia_de_data.ano": {
+			    "edicao.inicio.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -1809,7 +1819,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.inicio.variation.hierarquia_de_data.trimestre": {
+			    "edicao.inicio.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -1833,7 +1843,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.inicio.variation.hierarquia_de_data.mê": {
+			    "edicao.inicio.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -1857,7 +1867,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.inicio.variation.hierarquia_de_data.dia": {
+			    "edicao.inicio.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -1904,7 +1914,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "edicao.fim.variation.hierarquia_de_data": {
+			    "edicao.fim.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -1992,7 +2002,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.fim.variation.hierarquia_de_data.ano": {
+			    "edicao.fim.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -2016,7 +2026,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.fim.variation.hierarquia_de_data.trimestre": {
+			    "edicao.fim.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -2040,7 +2050,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.fim.variation.hierarquia_de_data.mê": {
+			    "edicao.fim.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -2064,7 +2074,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.fim.variation.hierarquia_de_data.dia": {
+			    "edicao.fim.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -2111,7 +2121,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "edicao.abertura.variation.hierarquia_de_data": {
+			    "edicao.abertura.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -2199,7 +2209,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.abertura.variation.hierarquia_de_data.ano": {
+			    "edicao.abertura.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -2223,7 +2233,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.abertura.variation.hierarquia_de_data.trimestre": {
+			    "edicao.abertura.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -2247,7 +2257,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.abertura.variation.hierarquia_de_data.mê": {
+			    "edicao.abertura.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -2271,7 +2281,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.abertura.variation.hierarquia_de_data.dia": {
+			    "edicao.abertura.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -2318,7 +2328,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "edicao.encerramento.variation.hierarquia_de_data": {
+			    "edicao.encerramento.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -2406,7 +2416,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.encerramento.variation.hierarquia_de_data.ano": {
+			    "edicao.encerramento.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -2430,7 +2440,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.encerramento.variation.hierarquia_de_data.trimestre": {
+			    "edicao.encerramento.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -2454,7 +2464,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.encerramento.variation.hierarquia_de_data.mê": {
+			    "edicao.encerramento.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -2478,7 +2488,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao.encerramento.variation.hierarquia_de_data.dia": {
+			    "edicao.encerramento.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "edicao",
@@ -2743,7 +2753,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "medalha.data.variation.hierarquia_de_data": {
+			    "medalha.data.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalha",
@@ -2831,7 +2841,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha.data.variation.hierarquia_de_data.ano": {
+			    "medalha.data.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalha",
@@ -2925,7 +2935,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha.data.variation.hierarquia_de_data.trimestre": {
+			    "medalha.data.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalha",
@@ -3019,7 +3029,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha.data.variation.hierarquia_de_data.mê": {
+			    "medalha.data.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalha",
@@ -3113,7 +3123,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha.data.variation.hierarquia_de_data.dia": {
+			    "medalha.data.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalha",
@@ -3353,7 +3363,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "medalha.edicao_abertura.variation.hierarquia_de_data": {
+			    "medalha.edicao_abertura.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalha",
@@ -3441,7 +3451,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha.edicao_abertura.variation.hierarquia_de_data.ano": {
+			    "medalha.edicao_abertura.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalha",
@@ -3465,7 +3475,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha.edicao_abertura.variation.hierarquia_de_data.trimestre": {
+			    "medalha.edicao_abertura.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalha",
@@ -3489,7 +3499,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha.edicao_abertura.variation.hierarquia_de_data.mê": {
+			    "medalha.edicao_abertura.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalha",
@@ -3513,7 +3523,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha.edicao_abertura.variation.hierarquia_de_data.dia": {
+			    "medalha.edicao_abertura.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalha",
@@ -3889,7 +3899,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data": {
+			    "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalhascomatletas",
@@ -3977,7 +3987,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.ano": {
+			    "medalhascomatleta.atleta_Data_Nascimento.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalhascomatletas",
@@ -4001,7 +4011,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.trimestre": {
+			    "medalhascomatleta.atleta_Data_Nascimento.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalhascomatletas",
@@ -4025,7 +4035,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.mê": {
+			    "medalhascomatleta.atleta_Data_Nascimento.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalhascomatletas",
@@ -4049,7 +4059,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.dia": {
+			    "medalhascomatleta.atleta_Data_Nascimento.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalhascomatletas",
@@ -4166,7 +4176,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "medalhascomatleta.medalha_data.variation.hierarquia_de_data": {
+			    "medalhascomatleta.medalha_data.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalhascomatletas",
@@ -4254,7 +4264,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta.medalha_data.variation.hierarquia_de_data.ano": {
+			    "medalhascomatleta.medalha_data.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalhascomatletas",
@@ -4348,7 +4358,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta.medalha_data.variation.hierarquia_de_data.trimestre": {
+			    "medalhascomatleta.medalha_data.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalhascomatletas",
@@ -4442,7 +4452,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta.medalha_data.variation.hierarquia_de_data.mê": {
+			    "medalhascomatleta.medalha_data.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalhascomatletas",
@@ -4536,7 +4546,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta.medalha_data.variation.hierarquia_de_data.dia": {
+			    "medalhascomatleta.medalha_data.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "medalhascomatletas",
@@ -5666,7 +5676,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "medalhistas estrangeiros": {
+			          "medalhistas nascidos fora do Brasil": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -6003,23 +6013,56 @@ cultureInfo pt-BR
 			          }
 			        }
 			      ]
+			    },
+			    "edicao.ano_sede": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "edicao",
+			          "ConceptualProperty": "Ano_Sede"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano sede": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Ano_Sede": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Ano - sede": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "medalhascomatleta_medalha_data_variation_hierarquia_de_data_has_mê": {
+			    "medalhascomatleta_medalha_data_hierarquia_de_data_has_medalhascomatleta_medalha_data_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data": {
+			        "medalhascomatleta.medalha_data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data"
+			            "Entity": "medalhascomatleta.medalha_data.hierarquia_de_data"
 			          }
 			        },
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data.mê": {
+			        "medalhascomatleta.medalha_data.mê": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.mê"
+			            "Entity": "medalhascomatleta.medalha_data.mê"
 			          }
 			        }
 			      },
@@ -6027,10 +6070,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data"
+			              "Role": "medalhascomatleta.medalha_data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.mê"
+			              "Role": "medalhascomatleta.medalha_data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -6039,20 +6082,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_medalha_data_variation_hierarquia_de_data_has_trimestre": {
+			    "medalhascomatleta_medalha_data_hierarquia_de_data_has_medalhascomatleta_medalha_data_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data": {
+			        "medalhascomatleta.medalha_data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data"
+			            "Entity": "medalhascomatleta.medalha_data.hierarquia_de_data"
 			          }
 			        },
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data.trimestre": {
+			        "medalhascomatleta.medalha_data.trimestre": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.trimestre"
+			            "Entity": "medalhascomatleta.medalha_data.trimestre"
 			          }
 			        }
 			      },
@@ -6060,10 +6103,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data"
+			              "Role": "medalhascomatleta.medalha_data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalhascomatleta.medalha_data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -6072,20 +6115,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_medalha_data_variation_hierarquia_de_data_has_ano": {
+			    "medalhascomatleta_medalha_data_hierarquia_de_data_has_medalhascomatleta_medalha_data_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data": {
+			        "medalhascomatleta.medalha_data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data"
+			            "Entity": "medalhascomatleta.medalha_data.hierarquia_de_data"
 			          }
 			        },
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data.ano": {
+			        "medalhascomatleta.medalha_data.ano": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.ano"
+			            "Entity": "medalhascomatleta.medalha_data.ano"
 			          }
 			        }
 			      },
@@ -6093,10 +6136,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data"
+			              "Role": "medalhascomatleta.medalha_data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.ano"
+			              "Role": "medalhascomatleta.medalha_data.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -6105,7 +6148,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_medalha_data_has_variation_hierarquia_de_data": {
+			    "medalhascomatleta_medalha_data_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
@@ -6116,9 +6159,9 @@ cultureInfo pt-BR
 			            "Entity": "medalhascomatleta.medalha_data"
 			          }
 			        },
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data": {
+			        "medalhascomatleta.medalha_data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data"
+			            "Entity": "medalhascomatleta.medalha_data.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -6129,7 +6172,7 @@ cultureInfo pt-BR
 			              "Role": "medalhascomatleta.medalha_data"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data"
+			              "Role": "medalhascomatleta.medalha_data.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -6138,20 +6181,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_atleta_Data_Nascimento_variation_hierarquia_de_data_mê_has_medalhascomatleta_atleta_Data_Nascimento_variation_hierarquia_de_data_dia": {
+			    "medalhascomatleta_atleta_Data_Nascimento_mê_has_medalhascomatleta_atleta_Data_Nascimento_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.mê": {
+			        "medalhascomatleta.atleta_Data_Nascimento.mê": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.mê"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.mê"
 			          }
 			        },
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.dia": {
+			        "medalhascomatleta.atleta_Data_Nascimento.dia": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.dia"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.dia"
 			          }
 			        }
 			      },
@@ -6159,10 +6202,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.mê"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.dia"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -6172,10 +6215,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.dia"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.dia"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -6185,7 +6228,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.dia"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -6195,7 +6238,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -6204,20 +6247,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_atleta_Data_Nascimento_variation_hierarquia_de_data_trimestre_has_medalhascomatleta_atleta_Data_Nascimento_variation_hierarquia_de_data_mê": {
+			    "medalhascomatleta_atleta_Data_Nascimento_trimestre_has_medalhascomatleta_atleta_Data_Nascimento_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.trimestre": {
+			        "medalhascomatleta.atleta_Data_Nascimento.trimestre": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.trimestre"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.trimestre"
 			          }
 			        },
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.mê": {
+			        "medalhascomatleta.atleta_Data_Nascimento.mê": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.mê"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.mê"
 			          }
 			        }
 			      },
@@ -6225,10 +6268,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.trimestre"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -6238,10 +6281,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.mê"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -6251,7 +6294,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -6261,7 +6304,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -6270,20 +6313,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_atleta_Data_Nascimento_variation_hierarquia_de_data_ano_has_medalhascomatleta_atleta_Data_Nascimento_variation_hierarquia_de_data_trimestre": {
+			    "medalhascomatleta_atleta_Data_Nascimento_ano_has_medalhascomatleta_atleta_Data_Nascimento_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.ano": {
+			        "medalhascomatleta.atleta_Data_Nascimento.ano": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.ano"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.ano"
 			          }
 			        },
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.trimestre": {
+			        "medalhascomatleta.atleta_Data_Nascimento.trimestre": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.trimestre"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.trimestre"
 			          }
 			        }
 			      },
@@ -6291,10 +6334,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.ano"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.ano"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -6304,10 +6347,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.trimestre"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.ano"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -6317,7 +6360,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -6327,7 +6370,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.ano"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -6336,20 +6379,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_atleta_Data_Nascimento_variation_hierarquia_de_data_has_dia": {
+			    "medalhascomatleta_atleta_Data_Nascimento_hierarquia_de_data_has_medalhascomatleta_atleta_Data_Nascimento_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data": {
+			        "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data"
 			          }
 			        },
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.dia": {
+			        "medalhascomatleta.atleta_Data_Nascimento.dia": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.dia"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.dia"
 			          }
 			        }
 			      },
@@ -6357,10 +6400,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.dia"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -6369,20 +6412,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_atleta_Data_Nascimento_variation_hierarquia_de_data_has_mê": {
+			    "medalhascomatleta_atleta_Data_Nascimento_hierarquia_de_data_has_medalhascomatleta_atleta_Data_Nascimento_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data": {
+			        "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data"
 			          }
 			        },
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.mê": {
+			        "medalhascomatleta.atleta_Data_Nascimento.mê": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.mê"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.mê"
 			          }
 			        }
 			      },
@@ -6390,10 +6433,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -6402,20 +6445,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_atleta_Data_Nascimento_variation_hierarquia_de_data_has_trimestre": {
+			    "medalhascomatleta_atleta_Data_Nascimento_hierarquia_de_data_has_medalhascomatleta_atleta_Data_Nascimento_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data": {
+			        "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data"
 			          }
 			        },
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.trimestre": {
+			        "medalhascomatleta.atleta_Data_Nascimento.trimestre": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.trimestre"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.trimestre"
 			          }
 			        }
 			      },
@@ -6423,10 +6466,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -6435,20 +6478,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_atleta_Data_Nascimento_variation_hierarquia_de_data_has_ano": {
+			    "medalhascomatleta_atleta_Data_Nascimento_hierarquia_de_data_has_medalhascomatleta_atleta_Data_Nascimento_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data": {
+			        "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data"
 			          }
 			        },
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.ano": {
+			        "medalhascomatleta.atleta_Data_Nascimento.ano": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.ano"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.ano"
 			          }
 			        }
 			      },
@@ -6456,10 +6499,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data.ano"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -6468,7 +6511,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_atleta_Data_Nascimento_has_variation_hierarquia_de_data": {
+			    "medalhascomatleta_atleta_Data_Nascimento_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
@@ -6479,9 +6522,9 @@ cultureInfo pt-BR
 			            "Entity": "medalhascomatleta.atleta_Data_Nascimento"
 			          }
 			        },
-			        "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data": {
+			        "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data"
+			            "Entity": "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -6492,7 +6535,7 @@ cultureInfo pt-BR
 			              "Role": "medalhascomatleta.atleta_Data_Nascimento"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.atleta_Data_Nascimento.variation.hierarquia_de_data"
+			              "Role": "medalhascomatleta.atleta_Data_Nascimento.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -6501,20 +6544,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_edicao_abertura_variation_hierarquia_de_data_mê_has_medalha_edicao_abertura_variation_hierarquia_de_data_dia": {
+			    "medalha_edicao_abertura_mê_has_medalha_edicao_abertura_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalha.edicao_abertura.variation.hierarquia_de_data.mê": {
+			        "medalha.edicao_abertura.mê": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data.mê"
+			            "Entity": "medalha.edicao_abertura.mê"
 			          }
 			        },
-			        "medalha.edicao_abertura.variation.hierarquia_de_data.dia": {
+			        "medalha.edicao_abertura.dia": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data.dia"
+			            "Entity": "medalha.edicao_abertura.dia"
 			          }
 			        }
 			      },
@@ -6522,10 +6565,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.mê"
+			              "Role": "medalha.edicao_abertura.mê"
 			            },
 			            "Object": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.dia"
+			              "Role": "medalha.edicao_abertura.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -6535,10 +6578,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.dia"
+			              "Role": "medalha.edicao_abertura.dia"
 			            },
 			            "Object": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.mê"
+			              "Role": "medalha.edicao_abertura.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -6548,7 +6591,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.dia"
+			              "Role": "medalha.edicao_abertura.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -6558,7 +6601,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.mê"
+			              "Role": "medalha.edicao_abertura.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -6567,20 +6610,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_edicao_abertura_variation_hierarquia_de_data_trimestre_has_medalha_edicao_abertura_variation_hierarquia_de_data_mê": {
+			    "medalha_edicao_abertura_trimestre_has_medalha_edicao_abertura_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalha.edicao_abertura.variation.hierarquia_de_data.trimestre": {
+			        "medalha.edicao_abertura.trimestre": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data.trimestre"
+			            "Entity": "medalha.edicao_abertura.trimestre"
 			          }
 			        },
-			        "medalha.edicao_abertura.variation.hierarquia_de_data.mê": {
+			        "medalha.edicao_abertura.mê": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data.mê"
+			            "Entity": "medalha.edicao_abertura.mê"
 			          }
 			        }
 			      },
@@ -6588,10 +6631,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalha.edicao_abertura.trimestre"
 			            },
 			            "Object": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.mê"
+			              "Role": "medalha.edicao_abertura.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -6601,10 +6644,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.mê"
+			              "Role": "medalha.edicao_abertura.mê"
 			            },
 			            "Object": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalha.edicao_abertura.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -6614,7 +6657,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.mê"
+			              "Role": "medalha.edicao_abertura.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -6624,7 +6667,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalha.edicao_abertura.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -6633,20 +6676,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_edicao_abertura_variation_hierarquia_de_data_ano_has_medalha_edicao_abertura_variation_hierarquia_de_data_trimestre": {
+			    "medalha_edicao_abertura_ano_has_medalha_edicao_abertura_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalha.edicao_abertura.variation.hierarquia_de_data.ano": {
+			        "medalha.edicao_abertura.ano": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data.ano"
+			            "Entity": "medalha.edicao_abertura.ano"
 			          }
 			        },
-			        "medalha.edicao_abertura.variation.hierarquia_de_data.trimestre": {
+			        "medalha.edicao_abertura.trimestre": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data.trimestre"
+			            "Entity": "medalha.edicao_abertura.trimestre"
 			          }
 			        }
 			      },
@@ -6654,10 +6697,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.ano"
+			              "Role": "medalha.edicao_abertura.ano"
 			            },
 			            "Object": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalha.edicao_abertura.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -6667,10 +6710,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalha.edicao_abertura.trimestre"
 			            },
 			            "Object": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.ano"
+			              "Role": "medalha.edicao_abertura.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -6680,7 +6723,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalha.edicao_abertura.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -6690,7 +6733,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.ano"
+			              "Role": "medalha.edicao_abertura.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -6699,20 +6742,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_edicao_abertura_variation_hierarquia_de_data_has_dia": {
+			    "medalha_edicao_abertura_hierarquia_de_data_has_medalha_edicao_abertura_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalha.edicao_abertura.variation.hierarquia_de_data": {
+			        "medalha.edicao_abertura.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data"
+			            "Entity": "medalha.edicao_abertura.hierarquia_de_data"
 			          }
 			        },
-			        "medalha.edicao_abertura.variation.hierarquia_de_data.dia": {
+			        "medalha.edicao_abertura.dia": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data.dia"
+			            "Entity": "medalha.edicao_abertura.dia"
 			          }
 			        }
 			      },
@@ -6720,10 +6763,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data"
+			              "Role": "medalha.edicao_abertura.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.dia"
+			              "Role": "medalha.edicao_abertura.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -6732,20 +6775,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_edicao_abertura_variation_hierarquia_de_data_has_mê": {
+			    "medalha_edicao_abertura_hierarquia_de_data_has_medalha_edicao_abertura_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalha.edicao_abertura.variation.hierarquia_de_data": {
+			        "medalha.edicao_abertura.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data"
+			            "Entity": "medalha.edicao_abertura.hierarquia_de_data"
 			          }
 			        },
-			        "medalha.edicao_abertura.variation.hierarquia_de_data.mê": {
+			        "medalha.edicao_abertura.mê": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data.mê"
+			            "Entity": "medalha.edicao_abertura.mê"
 			          }
 			        }
 			      },
@@ -6753,10 +6796,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data"
+			              "Role": "medalha.edicao_abertura.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.mê"
+			              "Role": "medalha.edicao_abertura.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -6765,20 +6808,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_edicao_abertura_variation_hierarquia_de_data_has_trimestre": {
+			    "medalha_edicao_abertura_hierarquia_de_data_has_medalha_edicao_abertura_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalha.edicao_abertura.variation.hierarquia_de_data": {
+			        "medalha.edicao_abertura.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data"
+			            "Entity": "medalha.edicao_abertura.hierarquia_de_data"
 			          }
 			        },
-			        "medalha.edicao_abertura.variation.hierarquia_de_data.trimestre": {
+			        "medalha.edicao_abertura.trimestre": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data.trimestre"
+			            "Entity": "medalha.edicao_abertura.trimestre"
 			          }
 			        }
 			      },
@@ -6786,10 +6829,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data"
+			              "Role": "medalha.edicao_abertura.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalha.edicao_abertura.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -6798,20 +6841,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_edicao_abertura_variation_hierarquia_de_data_has_ano": {
+			    "medalha_edicao_abertura_hierarquia_de_data_has_medalha_edicao_abertura_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalha.edicao_abertura.variation.hierarquia_de_data": {
+			        "medalha.edicao_abertura.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data"
+			            "Entity": "medalha.edicao_abertura.hierarquia_de_data"
 			          }
 			        },
-			        "medalha.edicao_abertura.variation.hierarquia_de_data.ano": {
+			        "medalha.edicao_abertura.ano": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data.ano"
+			            "Entity": "medalha.edicao_abertura.ano"
 			          }
 			        }
 			      },
@@ -6819,10 +6862,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data"
+			              "Role": "medalha.edicao_abertura.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data.ano"
+			              "Role": "medalha.edicao_abertura.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -6831,7 +6874,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_edicao_abertura_has_variation_hierarquia_de_data": {
+			    "medalha_edicao_abertura_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
@@ -6842,9 +6885,9 @@ cultureInfo pt-BR
 			            "Entity": "medalha.edicao_abertura"
 			          }
 			        },
-			        "medalha.edicao_abertura.variation.hierarquia_de_data": {
+			        "medalha.edicao_abertura.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalha.edicao_abertura.variation.hierarquia_de_data"
+			            "Entity": "medalha.edicao_abertura.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -6855,7 +6898,7 @@ cultureInfo pt-BR
 			              "Role": "medalha.edicao_abertura"
 			            },
 			            "Object": {
-			              "Role": "medalha.edicao_abertura.variation.hierarquia_de_data"
+			              "Role": "medalha.edicao_abertura.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -6864,20 +6907,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_data_variation_hierarquia_de_data_mê_has_medalha_data_variation_hierarquia_de_data_dia": {
+			    "medalha_data_mê_has_medalha_data_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalha.data.variation.hierarquia_de_data.mê": {
+			        "medalha.data.mê": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data.mê"
+			            "Entity": "medalha.data.mê"
 			          }
 			        },
-			        "medalha.data.variation.hierarquia_de_data.dia": {
+			        "medalha.data.dia": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data.dia"
+			            "Entity": "medalha.data.dia"
 			          }
 			        }
 			      },
@@ -6885,10 +6928,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.mê"
+			              "Role": "medalha.data.mê"
 			            },
 			            "Object": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.dia"
+			              "Role": "medalha.data.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -6898,10 +6941,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.dia"
+			              "Role": "medalha.data.dia"
 			            },
 			            "Object": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.mê"
+			              "Role": "medalha.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -6911,7 +6954,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.dia"
+			              "Role": "medalha.data.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -6921,7 +6964,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.mê"
+			              "Role": "medalha.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -6930,20 +6973,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_data_variation_hierarquia_de_data_trimestre_has_medalha_data_variation_hierarquia_de_data_mê": {
+			    "medalha_data_trimestre_has_medalha_data_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalha.data.variation.hierarquia_de_data.trimestre": {
+			        "medalha.data.trimestre": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data.trimestre"
+			            "Entity": "medalha.data.trimestre"
 			          }
 			        },
-			        "medalha.data.variation.hierarquia_de_data.mê": {
+			        "medalha.data.mê": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data.mê"
+			            "Entity": "medalha.data.mê"
 			          }
 			        }
 			      },
@@ -6951,10 +6994,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalha.data.trimestre"
 			            },
 			            "Object": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.mê"
+			              "Role": "medalha.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -6964,10 +7007,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.mê"
+			              "Role": "medalha.data.mê"
 			            },
 			            "Object": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalha.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -6977,7 +7020,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.mê"
+			              "Role": "medalha.data.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -6987,7 +7030,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalha.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -6996,20 +7039,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_data_variation_hierarquia_de_data_ano_has_medalha_data_variation_hierarquia_de_data_trimestre": {
+			    "medalha_data_ano_has_medalha_data_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalha.data.variation.hierarquia_de_data.ano": {
+			        "medalha.data.ano": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data.ano"
+			            "Entity": "medalha.data.ano"
 			          }
 			        },
-			        "medalha.data.variation.hierarquia_de_data.trimestre": {
+			        "medalha.data.trimestre": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data.trimestre"
+			            "Entity": "medalha.data.trimestre"
 			          }
 			        }
 			      },
@@ -7017,10 +7060,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.ano"
+			              "Role": "medalha.data.ano"
 			            },
 			            "Object": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalha.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7030,10 +7073,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalha.data.trimestre"
 			            },
 			            "Object": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.ano"
+			              "Role": "medalha.data.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7043,7 +7086,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalha.data.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -7053,7 +7096,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.ano"
+			              "Role": "medalha.data.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7062,20 +7105,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_data_variation_hierarquia_de_data_has_dia": {
+			    "medalha_data_hierarquia_de_data_has_medalha_data_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalha.data.variation.hierarquia_de_data": {
+			        "medalha.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data"
+			            "Entity": "medalha.data.hierarquia_de_data"
 			          }
 			        },
-			        "medalha.data.variation.hierarquia_de_data.dia": {
+			        "medalha.data.dia": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data.dia"
+			            "Entity": "medalha.data.dia"
 			          }
 			        }
 			      },
@@ -7083,10 +7126,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.data.variation.hierarquia_de_data"
+			              "Role": "medalha.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.dia"
+			              "Role": "medalha.data.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -7095,20 +7138,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_data_variation_hierarquia_de_data_has_mê": {
+			    "medalha_data_hierarquia_de_data_has_medalha_data_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalha.data.variation.hierarquia_de_data": {
+			        "medalha.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data"
+			            "Entity": "medalha.data.hierarquia_de_data"
 			          }
 			        },
-			        "medalha.data.variation.hierarquia_de_data.mê": {
+			        "medalha.data.mê": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data.mê"
+			            "Entity": "medalha.data.mê"
 			          }
 			        }
 			      },
@@ -7116,10 +7159,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.data.variation.hierarquia_de_data"
+			              "Role": "medalha.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.mê"
+			              "Role": "medalha.data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7128,20 +7171,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_data_variation_hierarquia_de_data_has_trimestre": {
+			    "medalha_data_hierarquia_de_data_has_medalha_data_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalha.data.variation.hierarquia_de_data": {
+			        "medalha.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data"
+			            "Entity": "medalha.data.hierarquia_de_data"
 			          }
 			        },
-			        "medalha.data.variation.hierarquia_de_data.trimestre": {
+			        "medalha.data.trimestre": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data.trimestre"
+			            "Entity": "medalha.data.trimestre"
 			          }
 			        }
 			      },
@@ -7149,10 +7192,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.data.variation.hierarquia_de_data"
+			              "Role": "medalha.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalha.data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7161,20 +7204,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_data_variation_hierarquia_de_data_has_ano": {
+			    "medalha_data_hierarquia_de_data_has_medalha_data_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalha.data.variation.hierarquia_de_data": {
+			        "medalha.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data"
+			            "Entity": "medalha.data.hierarquia_de_data"
 			          }
 			        },
-			        "medalha.data.variation.hierarquia_de_data.ano": {
+			        "medalha.data.ano": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data.ano"
+			            "Entity": "medalha.data.ano"
 			          }
 			        }
 			      },
@@ -7182,10 +7225,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalha.data.variation.hierarquia_de_data"
+			              "Role": "medalha.data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalha.data.variation.hierarquia_de_data.ano"
+			              "Role": "medalha.data.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7194,7 +7237,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalha_data_has_variation_hierarquia_de_data": {
+			    "medalha_data_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "medalha"
 			      },
@@ -7205,9 +7248,9 @@ cultureInfo pt-BR
 			            "Entity": "medalha.data"
 			          }
 			        },
-			        "medalha.data.variation.hierarquia_de_data": {
+			        "medalha.data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalha.data.variation.hierarquia_de_data"
+			            "Entity": "medalha.data.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -7218,7 +7261,7 @@ cultureInfo pt-BR
 			              "Role": "medalha.data"
 			            },
 			            "Object": {
-			              "Role": "medalha.data.variation.hierarquia_de_data"
+			              "Role": "medalha.data.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -7227,20 +7270,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_encerramento_variation_hierarquia_de_data_mê_has_edicao_encerramento_variation_hierarquia_de_data_dia": {
+			    "edicao_encerramento_mê_has_edicao_encerramento_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.encerramento.variation.hierarquia_de_data.mê": {
+			        "edicao.encerramento.mê": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data.mê"
+			            "Entity": "edicao.encerramento.mê"
 			          }
 			        },
-			        "edicao.encerramento.variation.hierarquia_de_data.dia": {
+			        "edicao.encerramento.dia": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data.dia"
+			            "Entity": "edicao.encerramento.dia"
 			          }
 			        }
 			      },
@@ -7248,10 +7291,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.encerramento.mê"
 			            },
 			            "Object": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.encerramento.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -7261,10 +7304,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.encerramento.dia"
 			            },
 			            "Object": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.encerramento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7274,7 +7317,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.encerramento.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -7284,7 +7327,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.encerramento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7293,20 +7336,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_encerramento_variation_hierarquia_de_data_trimestre_has_edicao_encerramento_variation_hierarquia_de_data_mê": {
+			    "edicao_encerramento_trimestre_has_edicao_encerramento_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.encerramento.variation.hierarquia_de_data.trimestre": {
+			        "edicao.encerramento.trimestre": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data.trimestre"
+			            "Entity": "edicao.encerramento.trimestre"
 			          }
 			        },
-			        "edicao.encerramento.variation.hierarquia_de_data.mê": {
+			        "edicao.encerramento.mê": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data.mê"
+			            "Entity": "edicao.encerramento.mê"
 			          }
 			        }
 			      },
@@ -7314,10 +7357,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.encerramento.trimestre"
 			            },
 			            "Object": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.encerramento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7327,10 +7370,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.encerramento.mê"
 			            },
 			            "Object": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.encerramento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7340,7 +7383,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.encerramento.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -7350,7 +7393,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.encerramento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7359,20 +7402,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_encerramento_variation_hierarquia_de_data_ano_has_edicao_encerramento_variation_hierarquia_de_data_trimestre": {
+			    "edicao_encerramento_ano_has_edicao_encerramento_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.encerramento.variation.hierarquia_de_data.ano": {
+			        "edicao.encerramento.ano": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data.ano"
+			            "Entity": "edicao.encerramento.ano"
 			          }
 			        },
-			        "edicao.encerramento.variation.hierarquia_de_data.trimestre": {
+			        "edicao.encerramento.trimestre": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data.trimestre"
+			            "Entity": "edicao.encerramento.trimestre"
 			          }
 			        }
 			      },
@@ -7380,10 +7423,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.encerramento.ano"
 			            },
 			            "Object": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.encerramento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7393,10 +7436,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.encerramento.trimestre"
 			            },
 			            "Object": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.encerramento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7406,7 +7449,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.encerramento.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -7416,7 +7459,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.encerramento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7425,20 +7468,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_encerramento_variation_hierarquia_de_data_has_dia": {
+			    "edicao_encerramento_hierarquia_de_data_has_edicao_encerramento_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.encerramento.variation.hierarquia_de_data": {
+			        "edicao.encerramento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data"
+			            "Entity": "edicao.encerramento.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.encerramento.variation.hierarquia_de_data.dia": {
+			        "edicao.encerramento.dia": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data.dia"
+			            "Entity": "edicao.encerramento.dia"
 			          }
 			        }
 			      },
@@ -7446,10 +7489,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data"
+			              "Role": "edicao.encerramento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.encerramento.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -7458,20 +7501,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_encerramento_variation_hierarquia_de_data_has_mê": {
+			    "edicao_encerramento_hierarquia_de_data_has_edicao_encerramento_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.encerramento.variation.hierarquia_de_data": {
+			        "edicao.encerramento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data"
+			            "Entity": "edicao.encerramento.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.encerramento.variation.hierarquia_de_data.mê": {
+			        "edicao.encerramento.mê": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data.mê"
+			            "Entity": "edicao.encerramento.mê"
 			          }
 			        }
 			      },
@@ -7479,10 +7522,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data"
+			              "Role": "edicao.encerramento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.encerramento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7491,20 +7534,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_encerramento_variation_hierarquia_de_data_has_trimestre": {
+			    "edicao_encerramento_hierarquia_de_data_has_edicao_encerramento_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.encerramento.variation.hierarquia_de_data": {
+			        "edicao.encerramento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data"
+			            "Entity": "edicao.encerramento.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.encerramento.variation.hierarquia_de_data.trimestre": {
+			        "edicao.encerramento.trimestre": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data.trimestre"
+			            "Entity": "edicao.encerramento.trimestre"
 			          }
 			        }
 			      },
@@ -7512,10 +7555,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data"
+			              "Role": "edicao.encerramento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.encerramento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7524,20 +7567,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_encerramento_variation_hierarquia_de_data_has_ano": {
+			    "edicao_encerramento_hierarquia_de_data_has_edicao_encerramento_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.encerramento.variation.hierarquia_de_data": {
+			        "edicao.encerramento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data"
+			            "Entity": "edicao.encerramento.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.encerramento.variation.hierarquia_de_data.ano": {
+			        "edicao.encerramento.ano": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data.ano"
+			            "Entity": "edicao.encerramento.ano"
 			          }
 			        }
 			      },
@@ -7545,10 +7588,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data"
+			              "Role": "edicao.encerramento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.encerramento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7557,7 +7600,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_encerramento_has_variation_hierarquia_de_data": {
+			    "edicao_encerramento_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
@@ -7568,9 +7611,9 @@ cultureInfo pt-BR
 			            "Entity": "edicao.encerramento"
 			          }
 			        },
-			        "edicao.encerramento.variation.hierarquia_de_data": {
+			        "edicao.encerramento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.encerramento.variation.hierarquia_de_data"
+			            "Entity": "edicao.encerramento.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -7581,7 +7624,7 @@ cultureInfo pt-BR
 			              "Role": "edicao.encerramento"
 			            },
 			            "Object": {
-			              "Role": "edicao.encerramento.variation.hierarquia_de_data"
+			              "Role": "edicao.encerramento.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -7590,20 +7633,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_abertura_variation_hierarquia_de_data_mê_has_edicao_abertura_variation_hierarquia_de_data_dia": {
+			    "edicao_abertura_mê_has_edicao_abertura_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.abertura.variation.hierarquia_de_data.mê": {
+			        "edicao.abertura.mê": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data.mê"
+			            "Entity": "edicao.abertura.mê"
 			          }
 			        },
-			        "edicao.abertura.variation.hierarquia_de_data.dia": {
+			        "edicao.abertura.dia": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data.dia"
+			            "Entity": "edicao.abertura.dia"
 			          }
 			        }
 			      },
@@ -7611,10 +7654,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.abertura.mê"
 			            },
 			            "Object": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.abertura.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -7624,10 +7667,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.abertura.dia"
 			            },
 			            "Object": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.abertura.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7637,7 +7680,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.abertura.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -7647,7 +7690,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.abertura.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7656,20 +7699,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_abertura_variation_hierarquia_de_data_trimestre_has_edicao_abertura_variation_hierarquia_de_data_mê": {
+			    "edicao_abertura_trimestre_has_edicao_abertura_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.abertura.variation.hierarquia_de_data.trimestre": {
+			        "edicao.abertura.trimestre": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data.trimestre"
+			            "Entity": "edicao.abertura.trimestre"
 			          }
 			        },
-			        "edicao.abertura.variation.hierarquia_de_data.mê": {
+			        "edicao.abertura.mê": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data.mê"
+			            "Entity": "edicao.abertura.mê"
 			          }
 			        }
 			      },
@@ -7677,10 +7720,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.abertura.trimestre"
 			            },
 			            "Object": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.abertura.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7690,10 +7733,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.abertura.mê"
 			            },
 			            "Object": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.abertura.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7703,7 +7746,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.abertura.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -7713,7 +7756,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.abertura.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7722,20 +7765,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_abertura_variation_hierarquia_de_data_ano_has_edicao_abertura_variation_hierarquia_de_data_trimestre": {
+			    "edicao_abertura_ano_has_edicao_abertura_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.abertura.variation.hierarquia_de_data.ano": {
+			        "edicao.abertura.ano": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data.ano"
+			            "Entity": "edicao.abertura.ano"
 			          }
 			        },
-			        "edicao.abertura.variation.hierarquia_de_data.trimestre": {
+			        "edicao.abertura.trimestre": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data.trimestre"
+			            "Entity": "edicao.abertura.trimestre"
 			          }
 			        }
 			      },
@@ -7743,10 +7786,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.abertura.ano"
 			            },
 			            "Object": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.abertura.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7756,10 +7799,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.abertura.trimestre"
 			            },
 			            "Object": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.abertura.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7769,7 +7812,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.abertura.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -7779,7 +7822,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.abertura.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7788,20 +7831,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_abertura_variation_hierarquia_de_data_has_dia": {
+			    "edicao_abertura_hierarquia_de_data_has_edicao_abertura_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.abertura.variation.hierarquia_de_data": {
+			        "edicao.abertura.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data"
+			            "Entity": "edicao.abertura.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.abertura.variation.hierarquia_de_data.dia": {
+			        "edicao.abertura.dia": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data.dia"
+			            "Entity": "edicao.abertura.dia"
 			          }
 			        }
 			      },
@@ -7809,10 +7852,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data"
+			              "Role": "edicao.abertura.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.abertura.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -7821,20 +7864,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_abertura_variation_hierarquia_de_data_has_mê": {
+			    "edicao_abertura_hierarquia_de_data_has_edicao_abertura_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.abertura.variation.hierarquia_de_data": {
+			        "edicao.abertura.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data"
+			            "Entity": "edicao.abertura.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.abertura.variation.hierarquia_de_data.mê": {
+			        "edicao.abertura.mê": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data.mê"
+			            "Entity": "edicao.abertura.mê"
 			          }
 			        }
 			      },
@@ -7842,10 +7885,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data"
+			              "Role": "edicao.abertura.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.abertura.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -7854,20 +7897,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_abertura_variation_hierarquia_de_data_has_trimestre": {
+			    "edicao_abertura_hierarquia_de_data_has_edicao_abertura_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.abertura.variation.hierarquia_de_data": {
+			        "edicao.abertura.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data"
+			            "Entity": "edicao.abertura.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.abertura.variation.hierarquia_de_data.trimestre": {
+			        "edicao.abertura.trimestre": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data.trimestre"
+			            "Entity": "edicao.abertura.trimestre"
 			          }
 			        }
 			      },
@@ -7875,10 +7918,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data"
+			              "Role": "edicao.abertura.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.abertura.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -7887,20 +7930,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_abertura_variation_hierarquia_de_data_has_ano": {
+			    "edicao_abertura_hierarquia_de_data_has_edicao_abertura_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.abertura.variation.hierarquia_de_data": {
+			        "edicao.abertura.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data"
+			            "Entity": "edicao.abertura.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.abertura.variation.hierarquia_de_data.ano": {
+			        "edicao.abertura.ano": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data.ano"
+			            "Entity": "edicao.abertura.ano"
 			          }
 			        }
 			      },
@@ -7908,10 +7951,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data"
+			              "Role": "edicao.abertura.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.abertura.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -7920,7 +7963,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_abertura_has_variation_hierarquia_de_data": {
+			    "edicao_abertura_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
@@ -7931,9 +7974,9 @@ cultureInfo pt-BR
 			            "Entity": "edicao.abertura"
 			          }
 			        },
-			        "edicao.abertura.variation.hierarquia_de_data": {
+			        "edicao.abertura.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.abertura.variation.hierarquia_de_data"
+			            "Entity": "edicao.abertura.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -7944,7 +7987,7 @@ cultureInfo pt-BR
 			              "Role": "edicao.abertura"
 			            },
 			            "Object": {
-			              "Role": "edicao.abertura.variation.hierarquia_de_data"
+			              "Role": "edicao.abertura.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -7953,20 +7996,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_fim_variation_hierarquia_de_data_mê_has_edicao_fim_variation_hierarquia_de_data_dia": {
+			    "edicao_fim_mê_has_edicao_fim_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.fim.variation.hierarquia_de_data.mê": {
+			        "edicao.fim.mê": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data.mê"
+			            "Entity": "edicao.fim.mê"
 			          }
 			        },
-			        "edicao.fim.variation.hierarquia_de_data.dia": {
+			        "edicao.fim.dia": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data.dia"
+			            "Entity": "edicao.fim.dia"
 			          }
 			        }
 			      },
@@ -7974,10 +8017,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.fim.mê"
 			            },
 			            "Object": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.fim.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -7987,10 +8030,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.fim.dia"
 			            },
 			            "Object": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.fim.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -8000,7 +8043,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.fim.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -8010,7 +8053,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.fim.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -8019,20 +8062,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_fim_variation_hierarquia_de_data_trimestre_has_edicao_fim_variation_hierarquia_de_data_mê": {
+			    "edicao_fim_trimestre_has_edicao_fim_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.fim.variation.hierarquia_de_data.trimestre": {
+			        "edicao.fim.trimestre": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data.trimestre"
+			            "Entity": "edicao.fim.trimestre"
 			          }
 			        },
-			        "edicao.fim.variation.hierarquia_de_data.mê": {
+			        "edicao.fim.mê": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data.mê"
+			            "Entity": "edicao.fim.mê"
 			          }
 			        }
 			      },
@@ -8040,10 +8083,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.fim.trimestre"
 			            },
 			            "Object": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.fim.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -8053,10 +8096,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.fim.mê"
 			            },
 			            "Object": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.fim.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -8066,7 +8109,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.fim.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -8076,7 +8119,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.fim.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -8085,20 +8128,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_fim_variation_hierarquia_de_data_ano_has_edicao_fim_variation_hierarquia_de_data_trimestre": {
+			    "edicao_fim_ano_has_edicao_fim_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.fim.variation.hierarquia_de_data.ano": {
+			        "edicao.fim.ano": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data.ano"
+			            "Entity": "edicao.fim.ano"
 			          }
 			        },
-			        "edicao.fim.variation.hierarquia_de_data.trimestre": {
+			        "edicao.fim.trimestre": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data.trimestre"
+			            "Entity": "edicao.fim.trimestre"
 			          }
 			        }
 			      },
@@ -8106,10 +8149,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.fim.ano"
 			            },
 			            "Object": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.fim.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -8119,10 +8162,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.fim.trimestre"
 			            },
 			            "Object": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.fim.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -8132,7 +8175,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.fim.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -8142,7 +8185,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.fim.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -8151,20 +8194,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_fim_variation_hierarquia_de_data_has_dia": {
+			    "edicao_fim_hierarquia_de_data_has_edicao_fim_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.fim.variation.hierarquia_de_data": {
+			        "edicao.fim.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data"
+			            "Entity": "edicao.fim.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.fim.variation.hierarquia_de_data.dia": {
+			        "edicao.fim.dia": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data.dia"
+			            "Entity": "edicao.fim.dia"
 			          }
 			        }
 			      },
@@ -8172,10 +8215,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data"
+			              "Role": "edicao.fim.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.fim.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -8184,20 +8227,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_fim_variation_hierarquia_de_data_has_mê": {
+			    "edicao_fim_hierarquia_de_data_has_edicao_fim_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.fim.variation.hierarquia_de_data": {
+			        "edicao.fim.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data"
+			            "Entity": "edicao.fim.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.fim.variation.hierarquia_de_data.mê": {
+			        "edicao.fim.mê": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data.mê"
+			            "Entity": "edicao.fim.mê"
 			          }
 			        }
 			      },
@@ -8205,10 +8248,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data"
+			              "Role": "edicao.fim.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.fim.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -8217,20 +8260,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_fim_variation_hierarquia_de_data_has_trimestre": {
+			    "edicao_fim_hierarquia_de_data_has_edicao_fim_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.fim.variation.hierarquia_de_data": {
+			        "edicao.fim.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data"
+			            "Entity": "edicao.fim.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.fim.variation.hierarquia_de_data.trimestre": {
+			        "edicao.fim.trimestre": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data.trimestre"
+			            "Entity": "edicao.fim.trimestre"
 			          }
 			        }
 			      },
@@ -8238,10 +8281,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data"
+			              "Role": "edicao.fim.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.fim.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -8250,20 +8293,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_fim_variation_hierarquia_de_data_has_ano": {
+			    "edicao_fim_hierarquia_de_data_has_edicao_fim_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.fim.variation.hierarquia_de_data": {
+			        "edicao.fim.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data"
+			            "Entity": "edicao.fim.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.fim.variation.hierarquia_de_data.ano": {
+			        "edicao.fim.ano": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data.ano"
+			            "Entity": "edicao.fim.ano"
 			          }
 			        }
 			      },
@@ -8271,10 +8314,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data"
+			              "Role": "edicao.fim.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.fim.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -8283,7 +8326,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_fim_has_variation_hierarquia_de_data": {
+			    "edicao_fim_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
@@ -8294,9 +8337,9 @@ cultureInfo pt-BR
 			            "Entity": "edicao.fim"
 			          }
 			        },
-			        "edicao.fim.variation.hierarquia_de_data": {
+			        "edicao.fim.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.fim.variation.hierarquia_de_data"
+			            "Entity": "edicao.fim.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -8307,7 +8350,7 @@ cultureInfo pt-BR
 			              "Role": "edicao.fim"
 			            },
 			            "Object": {
-			              "Role": "edicao.fim.variation.hierarquia_de_data"
+			              "Role": "edicao.fim.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -8316,20 +8359,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_inicio_variation_hierarquia_de_data_mê_has_edicao_inicio_variation_hierarquia_de_data_dia": {
+			    "edicao_inicio_mê_has_edicao_inicio_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.inicio.variation.hierarquia_de_data.mê": {
+			        "edicao.inicio.mê": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data.mê"
+			            "Entity": "edicao.inicio.mê"
 			          }
 			        },
-			        "edicao.inicio.variation.hierarquia_de_data.dia": {
+			        "edicao.inicio.dia": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data.dia"
+			            "Entity": "edicao.inicio.dia"
 			          }
 			        }
 			      },
@@ -8337,10 +8380,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.inicio.mê"
 			            },
 			            "Object": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.inicio.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -8350,10 +8393,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.inicio.dia"
 			            },
 			            "Object": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.inicio.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -8363,7 +8406,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.inicio.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -8373,7 +8416,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.inicio.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -8382,20 +8425,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_inicio_variation_hierarquia_de_data_trimestre_has_edicao_inicio_variation_hierarquia_de_data_mê": {
+			    "edicao_inicio_trimestre_has_edicao_inicio_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.inicio.variation.hierarquia_de_data.trimestre": {
+			        "edicao.inicio.trimestre": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data.trimestre"
+			            "Entity": "edicao.inicio.trimestre"
 			          }
 			        },
-			        "edicao.inicio.variation.hierarquia_de_data.mê": {
+			        "edicao.inicio.mê": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data.mê"
+			            "Entity": "edicao.inicio.mê"
 			          }
 			        }
 			      },
@@ -8403,10 +8446,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.inicio.trimestre"
 			            },
 			            "Object": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.inicio.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -8416,10 +8459,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.inicio.mê"
 			            },
 			            "Object": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.inicio.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -8429,7 +8472,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.inicio.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -8439,7 +8482,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.inicio.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -8448,20 +8491,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_inicio_variation_hierarquia_de_data_ano_has_edicao_inicio_variation_hierarquia_de_data_trimestre": {
+			    "edicao_inicio_ano_has_edicao_inicio_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.inicio.variation.hierarquia_de_data.ano": {
+			        "edicao.inicio.ano": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data.ano"
+			            "Entity": "edicao.inicio.ano"
 			          }
 			        },
-			        "edicao.inicio.variation.hierarquia_de_data.trimestre": {
+			        "edicao.inicio.trimestre": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data.trimestre"
+			            "Entity": "edicao.inicio.trimestre"
 			          }
 			        }
 			      },
@@ -8469,10 +8512,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.inicio.ano"
 			            },
 			            "Object": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.inicio.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -8482,10 +8525,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.inicio.trimestre"
 			            },
 			            "Object": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.inicio.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -8495,7 +8538,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.inicio.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -8505,7 +8548,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.inicio.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -8514,20 +8557,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_inicio_variation_hierarquia_de_data_has_dia": {
+			    "edicao_inicio_hierarquia_de_data_has_edicao_inicio_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.inicio.variation.hierarquia_de_data": {
+			        "edicao.inicio.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data"
+			            "Entity": "edicao.inicio.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.inicio.variation.hierarquia_de_data.dia": {
+			        "edicao.inicio.dia": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data.dia"
+			            "Entity": "edicao.inicio.dia"
 			          }
 			        }
 			      },
@@ -8535,10 +8578,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data"
+			              "Role": "edicao.inicio.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.dia"
+			              "Role": "edicao.inicio.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -8547,20 +8590,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_inicio_variation_hierarquia_de_data_has_mê": {
+			    "edicao_inicio_hierarquia_de_data_has_edicao_inicio_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.inicio.variation.hierarquia_de_data": {
+			        "edicao.inicio.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data"
+			            "Entity": "edicao.inicio.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.inicio.variation.hierarquia_de_data.mê": {
+			        "edicao.inicio.mê": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data.mê"
+			            "Entity": "edicao.inicio.mê"
 			          }
 			        }
 			      },
@@ -8568,10 +8611,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data"
+			              "Role": "edicao.inicio.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.mê"
+			              "Role": "edicao.inicio.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -8580,20 +8623,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_inicio_variation_hierarquia_de_data_has_trimestre": {
+			    "edicao_inicio_hierarquia_de_data_has_edicao_inicio_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.inicio.variation.hierarquia_de_data": {
+			        "edicao.inicio.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data"
+			            "Entity": "edicao.inicio.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.inicio.variation.hierarquia_de_data.trimestre": {
+			        "edicao.inicio.trimestre": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data.trimestre"
+			            "Entity": "edicao.inicio.trimestre"
 			          }
 			        }
 			      },
@@ -8601,10 +8644,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data"
+			              "Role": "edicao.inicio.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.trimestre"
+			              "Role": "edicao.inicio.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -8613,20 +8656,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_inicio_variation_hierarquia_de_data_has_ano": {
+			    "edicao_inicio_hierarquia_de_data_has_edicao_inicio_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "edicao.inicio.variation.hierarquia_de_data": {
+			        "edicao.inicio.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data"
+			            "Entity": "edicao.inicio.hierarquia_de_data"
 			          }
 			        },
-			        "edicao.inicio.variation.hierarquia_de_data.ano": {
+			        "edicao.inicio.ano": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data.ano"
+			            "Entity": "edicao.inicio.ano"
 			          }
 			        }
 			      },
@@ -8634,10 +8677,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data"
+			              "Role": "edicao.inicio.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data.ano"
+			              "Role": "edicao.inicio.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -8646,7 +8689,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "edicao_inicio_has_variation_hierarquia_de_data": {
+			    "edicao_inicio_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "edicao"
 			      },
@@ -8657,9 +8700,9 @@ cultureInfo pt-BR
 			            "Entity": "edicao.inicio"
 			          }
 			        },
-			        "edicao.inicio.variation.hierarquia_de_data": {
+			        "edicao.inicio.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "edicao.inicio.variation.hierarquia_de_data"
+			            "Entity": "edicao.inicio.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -8670,7 +8713,7 @@ cultureInfo pt-BR
 			              "Role": "edicao.inicio"
 			            },
 			            "Object": {
-			              "Role": "edicao.inicio.variation.hierarquia_de_data"
+			              "Role": "edicao.inicio.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -8679,20 +8722,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_morte_variation_hierarquia_de_data_mê_has_atleta_data_morte_variation_hierarquia_de_data_dia": {
+			    "atleta_data_morte_mê_has_atleta_data_morte_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atleta.data_morte.variation.hierarquia_de_data.mê": {
+			        "atleta.data_morte.mê": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data.mê"
+			            "Entity": "atleta.data_morte.mê"
 			          }
 			        },
-			        "atleta.data_morte.variation.hierarquia_de_data.dia": {
+			        "atleta.data_morte.dia": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data.dia"
+			            "Entity": "atleta.data_morte.dia"
 			          }
 			        }
 			      },
@@ -8700,10 +8743,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.mê"
+			              "Role": "atleta.data_morte.mê"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.dia"
+			              "Role": "atleta.data_morte.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -8713,10 +8756,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.dia"
+			              "Role": "atleta.data_morte.dia"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.mê"
+			              "Role": "atleta.data_morte.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -8726,7 +8769,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.dia"
+			              "Role": "atleta.data_morte.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -8736,7 +8779,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.mê"
+			              "Role": "atleta.data_morte.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -8745,20 +8788,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_morte_variation_hierarquia_de_data_trimestre_has_atleta_data_morte_variation_hierarquia_de_data_mê": {
+			    "atleta_data_morte_trimestre_has_atleta_data_morte_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atleta.data_morte.variation.hierarquia_de_data.trimestre": {
+			        "atleta.data_morte.trimestre": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data.trimestre"
+			            "Entity": "atleta.data_morte.trimestre"
 			          }
 			        },
-			        "atleta.data_morte.variation.hierarquia_de_data.mê": {
+			        "atleta.data_morte.mê": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data.mê"
+			            "Entity": "atleta.data_morte.mê"
 			          }
 			        }
 			      },
@@ -8766,10 +8809,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.trimestre"
+			              "Role": "atleta.data_morte.trimestre"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.mê"
+			              "Role": "atleta.data_morte.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -8779,10 +8822,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.mê"
+			              "Role": "atleta.data_morte.mê"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.trimestre"
+			              "Role": "atleta.data_morte.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -8792,7 +8835,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.mê"
+			              "Role": "atleta.data_morte.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -8802,7 +8845,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.trimestre"
+			              "Role": "atleta.data_morte.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -8811,20 +8854,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_morte_variation_hierarquia_de_data_ano_has_atleta_data_morte_variation_hierarquia_de_data_trimestre": {
+			    "atleta_data_morte_ano_has_atleta_data_morte_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atleta.data_morte.variation.hierarquia_de_data.ano": {
+			        "atleta.data_morte.ano": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data.ano"
+			            "Entity": "atleta.data_morte.ano"
 			          }
 			        },
-			        "atleta.data_morte.variation.hierarquia_de_data.trimestre": {
+			        "atleta.data_morte.trimestre": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data.trimestre"
+			            "Entity": "atleta.data_morte.trimestre"
 			          }
 			        }
 			      },
@@ -8832,10 +8875,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.ano"
+			              "Role": "atleta.data_morte.ano"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.trimestre"
+			              "Role": "atleta.data_morte.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -8845,10 +8888,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.trimestre"
+			              "Role": "atleta.data_morte.trimestre"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.ano"
+			              "Role": "atleta.data_morte.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -8858,7 +8901,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.trimestre"
+			              "Role": "atleta.data_morte.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -8868,7 +8911,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.ano"
+			              "Role": "atleta.data_morte.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -8877,20 +8920,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_morte_variation_hierarquia_de_data_has_dia": {
+			    "atleta_data_morte_hierarquia_de_data_has_atleta_data_morte_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atleta.data_morte.variation.hierarquia_de_data": {
+			        "atleta.data_morte.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data"
+			            "Entity": "atleta.data_morte.hierarquia_de_data"
 			          }
 			        },
-			        "atleta.data_morte.variation.hierarquia_de_data.dia": {
+			        "atleta.data_morte.dia": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data.dia"
+			            "Entity": "atleta.data_morte.dia"
 			          }
 			        }
 			      },
@@ -8898,10 +8941,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data"
+			              "Role": "atleta.data_morte.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.dia"
+			              "Role": "atleta.data_morte.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -8910,20 +8953,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_morte_variation_hierarquia_de_data_has_mê": {
+			    "atleta_data_morte_hierarquia_de_data_has_atleta_data_morte_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atleta.data_morte.variation.hierarquia_de_data": {
+			        "atleta.data_morte.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data"
+			            "Entity": "atleta.data_morte.hierarquia_de_data"
 			          }
 			        },
-			        "atleta.data_morte.variation.hierarquia_de_data.mê": {
+			        "atleta.data_morte.mê": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data.mê"
+			            "Entity": "atleta.data_morte.mê"
 			          }
 			        }
 			      },
@@ -8931,10 +8974,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data"
+			              "Role": "atleta.data_morte.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.mê"
+			              "Role": "atleta.data_morte.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -8943,20 +8986,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_morte_variation_hierarquia_de_data_has_trimestre": {
+			    "atleta_data_morte_hierarquia_de_data_has_atleta_data_morte_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atleta.data_morte.variation.hierarquia_de_data": {
+			        "atleta.data_morte.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data"
+			            "Entity": "atleta.data_morte.hierarquia_de_data"
 			          }
 			        },
-			        "atleta.data_morte.variation.hierarquia_de_data.trimestre": {
+			        "atleta.data_morte.trimestre": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data.trimestre"
+			            "Entity": "atleta.data_morte.trimestre"
 			          }
 			        }
 			      },
@@ -8964,10 +9007,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data"
+			              "Role": "atleta.data_morte.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.trimestre"
+			              "Role": "atleta.data_morte.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -8976,20 +9019,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_morte_variation_hierarquia_de_data_has_ano": {
+			    "atleta_data_morte_hierarquia_de_data_has_atleta_data_morte_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atleta.data_morte.variation.hierarquia_de_data": {
+			        "atleta.data_morte.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data"
+			            "Entity": "atleta.data_morte.hierarquia_de_data"
 			          }
 			        },
-			        "atleta.data_morte.variation.hierarquia_de_data.ano": {
+			        "atleta.data_morte.ano": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data.ano"
+			            "Entity": "atleta.data_morte.ano"
 			          }
 			        }
 			      },
@@ -8997,10 +9040,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data"
+			              "Role": "atleta.data_morte.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data.ano"
+			              "Role": "atleta.data_morte.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -9009,7 +9052,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_morte_has_variation_hierarquia_de_data": {
+			    "atleta_data_morte_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
@@ -9020,9 +9063,9 @@ cultureInfo pt-BR
 			            "Entity": "atleta.data_morte"
 			          }
 			        },
-			        "atleta.data_morte.variation.hierarquia_de_data": {
+			        "atleta.data_morte.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "atleta.data_morte.variation.hierarquia_de_data"
+			            "Entity": "atleta.data_morte.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -9033,7 +9076,7 @@ cultureInfo pt-BR
 			              "Role": "atleta.data_morte"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_morte.variation.hierarquia_de_data"
+			              "Role": "atleta.data_morte.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -9042,20 +9085,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_nascimento_variation_hierarquia_de_data_mê_has_atleta_data_nascimento_variation_hierarquia_de_data_dia": {
+			    "atleta_data_nascimento_mê_has_atleta_data_nascimento_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atleta.data_nascimento.variation.hierarquia_de_data.mê": {
+			        "atleta.data_nascimento.mê": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data.mê"
+			            "Entity": "atleta.data_nascimento.mê"
 			          }
 			        },
-			        "atleta.data_nascimento.variation.hierarquia_de_data.dia": {
+			        "atleta.data_nascimento.dia": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data.dia"
+			            "Entity": "atleta.data_nascimento.dia"
 			          }
 			        }
 			      },
@@ -9063,10 +9106,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "atleta.data_nascimento.mê"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.dia"
+			              "Role": "atleta.data_nascimento.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -9076,10 +9119,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.dia"
+			              "Role": "atleta.data_nascimento.dia"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "atleta.data_nascimento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -9089,7 +9132,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.dia"
+			              "Role": "atleta.data_nascimento.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -9099,7 +9142,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "atleta.data_nascimento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -9108,20 +9151,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_nascimento_variation_hierarquia_de_data_trimestre_has_atleta_data_nascimento_variation_hierarquia_de_data_mê": {
+			    "atleta_data_nascimento_trimestre_has_atleta_data_nascimento_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atleta.data_nascimento.variation.hierarquia_de_data.trimestre": {
+			        "atleta.data_nascimento.trimestre": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data.trimestre"
+			            "Entity": "atleta.data_nascimento.trimestre"
 			          }
 			        },
-			        "atleta.data_nascimento.variation.hierarquia_de_data.mê": {
+			        "atleta.data_nascimento.mê": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data.mê"
+			            "Entity": "atleta.data_nascimento.mê"
 			          }
 			        }
 			      },
@@ -9129,10 +9172,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "atleta.data_nascimento.trimestre"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "atleta.data_nascimento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -9142,10 +9185,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "atleta.data_nascimento.mê"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "atleta.data_nascimento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -9155,7 +9198,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "atleta.data_nascimento.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -9165,7 +9208,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "atleta.data_nascimento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -9174,20 +9217,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_nascimento_variation_hierarquia_de_data_ano_has_atleta_data_nascimento_variation_hierarquia_de_data_trimestre": {
+			    "atleta_data_nascimento_ano_has_atleta_data_nascimento_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atleta.data_nascimento.variation.hierarquia_de_data.ano": {
+			        "atleta.data_nascimento.ano": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data.ano"
+			            "Entity": "atleta.data_nascimento.ano"
 			          }
 			        },
-			        "atleta.data_nascimento.variation.hierarquia_de_data.trimestre": {
+			        "atleta.data_nascimento.trimestre": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data.trimestre"
+			            "Entity": "atleta.data_nascimento.trimestre"
 			          }
 			        }
 			      },
@@ -9195,10 +9238,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.ano"
+			              "Role": "atleta.data_nascimento.ano"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "atleta.data_nascimento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -9208,10 +9251,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "atleta.data_nascimento.trimestre"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.ano"
+			              "Role": "atleta.data_nascimento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -9221,7 +9264,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "atleta.data_nascimento.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -9231,7 +9274,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.ano"
+			              "Role": "atleta.data_nascimento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -9240,20 +9283,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_nascimento_variation_hierarquia_de_data_has_dia": {
+			    "atleta_data_nascimento_hierarquia_de_data_has_atleta_data_nascimento_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atleta.data_nascimento.variation.hierarquia_de_data": {
+			        "atleta.data_nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data"
+			            "Entity": "atleta.data_nascimento.hierarquia_de_data"
 			          }
 			        },
-			        "atleta.data_nascimento.variation.hierarquia_de_data.dia": {
+			        "atleta.data_nascimento.dia": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data.dia"
+			            "Entity": "atleta.data_nascimento.dia"
 			          }
 			        }
 			      },
@@ -9261,10 +9304,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data"
+			              "Role": "atleta.data_nascimento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.dia"
+			              "Role": "atleta.data_nascimento.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -9273,20 +9316,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_nascimento_variation_hierarquia_de_data_has_mê": {
+			    "atleta_data_nascimento_hierarquia_de_data_has_atleta_data_nascimento_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atleta.data_nascimento.variation.hierarquia_de_data": {
+			        "atleta.data_nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data"
+			            "Entity": "atleta.data_nascimento.hierarquia_de_data"
 			          }
 			        },
-			        "atleta.data_nascimento.variation.hierarquia_de_data.mê": {
+			        "atleta.data_nascimento.mê": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data.mê"
+			            "Entity": "atleta.data_nascimento.mê"
 			          }
 			        }
 			      },
@@ -9294,10 +9337,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data"
+			              "Role": "atleta.data_nascimento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.mê"
+			              "Role": "atleta.data_nascimento.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -9306,20 +9349,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_nascimento_variation_hierarquia_de_data_has_trimestre": {
+			    "atleta_data_nascimento_hierarquia_de_data_has_atleta_data_nascimento_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atleta.data_nascimento.variation.hierarquia_de_data": {
+			        "atleta.data_nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data"
+			            "Entity": "atleta.data_nascimento.hierarquia_de_data"
 			          }
 			        },
-			        "atleta.data_nascimento.variation.hierarquia_de_data.trimestre": {
+			        "atleta.data_nascimento.trimestre": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data.trimestre"
+			            "Entity": "atleta.data_nascimento.trimestre"
 			          }
 			        }
 			      },
@@ -9327,10 +9370,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data"
+			              "Role": "atleta.data_nascimento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.trimestre"
+			              "Role": "atleta.data_nascimento.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -9339,20 +9382,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_nascimento_variation_hierarquia_de_data_has_ano": {
+			    "atleta_data_nascimento_hierarquia_de_data_has_atleta_data_nascimento_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atleta.data_nascimento.variation.hierarquia_de_data": {
+			        "atleta.data_nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data"
+			            "Entity": "atleta.data_nascimento.hierarquia_de_data"
 			          }
 			        },
-			        "atleta.data_nascimento.variation.hierarquia_de_data.ano": {
+			        "atleta.data_nascimento.ano": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data.ano"
+			            "Entity": "atleta.data_nascimento.ano"
 			          }
 			        }
 			      },
@@ -9360,10 +9403,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data"
+			              "Role": "atleta.data_nascimento.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data.ano"
+			              "Role": "atleta.data_nascimento.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -9372,7 +9415,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "atleta_data_nascimento_has_variation_hierarquia_de_data": {
+			    "atleta_data_nascimento_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "atleta"
 			      },
@@ -9383,9 +9426,9 @@ cultureInfo pt-BR
 			            "Entity": "atleta.data_nascimento"
 			          }
 			        },
-			        "atleta.data_nascimento.variation.hierarquia_de_data": {
+			        "atleta.data_nascimento.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "atleta.data_nascimento.variation.hierarquia_de_data"
+			            "Entity": "atleta.data_nascimento.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -9396,7 +9439,7 @@ cultureInfo pt-BR
 			              "Role": "atleta.data_nascimento"
 			            },
 			            "Object": {
-			              "Role": "atleta.data_nascimento.variation.hierarquia_de_data"
+			              "Role": "atleta.data_nascimento.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -9685,6 +9728,39 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "atletas_have_quadroatletas"
+			        }
+			      ]
+			    },
+			    "edicao_has_ano_sede": {
+			      "Binding": {
+			        "ConceptualEntity": "edicao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "edicao": {
+			          "Target": {
+			            "Entity": "edicao"
+			          }
+			        },
+			        "edicao.ano_sede": {
+			          "Target": {
+			            "Entity": "edicao.ano_sede"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "edicao"
+			            },
+			            "Object": {
+			              "Role": "edicao.ano_sede"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "edicaos_have_ano_sedes"
 			        }
 			      ]
 			    },
@@ -11687,20 +11763,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_medalha_data_variation_hierarquia_de_data_has_dia": {
+			    "medalhascomatleta_medalha_data_hierarquia_de_data_has_medalhascomatleta_medalha_data_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data": {
+			        "medalhascomatleta.medalha_data.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data"
+			            "Entity": "medalhascomatleta.medalha_data.hierarquia_de_data"
 			          }
 			        },
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data.dia": {
+			        "medalhascomatleta.medalha_data.dia": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.dia"
+			            "Entity": "medalhascomatleta.medalha_data.dia"
 			          }
 			        }
 			      },
@@ -11708,10 +11784,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data"
+			              "Role": "medalhascomatleta.medalha_data.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.dia"
+			              "Role": "medalhascomatleta.medalha_data.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -11720,20 +11796,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_medalha_data_variation_hierarquia_de_data_ano_has_medalhascomatleta_medalha_data_variation_hierarquia_de_data_trimestre": {
+			    "medalhascomatleta_medalha_data_ano_has_medalhascomatleta_medalha_data_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data.ano": {
+			        "medalhascomatleta.medalha_data.ano": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.ano"
+			            "Entity": "medalhascomatleta.medalha_data.ano"
 			          }
 			        },
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data.trimestre": {
+			        "medalhascomatleta.medalha_data.trimestre": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.trimestre"
+			            "Entity": "medalhascomatleta.medalha_data.trimestre"
 			          }
 			        }
 			      },
@@ -11741,10 +11817,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.ano"
+			              "Role": "medalhascomatleta.medalha_data.ano"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalhascomatleta.medalha_data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -11754,10 +11830,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalhascomatleta.medalha_data.trimestre"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.ano"
+			              "Role": "medalhascomatleta.medalha_data.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -11767,7 +11843,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalhascomatleta.medalha_data.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -11777,7 +11853,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.ano"
+			              "Role": "medalhascomatleta.medalha_data.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -11786,20 +11862,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_medalha_data_variation_hierarquia_de_data_trimestre_has_medalhascomatleta_medalha_data_variation_hierarquia_de_data_mê": {
+			    "medalhascomatleta_medalha_data_trimestre_has_medalhascomatleta_medalha_data_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data.trimestre": {
+			        "medalhascomatleta.medalha_data.trimestre": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.trimestre"
+			            "Entity": "medalhascomatleta.medalha_data.trimestre"
 			          }
 			        },
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data.mê": {
+			        "medalhascomatleta.medalha_data.mê": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.mê"
+			            "Entity": "medalhascomatleta.medalha_data.mê"
 			          }
 			        }
 			      },
@@ -11807,10 +11883,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalhascomatleta.medalha_data.trimestre"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.mê"
+			              "Role": "medalhascomatleta.medalha_data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -11820,10 +11896,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.mê"
+			              "Role": "medalhascomatleta.medalha_data.mê"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalhascomatleta.medalha_data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -11833,7 +11909,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.mê"
+			              "Role": "medalhascomatleta.medalha_data.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -11843,7 +11919,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.trimestre"
+			              "Role": "medalhascomatleta.medalha_data.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -11852,20 +11928,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "medalhascomatleta_medalha_data_variation_hierarquia_de_data_mê_has_medalhascomatleta_medalha_data_variation_hierarquia_de_data_dia": {
+			    "medalhascomatleta_medalha_data_mê_has_medalhascomatleta_medalha_data_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "medalhascomatletas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data.mê": {
+			        "medalhascomatleta.medalha_data.mê": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.mê"
+			            "Entity": "medalhascomatleta.medalha_data.mê"
 			          }
 			        },
-			        "medalhascomatleta.medalha_data.variation.hierarquia_de_data.dia": {
+			        "medalhascomatleta.medalha_data.dia": {
 			          "Target": {
-			            "Entity": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.dia"
+			            "Entity": "medalhascomatleta.medalha_data.dia"
 			          }
 			        }
 			      },
@@ -11873,10 +11949,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.mê"
+			              "Role": "medalhascomatleta.medalha_data.mê"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.dia"
+			              "Role": "medalhascomatleta.medalha_data.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -11886,10 +11962,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.dia"
+			              "Role": "medalhascomatleta.medalha_data.dia"
 			            },
 			            "Object": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.mê"
+			              "Role": "medalhascomatleta.medalha_data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -11899,7 +11975,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.dia"
+			              "Role": "medalhascomatleta.medalha_data.dia"
 			            },
 			            "Prepositions": [
 			              {
@@ -11909,7 +11985,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "medalhascomatleta.medalha_data.variation.hierarquia_de_data.mê"
+			              "Role": "medalhascomatleta.medalha_data.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -11917,6 +11993,11 @@ cultureInfo pt-BR
 			          "ID": "dias_are_in_mê9"
 			        }
 			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
 			    }
 			  }
 			}

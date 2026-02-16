@@ -27,8 +27,8 @@
                 }
               },
               "queryRef": "Medidas.Nº Atletas",
-              "nativeQueryRef": "medalhistas estrangeiros",
-              "displayName": "medalhistas estrangeiros"
+              "nativeQueryRef": "medalhistas nascidos fora do Brasil",
+              "displayName": "medalhistas nascidos fora do Brasil"
             }
           ]
         }
@@ -237,6 +237,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "6a4ba7242d1913f07e20",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Nº Atletas"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

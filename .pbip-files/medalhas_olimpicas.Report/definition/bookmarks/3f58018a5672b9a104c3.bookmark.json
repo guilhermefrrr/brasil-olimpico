@@ -1115,24 +1115,6 @@
               ]
             }
           },
-          "6536c43e81b709517d19": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "f23122f7d29881b2dbce": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
           "78955e91e3d1d8942713": {
             "singleVisual": {
               "visualType": "actionButton",

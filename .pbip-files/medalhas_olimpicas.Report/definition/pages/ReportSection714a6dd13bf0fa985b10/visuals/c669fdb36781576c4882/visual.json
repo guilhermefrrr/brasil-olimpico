@@ -6,7 +6,7 @@
     "y": 81.078167115902957,
     "z": 13000,
     "height": 57.78975741239892,
-    "width": 175.09433962264151,
+    "width": 155,
     "tabOrder": 13000
   },
   "visual": {
@@ -149,7 +149,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "9D"
                 }
               }
             },
@@ -296,6 +296,20 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "6030f82c544593c3b73c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "edicao"
+              }
+            },
+            "Property": "Ano"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

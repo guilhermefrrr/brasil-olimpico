@@ -278,5 +278,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0c09c38bfad61cd3008a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "atleta"
+              }
+            },
+            "Property": "Nome_Principal"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6bc3f79995f2bad66ee8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "medalha"
+              }
+            },
+            "Property": "Modalidade"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

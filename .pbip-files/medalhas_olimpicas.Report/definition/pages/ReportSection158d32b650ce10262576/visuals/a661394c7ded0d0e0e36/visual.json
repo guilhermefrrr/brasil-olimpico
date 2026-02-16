@@ -23,27 +23,13 @@
                       "Entity": "edicao"
                     }
                   },
-                  "Property": "Ano"
+                  "Property": "Ano_Sede"
                 }
               },
-              "queryRef": "newschema edicao.Ano",
-              "nativeQueryRef": "Ano",
-              "active": true
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "edicao"
-                    }
-                  },
-                  "Property": "Cidade"
-                }
-              },
-              "queryRef": "newschema edicao.Cidade",
-              "nativeQueryRef": "Cidade",
-              "active": true
+              "queryRef": "edicao.Ano_Sede",
+              "nativeQueryRef": "Ano - sede",
+              "active": true,
+              "displayName": "Ano - sede"
             }
           ],
           "showAll": true
@@ -101,23 +87,10 @@
                     "Entity": "edicao"
                   }
                 },
-                "Property": "Ano"
+                "Property": "Ano_Sede"
               }
             },
-            "direction": "Ascending"
-          },
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "edicao"
-                  }
-                },
-                "Property": "Cidade"
-              }
-            },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -143,7 +116,7 @@
             "maxMarginFactor": {
               "expr": {
                 "Literal": {
-                  "Value": "25L"
+                  "Value": "35L"
                 }
               }
             },
@@ -220,6 +193,27 @@
                       "Value": "'#2C497F'"
                     }
                   }
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "switchAxisPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
                 }
               }
             }
@@ -350,6 +344,32 @@
             ]
           }
         }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "totals": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -438,46 +458,54 @@
           }
         },
         "type": "Categorical",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "n",
-              "Entity": "edicao",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "In": {
-                  "Expressions": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "n"
-                          }
-                        },
-                        "Property": "Verao_Inverno"
-                      }
-                    }
-                  ],
-                  "Values": [
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'Verão'"
-                        }
-                      }
-                    ]
-                  ]
-                }
-              }
-            }
-          ]
-        },
         "howCreated": "User"
+      },
+      {
+        "name": "b243fd06f44ff558d49a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "edicao"
+              }
+            },
+            "Property": "Ano_Sede"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "500261242d87e7aa3621",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "medalha"
+              }
+            },
+            "Property": "Medalha"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "228f44a86ef0ef1deba8",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "medalhascomatletas"
+                  }
+                },
+                "Property": "MedalhaID"
+              }
+            },
+            "Function": 2
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

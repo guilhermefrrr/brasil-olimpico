@@ -1369,24 +1369,6 @@
               "visualType": "actionButton",
               "objects": {}
             }
-          },
-          "c08469fbfba0a3eab392": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "8b4ed651058e68a83eff": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
           }
         }
       }

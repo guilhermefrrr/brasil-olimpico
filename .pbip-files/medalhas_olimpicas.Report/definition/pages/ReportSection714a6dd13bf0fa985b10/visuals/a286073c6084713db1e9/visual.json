@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "a286073c6084713db1e9",
   "position": {
-    "x": 746.096256684492,
-    "y": 79.85739750445633,
+    "x": 670,
+    "y": 81.25,
     "z": 10000,
-    "height": 58.18181818181818,
-    "width": 174.54545454545453,
+    "height": 57.5,
+    "width": 155,
     "tabOrder": 10000
   },
   "visual": {
@@ -149,7 +149,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "9D"
                 }
               }
             },
@@ -240,5 +240,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "da51d6f9153848302c49",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "medalha"
+              }
+            },
+            "Property": "Genero"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

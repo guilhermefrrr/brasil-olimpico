@@ -23,29 +23,13 @@
                       "Entity": "edicao"
                     }
                   },
-                  "Property": "Ano"
+                  "Property": "Ano_Sede"
                 }
               },
-              "queryRef": "edicao.Ano",
-              "nativeQueryRef": "Ano e",
+              "queryRef": "edicao.Ano_Sede",
+              "nativeQueryRef": "Ano - sede",
               "active": true,
-              "displayName": "Ano e"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "edicao"
-                    }
-                  },
-                  "Property": "Cidade"
-                }
-              },
-              "queryRef": "edicao.Cidade",
-              "nativeQueryRef": "cidade",
-              "active": true,
-              "displayName": "cidade"
+              "displayName": "Ano - sede"
             }
           ]
         },
@@ -87,23 +71,6 @@
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "edicao"
-                  }
-                },
-                "Property": "Ano"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
@@ -132,6 +99,27 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "concatenateLabels": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "maxMarginFactor": {
+              "expr": {
+                "Literal": {
+                  "Value": "35L"
                 }
               }
             }
@@ -320,6 +308,13 @@
                   "Value": "false"
                 }
               }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
             }
           }
         }
@@ -335,6 +330,20 @@
                       "Value": "'#2C497F'"
                     }
                   }
+                }
+              }
+            },
+            "showGradientLegend": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -443,63 +452,10 @@
           }
         },
         "type": "Categorical",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "e",
-              "Entity": "edicao",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "In": {
-                  "Expressions": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "e"
-                          }
-                        },
-                        "Property": "Verao_Inverno"
-                      }
-                    }
-                  ],
-                  "Values": [
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'Verão'"
-                        }
-                      }
-                    ]
-                  ]
-                }
-              }
-            }
-          ]
-        },
         "howCreated": "User"
       },
       {
-        "name": "18f7163d05ada7e25f68",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Total"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "e67a717204c7d0071cef",
+        "name": "0fcfa3825347e559de8b",
         "field": {
           "Column": {
             "Expression": {
@@ -507,27 +463,13 @@
                 "Entity": "edicao"
               }
             },
-            "Property": "Ano"
+            "Property": "Ano_Sede"
           }
         },
         "type": "Categorical"
       },
       {
-        "name": "41a53c9b5777374b7ed6",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "edicao"
-              }
-            },
-            "Property": "Cidade"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "64efba337d323e78d6ee",
+        "name": "65bc6f218a63cc430490",
         "field": {
           "Column": {
             "Expression": {
@@ -539,6 +481,20 @@
           }
         },
         "type": "Categorical"
+      },
+      {
+        "name": "ba6c618e38d45efde7ce",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Total"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

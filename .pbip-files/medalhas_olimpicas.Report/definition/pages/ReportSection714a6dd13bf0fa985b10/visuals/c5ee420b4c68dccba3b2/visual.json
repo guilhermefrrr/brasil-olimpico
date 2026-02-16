@@ -497,62 +497,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "b636aa6000bf2e4ac600",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Total"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "af026e7b851edc6b5c9c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "edicao"
-              }
-            },
-            "Property": "Ano"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "5734c2713cfc16111e08",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "edicao"
-              }
-            },
-            "Property": "Cidade"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "6ddae11b86f9a5146b92",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "medalha"
-              }
-            },
-            "Property": "Genero"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   },
