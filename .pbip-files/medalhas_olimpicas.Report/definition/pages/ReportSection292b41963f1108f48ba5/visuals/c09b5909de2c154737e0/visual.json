@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "c09b5909de2c154737e0",
   "position": {
     "x": 1061.77897574124,
@@ -249,5 +249,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "75101d155f676548bde0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "medalha"
+              }
+            },
+            "Property": "Modalidade"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "66691816da08dbdb0d09",
   "position": {
     "x": 476.59574468085111,
@@ -395,6 +395,48 @@
             }
           ]
         }
+      },
+      {
+        "name": "98d8417b0422eae0466c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "atleta"
+              }
+            },
+            "Property": "Nome_Principal"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d5c2897bfc426966193b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "medalha"
+              }
+            },
+            "Property": "Modalidade"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e2c8e6d3b0b5a35b4c2f",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "atleta"
+              }
+            },
+            "Property": "Cidade_Nascimento"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "be16c5e3703787e1cf95",
   "position": {
     "x": 514.93261444526718,
@@ -375,5 +375,79 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "46553ff883e5642ccd80",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "quadroatletas"
+              }
+            },
+            "Property": "Nome_Principal"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ae3c0c8022b2a9c99e4f",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "quadroatletas"
+              }
+            },
+            "Property": "Ouros"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ff965c0b4e8640e0bb77",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "quadroatletas"
+              }
+            },
+            "Property": "Pratas"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "34b2adbda2578bed88d4",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "quadroatletas"
+              }
+            },
+            "Property": "Bronzes"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7d58a0c9cefda60c9900",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "quadroatletas"
+              }
+            },
+            "Property": "Total"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

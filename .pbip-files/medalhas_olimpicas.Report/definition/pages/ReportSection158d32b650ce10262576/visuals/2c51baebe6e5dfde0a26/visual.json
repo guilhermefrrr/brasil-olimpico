@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "2c51baebe6e5dfde0a26",
   "position": {
     "x": 326.900269541779,
@@ -372,5 +372,79 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "aa8bb843bece58d7e69a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "quadromodalidades"
+              }
+            },
+            "Property": "Modalidade"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "88f6a1b4580f2993cbb1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "quadromodalidades"
+              }
+            },
+            "Property": "Ouros"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "def76d804003de58166d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "quadromodalidades"
+              }
+            },
+            "Property": "Pratas"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "dbdb7839732a10f1f67a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "quadromodalidades"
+              }
+            },
+            "Property": "Bronzes"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5eb82da22cc8a8e27fe1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "quadromodalidades"
+              }
+            },
+            "Property": "Total"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

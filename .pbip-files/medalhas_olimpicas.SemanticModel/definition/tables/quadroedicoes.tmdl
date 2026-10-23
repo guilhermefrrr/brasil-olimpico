@@ -51,9 +51,9 @@ table quadroedicoes
 				SUMMARIZE(
 				    'medalhascomatletas', 
 				    'edicao'[Ano],
-				    "Ouros", CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Ouro"),
-				    "Pratas", CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Prata"),
-				    "Bronzes", CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Bronze"),
+				    "Ouros", COALESCE(CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Ouro"), 0),
+				    "Pratas", COALESCE(CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Prata"), 0),
+				    "Bronzes", COALESCE(CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Bronze"), 0),
 				    "Total", COUNTROWS('medalha'))
 				```
 

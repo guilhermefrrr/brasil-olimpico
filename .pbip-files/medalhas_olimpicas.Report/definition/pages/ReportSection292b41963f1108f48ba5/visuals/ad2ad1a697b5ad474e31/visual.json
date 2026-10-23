@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "ad2ad1a697b5ad474e31",
   "position": {
     "x": 37.088948787061994,
@@ -426,5 +426,84 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2cd00a79a6d9d6a1fc43",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "quadroedicoes"
+              }
+            },
+            "Property": "Ano"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "683787c9c7de3fa3090c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "quadroedicoes"
+              }
+            },
+            "Property": "Ouros"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "49365eb96074366d320f",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "quadroedicoes"
+              }
+            },
+            "Property": "Pratas"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "2436afa0a5f4f7f1532f",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "quadroedicoes"
+              }
+            },
+            "Property": "Bronzes"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e7097a479fddbbd58958",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "quadroedicoes"
+                  }
+                },
+                "Property": "Total"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

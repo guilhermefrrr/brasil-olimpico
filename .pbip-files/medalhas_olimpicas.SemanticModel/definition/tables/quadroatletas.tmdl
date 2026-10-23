@@ -51,9 +51,9 @@ table quadroatletas
 				SUMMARIZE(
 				    'medalhascomatletas',
 				    atleta[Nome_Principal],
-				    "Ouros", CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Ouro"),
-				    "Pratas", CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Prata"),
-				    "Bronzes", CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Bronze"),
+				    "Ouros", COALESCE(CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Ouro"), 0),
+				    "Pratas", COALESCE(CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Prata"), 0),
+				    "Bronzes", COALESCE(CALCULATE(COUNTROWS('medalha'), 'medalha'[Medalha] = "Bronze"), 0),
 				    "Total", COUNTROWS('medalha'))
 
 	annotation PBI_Id = 64c4e77e3a49480db318945120bef0e9
