@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "39dc678c508bd1bc302c",
   "position": {
     "x": 321.72506738544473,
@@ -207,5 +207,42 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "710da7fd2ce3cb364dfc",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "atleta"
+              }
+            },
+            "Property": "Estado_Nascimento"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "9d0b242ffe6ce796f9b3",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "atleta"
+                  }
+                },
+                "Property": "Estado_Nascimento"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

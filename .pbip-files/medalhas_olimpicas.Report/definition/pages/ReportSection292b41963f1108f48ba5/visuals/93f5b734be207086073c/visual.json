@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "93f5b734be207086073c",
   "position": {
     "x": 359.67654986522911,
@@ -256,40 +256,64 @@
           }
         },
         "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "558c0cade4ce73a9fed7",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "edicao"
+              }
+            },
+            "Property": "Ano"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "74be7e8c3675b95b93f2",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "Total"
+          }
+        },
+        "type": "Advanced",
         "filter": {
           "Version": 2,
           "From": [
             {
-              "Name": "e",
-              "Entity": "edicao",
+              "Name": "m",
+              "Entity": "Medidas",
               "Type": 0
             }
           ],
           "Where": [
             {
               "Condition": {
-                "In": {
-                  "Expressions": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "e"
-                          }
-                        },
-                        "Property": "Verao_Inverno"
-                      }
-                    }
-                  ],
-                  "Values": [
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'Verão'"
+                "Comparison": {
+                  "ComparisonKind": 1,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
                         }
-                      }
-                    ]
-                  ]
+                      },
+                      "Property": "Total"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "0L"
+                    }
+                  }
                 }
               }
             }

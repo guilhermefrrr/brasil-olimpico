@@ -151,7 +151,7 @@ table medalha
 		mode: import
 		source =
 				let
-				    Fonte = MySQL.Database("127.0.0.1:3306", "jogosolimpicos", [ReturnSingleDatabase=true]),
+				    Fonte = Sql.Database("DESKTOP-GUI\SQLEXPRESS", "jogosolimpicos"),
 				    newschema_medalha = Fonte{[Schema="jogosolimpicos",Item="medalha"]}[Data],
 				    #"Coluna Condicional Adicionada" = Table.AddColumn(newschema_medalha, "Medalha_Ordem", each if [Medalha] = "Ouro" then 1 else if [Medalha] = "Prata" then 2 else if [Medalha] = "Bronze" then 3 else null),
 				    #"Consultas Mescladas" = Table.NestedJoin(#"Coluna Condicional Adicionada", {"EdicaoID"}, edicao, {"EdicaoID"}, "edicao", JoinKind.LeftOuter),

@@ -91,7 +91,7 @@ table medalhascomatletas
 		mode: import
 		source =
 				let
-				    Fonte = MySQL.Database("127.0.0.1:3306", "jogosolimpicos", [ReturnSingleDatabase=true]),
+				    Fonte = Sql.Database("DESKTOP-GUI\SQLEXPRESS", "jogosolimpicos"),
 				    newschema_medalhascomatletas = Fonte{[Schema="jogosolimpicos",Item="medalhascomatletas"]}[Data],
 				    #"Consultas Mescladas" = Table.NestedJoin(newschema_medalhascomatletas, {"AtletaID"}, atleta, {"AtletaID"}, "atleta", JoinKind.LeftOuter),
 				    #"atleta Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "atleta", {"Data_Nascimento"}, {"atleta.Data_Nascimento"}),
