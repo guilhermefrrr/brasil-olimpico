@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "a7e4117c9a2a717750dd",
   "position": {
     "x": 962.91793313069911,
@@ -241,6 +241,13 @@
                   "Value": "true"
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Lista atletas'"
+                }
+              }
             }
           }
         }
@@ -278,37 +285,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "0c09c38bfad61cd3008a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "atleta"
-              }
-            },
-            "Property": "Nome_Principal"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "6bc3f79995f2bad66ee8",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "medalha"
-              }
-            },
-            "Property": "Modalidade"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

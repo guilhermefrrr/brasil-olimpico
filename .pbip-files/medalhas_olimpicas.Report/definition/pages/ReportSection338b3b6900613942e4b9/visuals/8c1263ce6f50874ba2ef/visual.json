@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "8c1263ce6f50874ba2ef",
   "position": {
     "x": 984.28571428571433,
@@ -240,23 +240,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "5e856d87862058c4ba4b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "edicao"
-              }
-            },
-            "Property": "Verao_Inverno"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

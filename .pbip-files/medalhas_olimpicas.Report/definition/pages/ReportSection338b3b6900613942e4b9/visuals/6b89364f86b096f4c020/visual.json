@@ -4,7 +4,7 @@
   "position": {
     "x": 359.41176470588238,
     "y": 80,
-    "z": 15000,
+    "z": 17125,
     "height": 58.235294117647058,
     "width": 155.29411764705884,
     "tabOrder": 15000
@@ -301,20 +301,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "17ba2babeea330c28ea7",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "edicao"
-              }
-            },
-            "Property": "Ano"
-          }
-        },
-        "type": "Categorical"
       },
       {
         "name": "c9e4ce730adb661acc52",

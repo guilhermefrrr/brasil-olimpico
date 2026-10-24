@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "d97334a13d241022bf87",
   "position": {
     "x": 854.27539140907254,
     "y": 145.55732145528845,
-    "z": 2000,
+    "z": 1000,
     "height": 184.58221024258759,
     "width": 397.62803234501348,
     "tabOrder": 2000
@@ -201,6 +201,13 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Idade atletas'"
                 }
               }
             }

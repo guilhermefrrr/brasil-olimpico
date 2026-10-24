@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "ReportSection292b41963f1108f48ba5",
   "displayName": "Lista de medalhas",
   "displayOption": "FitToPage",
@@ -65,6 +65,16 @@
     {
       "source": "ad2ad1a697b5ad474e31",
       "target": "c253a7c0410fc2c145fd",
+      "type": "NoFilter"
+    },
+    {
+      "source": "d8e9b275d2311f772e9e",
+      "target": "65f5e5e1c357f2ace497",
+      "type": "DataFilter"
+    },
+    {
+      "source": "d8e9b275d2311f772e9e",
+      "target": "ad2ad1a697b5ad474e31",
       "type": "NoFilter"
     }
   ]

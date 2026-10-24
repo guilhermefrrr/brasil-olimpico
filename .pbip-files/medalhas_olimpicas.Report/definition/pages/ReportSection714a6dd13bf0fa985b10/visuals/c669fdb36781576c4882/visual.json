@@ -298,20 +298,6 @@
         "howCreated": "User"
       },
       {
-        "name": "6030f82c544593c3b73c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "edicao"
-              }
-            },
-            "Property": "Ano"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "15e191ec32e4e8702a30",
         "field": {
           "Measure": {
@@ -324,40 +310,6 @@
           }
         },
         "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "m",
-              "Entity": "Medidas",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 1,
-                  "Left": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "m"
-                        }
-                      },
-                      "Property": "Total"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "0L"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
         "howCreated": "User"
       }
     ]

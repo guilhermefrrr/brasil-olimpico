@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "a661394c7ded0d0e0e36",
   "position": {
     "x": 327.5,
     "y": 145,
-    "z": 14000,
+    "z": 1500,
     "height": 333.75,
     "width": 918.75,
     "tabOrder": 0
@@ -23,13 +23,12 @@
                       "Entity": "edicao"
                     }
                   },
-                  "Property": "Ano_Sede"
+                  "Property": "Ano"
                 }
               },
-              "queryRef": "edicao.Ano_Sede",
-              "nativeQueryRef": "Ano - sede",
-              "active": true,
-              "displayName": "Ano - sede"
+              "queryRef": "edicao.Ano",
+              "nativeQueryRef": "Ano",
+              "active": true
             }
           ],
           "showAll": true
@@ -49,6 +48,30 @@
               },
               "queryRef": "newschema medalha.Medalha",
               "nativeQueryRef": "Medalha"
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "edicao"
+                        }
+                      },
+                      "Property": "Cidade"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(edicao.Cidade)",
+              "nativeQueryRef": "Cidade",
+              "displayName": "Cidade"
             }
           ]
         },
@@ -87,10 +110,23 @@
                     "Entity": "edicao"
                   }
                 },
-                "Property": "Ano_Sede"
+                "Property": "Ano"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
+          },
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "edicao"
+                  }
+                },
+                "Property": "Cidade"
+              }
+            },
+            "direction": "Ascending"
           }
         ]
       }
@@ -420,7 +456,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Medalhas verão'"
+                  "Value": "'Medalhas'"
                 }
               }
             }
@@ -442,71 +478,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "Filter3b224e4e9aa002b69364",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "edicao"
-              }
-            },
-            "Property": "Verao_Inverno"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "User"
-      },
-      {
-        "name": "b243fd06f44ff558d49a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "edicao"
-              }
-            },
-            "Property": "Ano_Sede"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "500261242d87e7aa3621",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "medalha"
-              }
-            },
-            "Property": "Medalha"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "228f44a86ef0ef1deba8",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "medalhascomatletas"
-                  }
-                },
-                "Property": "MedalhaID"
-              }
-            },
-            "Function": 2
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

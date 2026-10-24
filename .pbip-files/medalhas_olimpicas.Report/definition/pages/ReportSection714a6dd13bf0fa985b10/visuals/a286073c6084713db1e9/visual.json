@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "a286073c6084713db1e9",
   "position": {
     "x": 670,
     "y": 81.25,
-    "z": 10000,
+    "z": 11000,
     "height": 57.5,
     "width": 155,
     "tabOrder": 10000
@@ -240,23 +240,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "da51d6f9153848302c49",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "medalha"
-              }
-            },
-            "Property": "Genero"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

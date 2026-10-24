@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "ff20d57801193d2f02f3",
   "position": {
     "x": 980,
     "y": 81.25,
-    "z": 18001,
+    "z": 9000,
     "height": 57.5,
     "width": 155,
-    "tabOrder": 19001
+    "tabOrder": 18000
   },
   "visual": {
     "visualType": "slicer",
@@ -240,23 +240,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "6cd38617a7bd04602733",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "edicao"
-              }
-            },
-            "Property": "Verao_Inverno"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

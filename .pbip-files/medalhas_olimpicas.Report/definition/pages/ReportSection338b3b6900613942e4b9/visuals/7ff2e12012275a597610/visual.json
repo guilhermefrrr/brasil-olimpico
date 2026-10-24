@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "7ff2e12012275a597610",
   "position": {
     "x": 321.94528875379939,
@@ -125,6 +125,13 @@
                   "Value": "true"
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Cartão ''estrangeiros'''"
+                }
+              }
             }
           }
         }
@@ -237,20 +244,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "6a4ba7242d1913f07e20",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Nº Atletas"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

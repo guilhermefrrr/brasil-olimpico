@@ -4,7 +4,7 @@
   "position": {
     "x": 321.72506738544473,
     "y": 154.25610783285424,
-    "z": 0,
+    "z": 5500,
     "height": 332.93800539083554,
     "width": 366.57681940700809,
     "tabOrder": 0
@@ -205,6 +205,13 @@
                   "Value": "false"
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Mapa'"
+                }
+              }
             }
           }
         }
@@ -228,42 +235,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "710da7fd2ce3cb364dfc",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "atleta"
-              }
-            },
-            "Property": "Estado_Nascimento"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "9d0b242ffe6ce796f9b3",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "atleta"
-                  }
-                },
-                "Property": "Estado_Nascimento"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

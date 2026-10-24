@@ -4,7 +4,7 @@
   "position": {
     "x": 301.88679245283015,
     "y": 330.21293882066095,
-    "z": 14750,
+    "z": 0,
     "height": 353.06990881458967,
     "width": 950.27355623100311,
     "tabOrder": 0
@@ -23,13 +23,12 @@
                       "Entity": "edicao"
                     }
                   },
-                  "Property": "Ano_Sede"
+                  "Property": "Ano"
                 }
               },
-              "queryRef": "edicao.Ano_Sede",
-              "nativeQueryRef": "Ano - sede",
-              "active": true,
-              "displayName": "Ano - sede"
+              "queryRef": "edicao.Ano",
+              "nativeQueryRef": "Ano",
+              "active": true
             }
           ]
         },
@@ -402,7 +401,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Medalhas por gênero - verão'"
+                  "Value": "'Medalhas por gênero'"
                 }
               }
             },
@@ -453,105 +452,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "Filter4263f9b516fb3a9985a5",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "edicao"
-              }
-            },
-            "Property": "Verao_Inverno"
-          }
-        },
-        "type": "Categorical",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "e",
-              "Entity": "edicao",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "In": {
-                  "Expressions": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "e"
-                          }
-                        },
-                        "Property": "Verao_Inverno"
-                      }
-                    }
-                  ],
-                  "Values": [
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'Verão'"
-                        }
-                      }
-                    ]
-                  ]
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User"
-      },
-      {
-        "name": "0fcfa3825347e559de8b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "edicao"
-              }
-            },
-            "Property": "Ano_Sede"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "65bc6f218a63cc430490",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "medalha"
-              }
-            },
-            "Property": "Genero"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "ba6c618e38d45efde7ce",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "Total"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

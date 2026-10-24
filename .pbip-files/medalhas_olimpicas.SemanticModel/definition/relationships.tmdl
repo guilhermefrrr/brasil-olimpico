@@ -67,12 +67,6 @@ relationship 80a80d3f-a015-4069-a981-66a392671928
 	fromColumn: medalhascomatletas.'medalha.Data'
 	toColumn: LocalDateTable_7b8367f8-12dc-4616-9771-8a9f9514b7cf.Date
 
-relationship b6baa54b-308a-449d-b828-e9e7c6b9448e
-	crossFilteringBehavior: bothDirections
-	fromCardinality: one
-	fromColumn: atleta.Nome_Principal
-	toColumn: quadroatletas.Nome_Principal
-
 relationship 5a70fd39-1547-430d-8b63-7884226437e1
 	crossFilteringBehavior: bothDirections
 	fromColumn: medalha.Modalidade
@@ -83,4 +77,10 @@ relationship d91af79e-2e4a-4705-9606-47b993312050
 	toCardinality: many
 	fromColumn: edicao.Ano
 	toColumn: quadroedicoes.Ano
+
+relationship b6baa54b-308a-449d-b828-e9e7c6b9448e
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: atleta.Nome_Principal
+	toColumn: quadroatletas.Nome_Principal
 

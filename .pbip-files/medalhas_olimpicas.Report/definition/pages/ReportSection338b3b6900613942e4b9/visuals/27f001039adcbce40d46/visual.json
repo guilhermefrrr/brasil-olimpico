@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "27f001039adcbce40d46",
   "position": {
     "x": 701.23989218328836,
     "y": 154.25610783285424,
-    "z": 1000,
+    "z": 4750,
     "height": 332.93800539083554,
     "width": 255.30997304582209,
     "tabOrder": 1000
@@ -309,6 +309,13 @@
                   "Value": "true"
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Matriz estados'"
+                }
+              }
             }
           }
         }
@@ -377,46 +384,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "bbe2bf0d5ad726ff1e56",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "atleta"
-              }
-            },
-            "Property": "Cidade_Nascimento"
-          }
-        },
-        "type": "Advanced",
-        "objects": {
-          "general": [
-            {
-              "properties": {}
-            }
-          ]
-        }
-      },
-      {
-        "name": "16d6f428d95aaddfa74b",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "atleta"
-                  }
-                },
-                "Property": "Estado_Nascimento"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
       },
       {
         "name": "369ec7dd96e52480c1f3",

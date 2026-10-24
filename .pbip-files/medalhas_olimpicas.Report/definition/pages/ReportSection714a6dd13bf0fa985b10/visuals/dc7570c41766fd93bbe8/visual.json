@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dc7570c41766fd93bbe8",
   "position": {
     "x": 87.702803282614539,
     "y": 165.81768653105567,
-    "z": 5000,
+    "z": 6000,
     "height": 62,
     "width": 60,
     "tabOrder": 5000
@@ -123,6 +123,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Cartão Pratas'"
                 }
               }
             }

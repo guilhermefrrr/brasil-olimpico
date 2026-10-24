@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "652360877a9b9225f2a1",
   "position": {
     "x": 346.24304639559551,
     "y": 156.77025946067923,
-    "z": 1000,
+    "z": 2000,
     "height": 156.98113207547169,
     "width": 494.23180592991912,
     "tabOrder": 1000
@@ -298,6 +298,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Lista atletas idade'"
                 }
               }
             }

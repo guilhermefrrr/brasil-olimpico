@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "7fdc1e37ebf291c3462a",
   "position": {
     "x": 906.52291105121287,
     "y": 493.36927223719675,
-    "z": 2000,
+    "z": 750,
     "height": 184.58221024258759,
     "width": 155.25606469002696,
     "tabOrder": 2000
@@ -114,6 +114,19 @@
                       "Value": "'#E9DEAF'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Cartão modalidades'"
                 }
               }
             }

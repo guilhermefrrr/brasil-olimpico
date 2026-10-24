@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "a80b86b1113ab0f8b61c",
   "position": {
     "x": 359.67654986522911,
     "y": 470.94339622641508,
-    "z": 11000,
+    "z": 3500,
     "height": 57.78975741239892,
     "width": 155.25606469002696,
     "tabOrder": 11000
@@ -169,7 +169,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Buscar atleta'"
+                  "Value": "'Buscar atletas'"
                 }
               }
             },

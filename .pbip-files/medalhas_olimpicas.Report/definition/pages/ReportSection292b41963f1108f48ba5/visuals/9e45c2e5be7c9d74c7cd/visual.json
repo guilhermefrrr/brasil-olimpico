@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "9e45c2e5be7c9d74c7cd",
   "position": {
     "x": 359.67654986522911,
     "y": 151.80592991913747,
-    "z": 0,
+    "z": 4500,
     "height": 313.96226415094338,
     "width": 851.32075471698113,
     "tabOrder": 0
@@ -359,7 +359,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'As medalhas do Brasil em Jogos Olímpicos'"
+                  "Value": "'Lista medalhas'"
                 }
               }
             },

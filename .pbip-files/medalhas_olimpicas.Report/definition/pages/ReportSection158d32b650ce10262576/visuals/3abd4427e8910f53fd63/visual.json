@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "3abd4427e8910f53fd63",
   "position": {
     "x": 201.97034365627337,
     "y": 165.46900269782748,
-    "z": 6000,
+    "z": 2500,
     "height": 62,
     "width": 59.514824797843666,
     "tabOrder": 7000
@@ -130,6 +130,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Cartão Total'"
                 }
               }
             }

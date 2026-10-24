@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "1532630335286ea23dc9",
   "position": {
     "x": 141.59298516570729,
     "y": 165.46900269782748,
-    "z": 6000,
+    "z": 5000,
     "height": 62,
     "width": 60.377358490566039,
     "tabOrder": 6000
@@ -123,6 +123,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Cartão Bronzes'"
                 }
               }
             }
