@@ -23,20 +23,6 @@ O projeto reúne informações sobre as edições dos Jogos Olímpicos, as medal
 - **Power BI:** modelagem analítica e desenvolvimento de relatórios interativos.
 - **DAX:** criação de medidas e cálculos para as análises e visualizações do relatório.
 
-## Análises desenvolvidas
-
-### Medalhas por modalidade
-
-Consolidação das medalhas de ouro, prata e bronze conquistadas pelo Brasil em cada modalidade olímpica, permitindo comparar os resultados e identificar as modalidades com maior número de pódios.
-
-### Medalhas por edição olímpica
-
-Análise do desempenho brasileiro ao longo da história dos Jogos, com a distribuição de medalhas por edição, cidade-sede e ano.
-
-### Medalhas por atleta
-
-Levantamento das medalhas conquistadas pelos atletas brasileiros, com separação por tipo de medalha e possibilidade de identificar os atletas com maior número de conquistas.
-
 ## Banco de dados e consultas SQL
 
 O banco de dados foi estruturado para relacionar informações sobre as edições olímpicas, as medalhas e os atletas brasileiros medalhistas.
