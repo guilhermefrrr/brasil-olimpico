@@ -1,6 +1,6 @@
 # Brasil Olímpico 🇧🇷
 
-Projeto de análise e visualização de dados sobre as medalhas conquistadas pelo Brasil nos Jogos Olímpicos de Verão e de Inverno, desenvolvido com **SQL, Power BI e modelagem de dados**.
+Projeto de visualização de dados sobre as todas as medalhas e do Brasil na história dos Jogos Olímpicos, desenvolvido com **SQL, Power BI e modelagem de dados**.
 
 O projeto reúne informações sobre as edições dos Jogos Olímpicos, as medalhas conquistadas pelo Brasil e os atletas brasileiros que subiram ao pódio. A partir desses dados, é possível explorar o desempenho do país ao longo da história e analisar os resultados por edição, modalidade e atleta.
 
