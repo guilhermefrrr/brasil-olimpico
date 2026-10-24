@@ -4,6 +4,10 @@ Projeto de visualização de dados sobre as todas as medalhas e do Brasil na his
 
 O projeto reúne informações sobre as edições dos Jogos Olímpicos, as medalhas conquistadas pelo Brasil e os atletas brasileiros que subiram ao pódio. A partir desses dados, é possível explorar o desempenho do país ao longo da história e analisar os resultados por edição, modalidade e atleta.
 
+## Acesse o projeto
+
+**[Clique aqui para acessar o relatório interativo no Power BI](https://app.powerbi.com/view?r=eyJrIjoiYWJjMzM5NDctZTkwOC00Y2I5LTk4OWYtMmFhOTViY2JlNDlhIiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9)**
+
 ## Objetivos
 
 - Organizar dados históricos das medalhas olímpicas brasileiras em um banco de dados relacional.
@@ -54,12 +58,6 @@ As principais referências utilizadas são:
 
 - [Time Brasil](https://www.cob.org.br/time-brasil)
 - [Olympedia](https://www.olympedia.org/)
-
-## Acesse o projeto
-
-**[Clique aqui para acessar o relatório interativo no Power BI](https://app.powerbi.com/view?r=eyJrIjoiYWJjMzM5NDctZTkwOC00Y2I5LTk4OWYtMmFhOTViY2JlNDlhIiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9)**
-
-O relatório permite explorar os resultados brasileiros e analisar as medalhas por edição olímpica, modalidade e tipo de medalha, além de consultar informações sobre os atletas medalhistas.
 
 ## Estrutura do projeto
 
