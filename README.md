@@ -4,6 +4,10 @@ Projeto de análise e visualização de dados das medalhas olímpicas, com foco 
 
 > **English:** Data analysis and visualization project on Olympic medals, focused on Brazil's performance throughout the history of the Games. Built with SQL, Power BI and data modeling, it lets you explore Brazilian results by edition, sport and athlete, identifying patterns and tracking the country's progress in the competitions. The report is in Portuguese
 
+**[Clique aqui para acessar o site](https://guilhermefrrr.github.io/brasil-olimpico/)**
+
+> Site gerado com auxílio de IA a partir de dados coletados e validados pelo autor (COB / Olympedia).
+
 **[Clique aqui para acessar o relatório no Power BI](https://app.powerbi.com/view?r=eyJrIjoiYWJjMzM5NDctZTkwOC00Y2I5LTk4OWYtMmFhOTViY2JlNDlhIiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9)**
 
 ![Página - Lista de medalhas](images/lista-medalhas.png)
@@ -101,6 +105,13 @@ O projeto também inclui consultas SQL para exploração dos dados e criação d
 
 Os dados foram coletados e organizados de forma independente, com consulta a diferentes fontes para reunir e conferir informações históricas. Os dados biográficos dos atletas, incluindo datas de nascimento, foram verificados por meio do cruzamento de fontes sempre que necessário.
 
+Para atualizar os dados no site:
+1. Atualize o banco no SSMS (edição, medalha, atleta, vínculo)
+2. No SSMS: Gerar Scripts → salve o `.sql`
+3. No Google Colab: suba o `.sql` e rode `scripts/export_ssms_para_json_colab.ipynb`
+4. O script gera um `dados_brasil_olimpico.json` novo
+5. Substitua só o JSON no GitHub, com o mesmo nome. O HTML não precisa mudar.
+
 As principais referências utilizadas são:
 
 - [Time Brasil](https://www.cob.org.br/time-brasil)
@@ -108,8 +119,10 @@ As principais referências utilizadas são:
 
 ## Estrutura do projeto
 
-- `dump_jogosolimpicos.sql`: dump do banco de dados (MySQL), contendo sua estrutura e os dados armazenados.
-- `script_jogosolimpicos.sql`: consultas SQL exploratórias (MySQL) e criação de views para resumir as medalhas por modalidade, edição olímpica e atleta.
-- `.pbip-files/`: arquivos do projeto Power BI, incluindo o relatório e o modelo semântico.
+- `index.html`: o site interativo (página principal).
+- `dados_brasil_olimpico.json`: o site carrega os dados deste arquivo.
+- `scripts/export_ssms_para_json_colab.py`: script para gerar o `dados_brasil_olimpico.json` novo a partir do `.sql` exportado do SSMS, via Google Colab.
+- `dump_jogosolimpicos.sql`: dump do banco de dados (SSMS), contendo sua estrutura e os dados armazenados.
+- `script_jogosolimpicos.sql`: consultas SQL exploratórias (SSMS) e criação de views para resumir as medalhas por modalidade, edição olímpica e atleta.
+- `.pbip-files/`: arquivos do projeto Power BI, incluindo o relatório e o modelo semântico (versão anterior do projeto).
 - `images/`: capturas de tela do relatório usadas neste README.
-
