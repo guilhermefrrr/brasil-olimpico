@@ -8,11 +8,11 @@ Projeto de análise e visualização de dados das medalhas olímpicas, com foco 
 
 > Site gerado com auxílio de IA a partir de dados coletados e validados pelo autor.
 
+![Site - Lista de medalhas](images/site-lista-medalhas.jpg)
+
 **[Clique aqui para acessar o relatório no Power BI](https://app.powerbi.com/view?r=eyJrIjoiYWJjMzM5NDctZTkwOC00Y2I5LTk4OWYtMmFhOTViY2JlNDlhIiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9)**
 
-![Página - Lista de medalhas](images/lista-medalhas.png)
-
-![Página - Evolução do número de medalhas](images/evolucao.png)
+![Página Power BI - Evolução do número de medalhas](images/evolucao.png)
 
 ## Visão geral do relatório
 
