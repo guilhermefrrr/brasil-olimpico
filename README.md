@@ -6,7 +6,7 @@ Projeto de análise e visualização de dados das medalhas olímpicas, com foco 
 
 **[Clique aqui para acessar o site](https://guilhermefrrr.github.io/brasil-olimpico/)**
 
-> Site gerado com auxílio de IA a partir de dados coletados e validados pelo autor (COB / Olympedia).
+> Site gerado com auxílio de IA a partir de dados coletados e validados pelo autor.
 
 **[Clique aqui para acessar o relatório no Power BI](https://app.powerbi.com/view?r=eyJrIjoiYWJjMzM5NDctZTkwOC00Y2I5LTk4OWYtMmFhOTViY2JlNDlhIiwidCI6ImFmNmE0MmI1LWJkMGUtNDUwNS1iMDdmLWY5MTdiMGNlMmYzZCJ9)**
 
@@ -34,10 +34,13 @@ O relatório tem quatro páginas. Em todas elas existem os filtros no topo (ano,
 ## Tecnologias utilizadas
 
 - **SQL**: consulta, organização e análise dos dados em um banco de dados relacional.
-- **MySQL**: criação e modelagem do banco de dados, consultas e views.
-- **SQL Server**: armazenamento e gerenciamento dos dados usados pelo relatório (o banco foi migrado do MySQL).
+- **SQL Server**: armazenamento e gerenciamento dos dados usados pelo projeto (o banco foi migrado do MySQL).
 - **Power BI**: modelagem analítica e desenvolvimento de relatórios interativos.
 - **DAX**: criação de medidas e cálculos para as análises e visualizações do relatório.
+- **HTML / CSS / JavaScript**: desenvolvimento do site interativo.
+- **Python**: exportação dos dados do SSMS para JSON para alimentar o site.
+- **GitHub Pages**: publicação do site.
+- **IA generativa**: auxílio na construção do site a partir dos dados coletados e validados pelo autor.
 
 ## Banco de dados e consultas SQL
 
