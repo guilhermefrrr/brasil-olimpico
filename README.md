@@ -1,8 +1,8 @@
 # Brasil Olímpico 🇧🇷
 
-Projeto de análise e visualização de dados das medalhas olímpicas, com foco no desempenho do Brasil ao longo da história dos Jogos. Desenvolvido com SQL, Power BI e modelagem de dados, permite explorar os resultados brasileiros por edição, modalidade e atleta, identificando padrões e acompanhando a evolução do país nas competições.
+Projeto de análise e visualização de dados das medalhas olímpicas, com foco no desempenho do Brasil ao longo da história dos Jogos. Desenvolvido com SQL, Power BI e modelagem de dados, permite explorar os resultados brasileiros por edição, modalidade e atleta. Também disponível em site interativo.
 
-> **English:** Data analysis and visualization project on Olympic medals, focused on Brazil's performance throughout the history of the Games. Built with SQL, Power BI and data modeling, it lets you explore Brazilian results by edition, sport and athlete, identifying patterns and tracking the country's progress in the competitions. The report is in Portuguese
+> **English:** Data analysis and visualization project on Olympic medals, focused on Brazil's performance throughout the history of the Games. Built with SQL, Power BI and data modeling, it lets you explore Brazilian results by edition, sport and athlete. Also available as an interactive website.
 
 **[Clique aqui para acessar o site](https://guilhermefrrr.github.io/brasil-olimpico/)**
 
