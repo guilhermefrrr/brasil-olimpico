@@ -37,7 +37,6 @@ O relatório tem quatro páginas. Em todas elas existem os filtros no topo (ano,
 - **SQL Server**: armazenamento e gerenciamento dos dados usados pelo projeto (o banco foi migrado do MySQL).
 - **Power BI**: modelagem analítica e desenvolvimento de relatórios interativos.
 - **DAX**: criação de medidas e cálculos para as análises e visualizações do relatório.
-- **HTML / CSS / JavaScript**: desenvolvimento do site interativo.
 - **Python**: exportação dos dados do SSMS para JSON para alimentar o site.
 - **GitHub Pages**: publicação do site.
 - **IA generativa**: auxílio na construção do site a partir dos dados coletados e validados pelo autor.
@@ -124,7 +123,7 @@ As principais referências utilizadas são:
 
 - `index.html`: o site interativo (página principal).
 - `dados_brasil_olimpico.json`: o site carrega os dados deste arquivo.
-- `scripts/export_ssms_para_json_colab.py`: script para gerar o `dados_brasil_olimpico.json` novo a partir do `.sql` exportado do SSMS, via Google Colab.
+- `scripts/export_ssms_para_json_colab.ipynb`: script para gerar o `dados_brasil_olimpico.json` novo a partir do `.sql` exportado do SSMS, via Google Colab.
 - `dump_jogosolimpicos.sql`: dump do banco de dados (SSMS), contendo sua estrutura e os dados armazenados.
 - `script_jogosolimpicos.sql`: consultas SQL exploratórias (SSMS) e criação de views para resumir as medalhas por modalidade, edição olímpica e atleta.
 - `.pbip-files/`: arquivos do projeto Power BI, incluindo o relatório e o modelo semântico (versão anterior do projeto).
