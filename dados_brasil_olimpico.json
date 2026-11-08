@@ -7387,168 +7387,168 @@
   "by_estado": [
     {
       "estado_nome": "São Paulo",
-      "total_participacoes": 229,
+      "total_vinculos": 229,
       "ouro": 48,
       "prata": 78,
       "bronze": 103
     },
     {
       "estado_nome": "Rio de Janeiro",
-      "total_participacoes": 98,
+      "total_vinculos": 98,
       "ouro": 24,
       "prata": 33,
       "bronze": 41
     },
     {
       "estado_nome": "Rio Grande do Sul",
-      "total_participacoes": 49,
+      "total_vinculos": 49,
       "ouro": 11,
       "prata": 24,
       "bronze": 14
     },
     {
       "estado_nome": "Minas Gerais",
-      "total_participacoes": 49,
+      "total_vinculos": 49,
       "ouro": 16,
       "prata": 19,
       "bronze": 14
     },
     {
       "estado_nome": "Paraná",
-      "total_participacoes": 42,
+      "total_vinculos": 42,
       "ouro": 8,
       "prata": 21,
       "bronze": 13
     },
     {
       "estado_nome": "Bahia",
-      "total_participacoes": 28,
+      "total_vinculos": 28,
       "ouro": 7,
       "prata": 12,
       "bronze": 9
     },
     {
       "estado_nome": "Distrito Federal",
-      "total_participacoes": 18,
+      "total_vinculos": 18,
       "ouro": 7,
       "prata": 5,
       "bronze": 6
     },
     {
       "estado_nome": "Santa Catarina",
-      "total_participacoes": 10,
+      "total_vinculos": 10,
       "ouro": 0,
       "prata": 6,
       "bronze": 4
     },
     {
       "estado_nome": "Espírito Santo",
-      "total_participacoes": 10,
+      "total_vinculos": 10,
       "ouro": 3,
       "prata": 4,
       "bronze": 3
     },
     {
       "estado_nome": "Pernambuco",
-      "total_participacoes": 9,
+      "total_vinculos": 9,
       "ouro": 5,
       "prata": 1,
       "bronze": 3
     },
     {
       "estado_nome": "Paraíba",
-      "total_participacoes": 7,
+      "total_vinculos": 7,
       "ouro": 3,
       "prata": 3,
       "bronze": 1
     },
     {
       "estado_nome": "Rio Grande do Norte",
-      "total_participacoes": 7,
+      "total_vinculos": 7,
       "ouro": 1,
       "prata": 3,
       "bronze": 3
     },
     {
       "estado_nome": "Alagoas",
-      "total_participacoes": 6,
+      "total_vinculos": 6,
       "ouro": 1,
       "prata": 3,
       "bronze": 2
     },
     {
       "estado_nome": "Maranhão",
-      "total_participacoes": 6,
+      "total_vinculos": 6,
       "ouro": 0,
       "prata": 3,
       "bronze": 3
     },
     {
       "estado_nome": "Mato Grosso do Sul",
-      "total_participacoes": 5,
+      "total_vinculos": 5,
       "ouro": 0,
       "prata": 1,
       "bronze": 4
     },
     {
       "estado_nome": "Piauí",
-      "total_participacoes": 5,
+      "total_vinculos": 5,
       "ouro": 1,
       "prata": 3,
       "bronze": 1
     },
     {
       "estado_nome": "Pará",
-      "total_participacoes": 3,
+      "total_vinculos": 3,
       "ouro": 1,
       "prata": 1,
       "bronze": 1
     },
     {
       "estado_nome": "Goiás",
-      "total_participacoes": 3,
+      "total_vinculos": 3,
       "ouro": 1,
       "prata": 1,
       "bronze": 1
     },
     {
       "estado_nome": "Ceará",
-      "total_participacoes": 3,
+      "total_vinculos": 3,
       "ouro": 0,
       "prata": 3,
       "bronze": 0
     },
     {
       "estado_nome": "Amazonas",
-      "total_participacoes": 2,
+      "total_vinculos": 2,
       "ouro": 0,
       "prata": 1,
       "bronze": 1
     },
     {
       "estado_nome": "Acre",
-      "total_participacoes": 2,
+      "total_vinculos": 2,
       "ouro": 2,
       "prata": 0,
       "bronze": 0
     },
     {
       "estado_nome": "Sergipe",
-      "total_participacoes": 2,
+      "total_vinculos": 2,
       "ouro": 1,
       "prata": 0,
       "bronze": 1
     },
     {
       "estado_nome": "Roraima",
-      "total_participacoes": 1,
+      "total_vinculos": 1,
       "ouro": 1,
       "prata": 0,
       "bronze": 0
     },
     {
       "estado_nome": "Mato Grosso",
-      "total_participacoes": 1,
+      "total_vinculos": 1,
       "ouro": 0,
       "prata": 1,
       "bronze": 0
