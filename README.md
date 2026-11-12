@@ -110,9 +110,9 @@ Os dados foram coletados e organizados de forma independente, com consulta a dif
 Para atualizar os dados no site:
 1. Atualize o banco no SSMS (edição, medalha, atleta, vínculo)
 2. No SSMS: Gerar Scripts → salve o `.sql`
-3. No Google Colab: suba o `.sql` e rode `scripts/export_ssms_para_json_colab.ipynb`
-4. O script gera um `dados_brasil_olimpico.json` novo
-5. Substitua só o JSON no GitHub, com o mesmo nome. O HTML não precisa mudar.
+3. No Google Colab: suba o `.sql` e o `index.html` leve atual, e rode `scripts/export_ssms_para_json_colab.ipynb`
+4. O script gera 3 arquivos novos: `dados_brasil_olimpico.json`, `index.html` e `index_standalone.html`
+5. Substitua os 3 no GitHub, com os mesmos nomes.
 
 As principais referências utilizadas são:
 
@@ -121,9 +121,10 @@ As principais referências utilizadas são:
 
 ## Estrutura do projeto
 
-- `index.html`: o site interativo (página principal).
-- `dados_brasil_olimpico.json`: o site carrega os dados deste arquivo.
-- `scripts/export_ssms_para_json_colab.ipynb`: script para gerar o `dados_brasil_olimpico.json` novo a partir do `.sql` exportado do SSMS, via Google Colab.
+- `index.html`: o site interativo, versão leve (página principal). Busca os dados do `dados_brasil_olimpico.json` com fetch(). Para GitHub Pages / servidor. Não funciona com dois cliques.
+- `index_standalone.html`: o site interativo, versão standalone (1 arquivo só, já com os dados dentro). Para abrir com dois cliques / mandar por 【entity-WhatsApp¦canonical_name=WhatsApp】 / e-mail. As 2 versões têm os mesmos dados, gráficos, filtros e visual — a única diferença é onde o dado mora.
+- `dados_brasil_olimpico.json`: os dados do site. Usado pela versão leve.
+- `scripts/export_ssms_para_json_colab.ipynb`: script para gerar o `dados_brasil_olimpico.json`, o `index.html` e o `index_standalone.html` novos a partir do `.sql` exportado do SSMS, via Google Colab.
 - `dump_jogosolimpicos.sql`: dump do banco de dados (SSMS), contendo sua estrutura e os dados armazenados.
 - `script_jogosolimpicos.sql`: consultas SQL exploratórias (SSMS) e criação de views para resumir as medalhas por modalidade, edição olímpica e atleta.
 - `.pbip-files/`: arquivos do projeto Power BI, incluindo o relatório e o modelo semântico (versão anterior do projeto).
