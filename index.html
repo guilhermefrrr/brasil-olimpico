@@ -1893,6 +1893,337 @@ function wl(){let[a,e]=U.useState("inicio"),[o,n]=U.useState("Verão"),[r,t]=U.u
 ]})]})]})]}),f("footer",{className:"bg-[var(--green)] text-[var(--green-deep)] mt-4",children:S("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row justify-between gap-4",children:[S("div",{children:[f("p",{className:"font-display font-black text-xl",children:"BRASIL OLÍMPICO"}),f("p",{className:"opacity-80 text-sm mt-1",children:"Fontes: COB / Olympedia"})]}),f("p",{className:"opacity-80 text-sm max-w-md",children:"História das medalhas brasileiras nos Jogos Olímpicos."})]})})]})}(function(){var __root=null;function __render(){if(!__root){__root=wc.createRoot(document.getElementById("root"));}__root.render(f(Dc.default.StrictMode,{children:f(wl,{})}));}async function __start(){var __has=Fe&&Fe.medalhas&&Fe.medalhas.length;if(__has){try{sessionStorage.removeItem("brasil_olimpico_json");}catch(__e){}__render();return;}var __w=document.createElement("div");__w.id="aviso-versao-leve";__w.style.cssText="background:#fef3c7;color:#92400e;border:1px solid #f59e0b;padding:12px 16px;margin:0;font-family:system-ui,sans-serif;font-size:14px;line-height:1.5;position:relative;z-index:9999;";__w.innerHTML="<b>Não consegui carregar o data.json automaticamente</b><br>Você abriu a versão leve (index.html). Ela não funciona com dois cliques, porque ela busca o JSON com fetch() e o navegador bloqueia isso em file://. Para abrir com dois cliques, use o index_standalone.html (1 arquivo só, já com os dados dentro). Para usar esta versão leve, abra com servidor / GitHub Pages, com o JSON na mesma pasta.<br><br><b>Ou carregue o JSON manualmente:</b><br><input type=\"file\" id=\"filePicker\" accept=\".json,application/json\"><br><span id=\"filePickerErro\" style=\"color:#991b1b;\"></span>";var __root=document.getElementById("root");if(__root&&__root.parentNode){__root.parentNode.insertBefore(__w,__root);}else{document.body.insertBefore(__w,document.body.firstChild);}var __picker=document.getElementById("filePicker");if(__picker){__picker.addEventListener("change",async function(__ev){var __f=__ev.target.files&&__ev.target.files[0];if(!__f)return;try{var __txt=await __f.text();var __j2=JSON.parse(__txt);if(typeof norm==="function"){try{__j2=norm(__j2);}catch(__eNorm){}}if(!__j2||!__j2.medalhas||!__j2.medalhas.length){throw new Error("o arquivo não tem medalhas (verifique se é o dados_brasil_olimpico.json)");}try{sessionStorage.setItem("brasil_olimpico_json",JSON.stringify(__j2));}catch(__eS){}location.reload();}catch(__err){var __eEl=document.getElementById("filePickerErro");if(__eEl){__eEl.textContent="Não consegui ler esse JSON: "+(__err&&__err.message?__err.message:String(__err));}}});}__render();}__start();})();
 </script>
   <script>(function(){function m(a){var h=a.getAttribute("href");if(!h)return;try{var u=new URL(h,document.baseURI);if(((u.protocol==="http:"||u.protocol==="https:")&&u.host!==location.host)||u.protocol==="mailto:"||u.protocol==="tel:"||u.protocol==="sms:"){a.target="_blank";a.rel="noopener noreferrer";}}catch(e){}}function s(){document.querySelectorAll("a[href]").forEach(m);}if(document.readyState!=="loading"){s();}else{document.addEventListener("DOMContentLoaded",s);}document.addEventListener("click",function(e){var a=e.target&&e.target.closest&&e.target.closest("a[href]");if(a){m(a);}},true);})();</script>
-  <script type="application/json" data-clippy-inline-media-manifest="1">{"version":1,"slots":[]}</script>
+
+<style id="evo-hover-style">
+  #evolucao div[role="img"] > div { transition: opacity .15s ease, transform .15s ease; transform-origin: bottom; }
+  #evolucao.evo-hovering div[role="img"] > div { opacity: .28; }
+  #evolucao div[role="img"] > div.evo-active { opacity: 1 !important; transform: none; }
+  #evolucao div[role="img"] > div.evo-active > div > div { box-shadow: 0 0 0 2px rgba(45,74,50,.25); }
+  #evo-tooltip { position: fixed; z-index: 9999; pointer-events: none; background: #fff; color: #1f2937; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 10px 28px rgba(0,0,0,.18); padding: 10px 12px; font-size: 13px; line-height: 1.45; min-width: 168px; max-width: 240px; display: none; }
+  #evo-tooltip .evo-tt-title { font-weight: 800; font-size: 14px; color: #2D4A32; }
+  #evo-tooltip .evo-tt-city { color: #6b7280; font-size: 12px; margin-bottom: 6px; }
+  #evo-tooltip .evo-tt-row { display: flex; justify-content: space-between; gap: 12px; padding: 2px 0; }
+  #evo-tooltip .evo-tt-row b { font-variant-numeric: tabular-nums; }
+  #evo-tooltip .evo-tt-total { border-top: 1px solid #e5e7eb; margin-top: 6px; padding-top: 6px; font-weight: 800; }
+  #evo-tooltip .evo-dot { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+</style>
+<script id="evo-hover-script">
+(function(){
+  function initEvoHover(){
+    var sec = document.getElementById("evolucao");
+    if(!sec) return;
+    var tip = document.getElementById("evo-tooltip");
+    if(!tip){ tip = document.createElement("div"); tip.id = "evo-tooltip"; document.body.appendChild(tip); }
+    function getCols(){ var chart = sec.querySelector('div[role="img"]'); if(!chart) return []; return Array.prototype.slice.call(chart.children); }
+    function parseTitle(title){
+      var m = title.match(/^(.+?)\s—\s(.+?):\s(\d+) ouro,\s(\d+) prata,\s(\d+) bronze\s\(total\s(\d+)\)/);
+      if(m) return {ano:m[1], cidade:m[2], ouro:+m[3], prata:+m[4], bronze:+m[5], total:+m[6]};
+      return null;
+    }
+    function showTip(e, col){
+      var bar = col.querySelector('div[title]');
+      var d = bar ? parseTitle(bar.getAttribute("title")||"") : null;
+      if(!d){
+        var cols = getCols(); var idx = cols.indexOf(col);
+        var labels = sec.querySelectorAll('div.flex.mt-1 > div'); var lab = labels[idx];
+        var ano = "", cidade = "";
+        if(lab){ var parts = lab.querySelectorAll("div"); if(parts[0]) ano = parts[0].textContent.trim(); if(parts[1]) cidade = parts[1].textContent.trim(); }
+        var totalEl = col.querySelector("div.text-center"); var total = totalEl ? parseInt(totalEl.textContent.trim(),10)||0 : 0;
+        d = {ano:ano, cidade:cidade, ouro:0, prata:0, bronze:0, total:total};
+      }
+      tip.innerHTML = '<div class="evo-tt-title">'+d.ano+'</div>'
+        + '<div class="evo-tt-city">'+d.cidade+'</div>'
+        + '<div class="evo-tt-row"><span><span class="evo-dot" style="background:#FFD700"></span>Ouros</span><b>'+d.ouro+'</b></div>'
+        + '<div class="evo-tt-row"><span><span class="evo-dot" style="background:#C0C0C0"></span>Pratas</span><b>'+d.prata+'</b></div>'
+        + '<div class="evo-tt-row"><span><span class="evo-dot" style="background:#CD7F32"></span>Bronzes</span><b>'+d.bronze+'</b></div>'
+        + '<div class="evo-tt-row evo-tt-total"><span>Total</span><b>'+d.total+' medalha'+(d.total===1?'':'s')+'</b></div>';
+      tip.style.display = "block"; positionTip(e);
+    }
+    function positionTip(e){
+      var pad = 14; var w = tip.offsetWidth, h = tip.offsetHeight;
+      var x = e.clientX + pad, y = e.clientY + pad;
+      if(x + w > window.innerWidth - 8) x = e.clientX - w - pad;
+      if(y + h > window.innerHeight - 8) y = e.clientY - h - pad;
+      tip.style.left = x + "px"; tip.style.top = y + "px";
+    }
+    function hideTip(){ tip.style.display = "none"; sec.classList.remove("evo-hovering"); getCols().forEach(function(c){ c.classList.remove("evo-active"); }); }
+    sec.addEventListener("mouseover", function(e){
+      var chart = sec.querySelector('div[role="img"]'); if(!chart || !chart.contains(e.target)) return;
+      var col = e.target.closest('div[role="img"] > div'); if(!col) return;
+      if(col.classList.contains("evo-active")){ positionTip(e); return; }
+      sec.classList.add("evo-hovering"); getCols().forEach(function(c){ c.classList.toggle("evo-active", c===col); }); showTip(e, col);
+    });
+    sec.addEventListener("mousemove", function(e){ if(tip.style.display==="block") positionTip(e); });
+    sec.addEventListener("mouseout", function(e){
+      var to = e.relatedTarget;
+      if(to && sec.contains(to)){ var col = to.closest && to.closest('div[role="img"] > div'); if(col) return; }
+      hideTip();
+    });
+    sec.addEventListener("click", function(e){
+      var col = e.target.closest && e.target.closest('div[role="img"] > div'); if(!col) return;
+      sec.classList.add("evo-hovering"); getCols().forEach(function(c){ c.classList.toggle("evo-active", c===col); }); showTip(e, col);
+    });
+    document.addEventListener("click", function(e){ if(!sec.contains(e.target) && tip.style.display==="block") hideTip(); });
+  }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded", initEvoHover); else initEvoHover();
+  setTimeout(initEvoHover, 500); setTimeout(initEvoHover, 1500);
+})();
+</script>
+
+
+<style id="estado-detalhe-style">
+  #estados .mapa-main svg path { cursor: pointer; transition: opacity .15s, stroke-width .15s; }
+  #estados .mapa-main svg path:hover { opacity: .75; stroke-width: 1.4; }
+  #estados .mapa-main svg g.estado-selecionado path { stroke: #2D4A32; stroke-width: 2; }
+  #estados .globo-box { cursor: pointer; }
+  #estados .globo-box:hover { opacity: .85; }
+  #estados .quadro-tabela tbody tr { cursor: pointer; }
+  #estados .quadro-tabela tbody tr:hover { background: #F9FAFB; }
+  #estados .quadro-tabela tbody tr.estado-selecionado { background: #FEF9C3; }
+  #estado-detalhe { margin-top: 16px; background: #fff; border: 1px solid var(--line, #e5e7eb); border-radius: 16px; padding: 16px; }
+  #estado-detalhe h4 { font-weight: 800; font-size: 17px; color: #2D4A32; margin: 0 0 4px 0; }
+  #estado-detalhe .estado-detalhe-sub { font-size: 13px; color: #6b7280; margin-bottom: 12px; }
+  #estado-detalhe .estado-detalhe-lista { display: flex; flex-direction: column; gap: 0; max-height: 420px; overflow-y: auto; }
+  #estado-detalhe .estado-detalhe-row { display: flex; align-items: center; gap: 10px; padding: 9px 4px; border-top: 1px solid #f3f4f6; font-size: 14px; }
+  #estado-detalhe .estado-detalhe-pos { width: 28px; flex-shrink: 0; font-weight: 800; color: #2D4A32; }
+  #estado-detalhe .estado-detalhe-nome { flex: 1; min-width: 0; font-weight: 600; }
+  #estado-detalhe .estado-detalhe-cidade { font-size: 12px; color: #6b7280; font-weight: 400; }
+  #estado-detalhe .estado-detalhe-med { display: flex; gap: 10px; font-size: 13px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  #estado-detalhe .estado-detalhe-fechar { float: right; border: 0; background: transparent; cursor: pointer; font-size: 13px; font-weight: 700; color: #2D4A32; text-decoration: underline; }
+</style>
+<script id="estado-detalhe-script">
+(function(){
+  var SIGLA_ORDEM = ["RO","AC","AM","RR","PA","AP","TO","MA","PI","CE","RN","PB","PE","AL","SE","BA","MG","ES","RJ","SP","PR","SC","RS","MS","MT","GO","DF"];
+  var NOME_PARA_SIGLA = {"Rondônia":"RO","Acre":"AC","Amazonas":"AM","Roraima":"RR","Pará":"PA","Amapá":"AP","Tocantins":"TO","Maranhão":"MA","Piauí":"PI","Ceará":"CE","Rio Grande do Norte":"RN","Paraíba":"PB","Pernambuco":"PE","Alagoas":"AL","Sergipe":"SE","Bahia":"BA","Minas Gerais":"MG","Espírito Santo":"ES","Rio de Janeiro":"RJ","São Paulo":"SP","Paraná":"PR","Santa Catarina":"SC","Rio Grande do Sul":"RS","Mato Grosso do Sul":"MS","Mato Grosso":"MT","Goiás":"GO","Distrito Federal":"DF"};
+  var SIGLA_PARA_NOME = {}; Object.keys(NOME_PARA_SIGLA).forEach(function(n){ SIGLA_PARA_NOME[NOME_PARA_SIGLA[n]] = n; });
+  function getRanking(){
+    try{ var f = window.Fe || (typeof Fe!=="undefined" ? Fe : null); if(f && f.ranking) return f.ranking; }catch(e){}
+    try{ var el = document.getElementById("embedded-data"); if(el && el.textContent.trim()){ var j = JSON.parse(el.textContent); if(j && j.ranking) return j.ranking; } }catch(e){}
+    try{ var s = sessionStorage.getItem("brasil_olimpico_json"); if(s){ var j2 = JSON.parse(s); if(j2 && j2.ranking) return j2.ranking; } }catch(e){}
+    return [];
+  }
+  function getModalidadeMap(){
+    var mapa = {};
+    try{
+      var f = window.Fe || (typeof Fe!=="undefined" ? Fe : null);
+      var medalhas = f && f.medalhas ? f.medalhas : null;
+      if(!medalhas){ var el = document.getElementById("embedded-data"); if(el && el.textContent.trim()){ var j = JSON.parse(el.textContent); if(j && j.medalhas) medalhas = j.medalhas; } }
+      if(!medalhas){ var s = sessionStorage.getItem("brasil_olimpico_json"); if(s){ var j2 = JSON.parse(s); if(j2 && j2.medalhas) medalhas = j2.medalhas; } }
+      if(medalhas){ medalhas.forEach(function(m){ var mod = m.modalidade || ""; if(!mod) return; (m.atletas_detalhe||[]).forEach(function(a){ if(a && a.nome && !mapa[a.nome]) mapa[a.nome] = mod; }); (m.atletas||[]).forEach(function(n){ if(typeof n==="string" && n && !mapa[n]) mapa[n] = mod; }); }); }
+    }catch(e){}
+    return mapa;
+  }
+  function initEstadoDetalhe(){
+    var sec = document.getElementById("estados"); if(!sec) return;
+    if(document.getElementById("estado-detalhe")) return;
+    var painel = document.createElement("div"); painel.id = "estado-detalhe";
+    painel.innerHTML = '<button type="button" class="estado-detalhe-fechar" style="display:none">Fechar ✕</button>'
+      + '<h4>Medalhistas por estado</h4>'
+      + '<div class="estado-detalhe-sub">Clique num estado no mapa ou na tabela para ver os medalhistas nascidos lá. Clique no globo para ver os nascidos fora do Brasil.</div>'
+      + '<div class="estado-detalhe-lista"></div>';
+    var card = sec.querySelector("div.bg-\\[var\\(--card\\)\\]");
+    if(card) card.appendChild(painel); else sec.appendChild(painel);
+    var titulo = painel.querySelector("h4"); var sub = painel.querySelector(".estado-detalhe-sub");
+    var lista = painel.querySelector(".estado-detalhe-lista"); var btnFechar = painel.querySelector(".estado-detalhe-fechar");
+    function limparSelecao(){
+      sec.querySelectorAll("g.estado-selecionado").forEach(function(g){ g.classList.remove("estado-selecionado"); });
+      sec.querySelectorAll("tr.estado-selecionado").forEach(function(tr){ tr.classList.remove("estado-selecionado"); });
+    }
+    function mostrarEstado(sigla){
+      var modMap = getModalidadeMap();
+      var ranking = getRanking(); var nome = SIGLA_PARA_NOME[sigla] || sigla;
+      var atletas = ranking.filter(function(a){ return NOME_PARA_SIGLA[a.estado] === sigla; })
+        .slice().sort(function(a,b){ return (b.total||0)-(a.total||0) || (b.ouro||0)-(a.ouro||0) || (b.prata||0)-(a.prata||0) || (b.bronze||0)-(a.bronze||0) || String(a.nome||"").localeCompare(String(b.nome||"")); });
+      limparSelecao();
+      var gs = sec.querySelectorAll(".mapa-main svg g"); var mapaGs = []; gs.forEach(function(g){ mapaGs.push(g); });
+      var idx = SIGLA_ORDEM.indexOf(sigla); if(idx>=0 && mapaGs[idx]) mapaGs[idx].classList.add("estado-selecionado");
+      sec.querySelectorAll(".quadro-tabela tbody tr").forEach(function(tr){ var tds = tr.querySelectorAll("td"); if(tds[1] && tds[1].textContent.trim() === nome) tr.classList.add("estado-selecionado"); });
+      titulo.textContent = "Medalhistas nascidos em " + nome + " (" + atletas.length + ")";
+      sub.textContent = "Ordenados por total de medalhas. Clique em outro estado para trocar, ou em Fechar para limpar.";
+      btnFechar.style.display = "";
+      if(!atletas.length){ lista.innerHTML = '<div style="padding:12px 4px;color:#6b7280;font-size:14px">Nenhum medalhista nascido neste estado no conjunto de dados.</div>'; }
+      else {
+        lista.innerHTML = atletas.map(function(a, i){
+          var cidade = a.cidade ? '<div class="estado-detalhe-cidade">'+a.cidade+'</div>' : '';
+          return '<div class="estado-detalhe-row"><span class="estado-detalhe-pos">'+String(i+1).padStart(2,"0")+'</span>'
+            + '<span class="estado-detalhe-nome">'+(a.nome||"") + (modMap[a.nome] ? " - " + modMap[a.nome] : "") + cidade + '</span>'
+            + '<span class="estado-detalhe-med"><span>🥇 '+(a.ouro||0)+'</span><span>🥈 '+(a.prata||0)+'</span><span>🥉 '+(a.bronze||0)+'</span><b>'+(a.total||0)+' medalha'+((a.total||0)===1?'':'s')+'</b></span></div>';
+        }).join("");
+      }
+      painel.scrollIntoView({behavior:"smooth", block:"nearest"});
+    }
+    function mostrarFora(){
+      var modMap = getModalidadeMap();
+      var ranking = getRanking();
+      var fora = ranking.filter(function(a){ return a.pais && a.pais !== "Brasil"; })
+        .slice().sort(function(a,b){ return (b.total||0)-(a.total||0) || String(a.nome||"").localeCompare(String(b.nome||"")); });
+      limparSelecao();
+      titulo.textContent = "Medalhistas nascidos fora do Brasil (" + fora.length + ")";
+      sub.textContent = "Ordenados por total de medalhas."; btnFechar.style.display = "";
+      if(!fora.length){ lista.innerHTML = '<div style="padding:12px 4px;color:#6b7280;font-size:14px">Nenhum medalhista nascido fora do Brasil.</div>'; }
+      else {
+        lista.innerHTML = fora.map(function(a, i){
+          var loc = (a.cidade ? a.cidade + " — " : "") + (a.pais||"");
+          return '<div class="estado-detalhe-row"><span class="estado-detalhe-pos">'+String(i+1).padStart(2,"0")+'</span>'
+            + '<span class="estado-detalhe-nome">'+(a.nome||"") + (modMap[a.nome] ? " - " + modMap[a.nome] : "") + '<div class="estado-detalhe-cidade">'+loc+'</div></span>'
+            + '<span class="estado-detalhe-med"><span>🥇 '+(a.ouro||0)+'</span><span>🥈 '+(a.prata||0)+'</span><span>🥉 '+(a.bronze||0)+'</span><b>'+(a.total||0)+' medalha'+((a.total||0)===1?'':'s')+'</b></span></div>';
+        }).join("");
+      }
+      painel.scrollIntoView({behavior:"smooth", block:"nearest"});
+    }
+    btnFechar.addEventListener("click", function(){
+      limparSelecao(); titulo.textContent = "Medalhistas por estado";
+      sub.textContent = "Clique num estado no mapa ou na tabela para ver os medalhistas nascidos lá. Clique no globo para ver os nascidos fora do Brasil.";
+      lista.innerHTML = ""; btnFechar.style.display = "none";
+    });
+    sec.addEventListener("click", function(e){
+      var path = e.target.closest && e.target.closest(".mapa-main svg path");
+      if(path){ var svg = path.closest("svg"); var paths = Array.prototype.slice.call(svg.querySelectorAll("path")); var idx = paths.indexOf(path); if(idx>=0 && idx < SIGLA_ORDEM.length){ mostrarEstado(SIGLA_ORDEM[idx]); return; } }
+      var g = e.target.closest && e.target.closest(".mapa-main svg g");
+      if(g){ var svg2 = g.closest("svg"); var gs = Array.prototype.slice.call(svg2.querySelectorAll("g")); var idx2 = gs.indexOf(g); if(idx2>=0 && idx2 < SIGLA_ORDEM.length){ mostrarEstado(SIGLA_ORDEM[idx2]); return; } }
+      var globo = e.target.closest && e.target.closest(".globo-box"); if(globo){ mostrarFora(); return; }
+      var tr = e.target.closest && e.target.closest(".quadro-tabela tbody tr");
+      if(tr){ var tds = tr.querySelectorAll("td"); if(tds[1]){ var nome = tds[1].textContent.trim(); var sigla = NOME_PARA_SIGLA[nome]; if(sigla){ mostrarEstado(sigla); return; } } }
+    });
+  }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded", initEstadoDetalhe); else initEstadoDetalhe();
+  setTimeout(initEstadoDetalhe, 500); setTimeout(initEstadoDetalhe, 1500);
+})();
+</script>
+
+
+<style id="ux-geral-style">
+  #root div.bg-\[var\(--card\)\] { transition: box-shadow .18s ease, border-color .18s ease, transform .18s ease; }
+  #root div.bg-\[var\(--card\)\]:hover, #root div.bg-\[var\(--card\)\].ux-tapped { box-shadow: 0 8px 24px rgba(45,74,50,.12); border-color: #CBD5CB; transform: translateY(-1px); }
+  #root .mini-card { transition: box-shadow .18s ease, border-color .18s ease, transform .18s ease; }
+  #root .mini-card:hover, #root .mini-card.ux-tapped { box-shadow: 0 6px 18px rgba(45,74,50,.12); transform: translateY(-1px); }
+  #inicio div.grid > div.rounded-2xl { transition: box-shadow .18s ease, transform .18s ease; cursor: default; }
+  #inicio div.grid > div.rounded-2xl:hover, #inicio div.grid > div.rounded-2xl.ux-tapped { box-shadow: 0 8px 24px rgba(45,74,50,.14); transform: translateY(-2px); }
+  #root table.quadro-tabela tbody tr { transition: background .15s ease; }
+  #root table.quadro-tabela tbody tr:hover, #root table.quadro-tabela tbody tr.ux-tapped { background: #F3F8F3; }
+  #medalhas article { transition: background .15s ease, box-shadow .15s ease; border-radius: 12px; padding-left: 8px; padding-right: 8px; margin-left: -8px; margin-right: -8px; }
+  #medalhas article:hover, #medalhas article.ux-tapped { background: #F9FBF9; box-shadow: 0 2px 10px rgba(45,74,50,.08); }
+  #medalhas article p span.font-medium { transition: color .15s ease; border-radius: 4px; padding: 0 2px; margin: 0 -2px; }
+  #medalhas article p span.font-medium:hover, #medalhas article p span.font-medium.ux-tapped { color: #2D4A32; background: #FEF9C3; }
+  #estado-detalhe .estado-detalhe-row { transition: background .15s ease; border-radius: 8px; }
+  #estado-detalhe .estado-detalhe-row:hover, #estado-detalhe .estado-detalhe-row.ux-tapped { background: #F3F8F3; }
+  #estado-detalhe .estado-detalhe-nome:hover { color: #2D4A32; }
+  header nav a { transition: background .15s ease, transform .15s ease, box-shadow .15s ease !important; }
+  header nav a:hover, header nav a.ux-tapped { background: rgba(255,255,255,.45) !important; transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,.10); }
+  header div.lg\:hidden a { transition: background .15s ease, transform .15s ease, box-shadow .15s ease !important; }
+  header div.lg\:hidden a:hover, header div.lg\:hidden a.ux-tapped { background: rgba(255,255,255,.45) !important; transform: translateY(-1px); }
+  #root button.inline-flex:hover { box-shadow: 0 2px 8px rgba(45,74,50,.10); }
+  .ux-tooltip { position: fixed; z-index: 9999; pointer-events: none; background: #fff; color: #1f2937; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 10px 28px rgba(0,0,0,.18); padding: 10px 12px; font-size: 13px; line-height: 1.45; min-width: 168px; max-width: 240px; display: none; }
+  .ux-tooltip .ux-tt-title { font-weight: 800; font-size: 14px; color: #2D4A32; }
+  .ux-tooltip .ux-tt-city { color: #6b7280; font-size: 12px; margin-bottom: 6px; }
+  .ux-tooltip .ux-tt-row { display: flex; justify-content: space-between; gap: 12px; padding: 2px 0; }
+  .ux-tooltip .ux-tt-row b { font-variant-numeric: tabular-nums; }
+  .ux-tooltip .ux-tt-total { border-top: 1px solid #e5e7eb; margin-top: 6px; padding-top: 6px; font-weight: 800; }
+  .ux-tooltip .ux-dot { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+  #genero div[role="img"] > div { transition: opacity .15s ease; }
+  #genero.ux-hovering div[role="img"] > div { opacity: .28; }
+  #genero div[role="img"] > div.ux-active { opacity: 1 !important; }
+  #genero div[role="img"] > div.ux-active > div > div { box-shadow: 0 0 0 2px rgba(45,74,50,.25); }
+  #idade div.flex.items-end.gap-3 > div { transition: opacity .15s ease; }
+  #idade.ux-hovering div.flex.items-end.gap-3 > div { opacity: .30; }
+  #idade div.flex.items-end.gap-3 > div.ux-active { opacity: 1 !important; }
+  #idade div.flex.items-end.gap-3 > div.ux-active > div { box-shadow: 0 0 0 2px rgba(45,74,50,.25); }
+</style>
+<script id="ux-geral-script">
+(function(){
+  function addTapped(el){ if(!el) return; el.classList.add("ux-tapped"); setTimeout(function(){ el.classList.remove("ux-tapped"); }, 400); }
+  document.addEventListener("click", function(e){
+    var card = e.target.closest && e.target.closest('#root div.bg-\\[var\\(--card\\)\\], #root .mini-card, #inicio div.grid > div.rounded-2xl');
+    if(card) addTapped(card);
+    var tr = e.target.closest && e.target.closest('#root table.quadro-tabela tbody tr'); if(tr) addTapped(tr);
+    var art = e.target.closest && e.target.closest('#medalhas article'); if(art) addTapped(art);
+    var row = e.target.closest && e.target.closest('#estado-detalhe .estado-detalhe-row'); if(row) addTapped(row);
+    var nome = e.target.closest && e.target.closest('#medalhas article p span.font-medium'); if(nome) addTapped(nome);
+    var navA = e.target.closest && e.target.closest('header nav a, header div.lg\\:hidden a'); if(navA) addTapped(navA);
+  }, true);
+  var tip = null;
+  function getTip(){ if(!tip){ tip = document.createElement("div"); tip.className = "ux-tooltip"; tip.id = "ux-tooltip"; document.body.appendChild(tip); } return tip; }
+  function positionTip(e){
+    var t = getTip(); var pad = 14; var w = t.offsetWidth, h = t.offsetHeight;
+    var x = e.clientX + pad, y = e.clientY + pad;
+    if(x + w > window.innerWidth - 8) x = e.clientX - w - pad;
+    if(y + h > window.innerHeight - 8) y = e.clientY - h - pad;
+    t.style.left = x + "px"; t.style.top = y + "px";
+  }
+  function hideTip(){ var t = getTip(); t.style.display = "none"; }
+  function initGenero(){
+    var sec = document.getElementById("genero"); if(!sec) return;
+    function getCols(){ var chart = sec.querySelector('div[role="img"]'); if(!chart) return []; return Array.prototype.slice.call(chart.children); }
+    function parseTitle(title){
+      var m = title.match(/^(.+?)\s—\s(.+?):\sMasculino\s(\d+),\sFeminino\s(\d+),\sMisto\s(\d+)\s\(total\s(\d+)\)/);
+      if(m) return {ano:m[1], cidade:m[2], masc:+m[3], fem:+m[4], misto:+m[5], total:+m[6]}; return null;
+    }
+    function renderTip(d){
+      var t = getTip();
+      t.innerHTML = '<div class="ux-tt-title">'+d.ano+'</div>'
+        + '<div class="ux-tt-city">'+d.cidade+'</div>'
+        + '<div class="ux-tt-row"><span><span class="ux-dot" style="background:#93C5FD"></span>Masculino</span><b>'+d.masc+'</b></div>'
+        + '<div class="ux-tt-row"><span><span class="ux-dot" style="background:#F9A8D4"></span>Feminino</span><b>'+d.fem+'</b></div>'
+        + '<div class="ux-tt-row"><span><span class="ux-dot" style="background:#C4B5FD"></span>Misto</span><b>'+d.misto+'</b></div>'
+        + '<div class="ux-tt-row ux-tt-total"><span>Total</span><b>'+d.total+' medalha'+(d.total===1?'':'s')+'</b></div>';
+      t.style.display = "block";
+    }
+    sec.addEventListener("mouseover", function(e){
+      var chart = sec.querySelector('div[role="img"]'); if(!chart || !chart.contains(e.target)) return;
+      var col = e.target.closest('div[role="img"] > div'); if(!col) return;
+      if(col.classList.contains("ux-active")){ positionTip(e); return; }
+      sec.classList.add("ux-hovering"); getCols().forEach(function(c){ c.classList.toggle("ux-active", c===col); });
+      var bar = col.querySelector('div[title]'); var d = bar ? parseTitle(bar.getAttribute("title")||"") : null; if(!d) return; renderTip(d); positionTip(e);
+    });
+    sec.addEventListener("mousemove", function(e){ var t = getTip(); if(t.style.display==="block") positionTip(e); });
+    sec.addEventListener("mouseout", function(e){
+      var to = e.relatedTarget; if(to && sec.contains(to)){ var col = to.closest && to.closest('div[role="img"] > div'); if(col) return; }
+      sec.classList.remove("ux-hovering"); getCols().forEach(function(c){ c.classList.remove("ux-active"); }); hideTip();
+    });
+    sec.addEventListener("click", function(e){
+      var col = e.target.closest && e.target.closest('div[role="img"] > div'); if(!col) return;
+      sec.classList.add("ux-hovering"); getCols().forEach(function(c){ c.classList.toggle("ux-active", c===col); });
+      var bar = col.querySelector('div[title]'); var d = bar ? parseTitle(bar.getAttribute("title")||"") : null; if(!d) return; renderTip(d); positionTip(e);
+    });
+  }
+  function initIdade(){
+    var sec = document.getElementById("idade"); if(!sec) return;
+    function getBars(){ var chart = sec.querySelector('div.flex.items-end.gap-3'); if(!chart) return []; return Array.prototype.slice.call(chart.children); }
+    function showFor(bar, e){
+      var divs = bar.querySelectorAll(":scope > div"); if(divs.length < 3) return;
+      var count = parseInt((divs[0].textContent||"").trim(), 10) || 0;
+      var label = (divs[2].textContent||"").trim();
+      var bars = getBars(); var total = 0;
+      bars.forEach(function(b){ var c = b.querySelector(":scope > div"); if(c) total += parseInt((c.textContent||"").trim(), 10) || 0; });
+      var pct = total ? Math.round(count/total*100) : 0;
+      var t = getTip();
+      t.innerHTML = '<div class="ux-tt-title">Faixa '+label+' anos</div>'
+        + '<div class="ux-tt-city">Idade dos medalhistas</div>'
+        + '<div class="ux-tt-row"><span>Medalhistas</span><b>'+count+' ('+pct+'% do total)</b></div>'
+        + '<div class="ux-tt-row ux-tt-total"><span>Total</span><b>'+total+' medalhistas</b></div>';
+      t.style.display = "block"; positionTip(e);
+    }
+    sec.addEventListener("mouseover", function(e){
+      var chart = sec.querySelector('div.flex.items-end.gap-3'); if(!chart || !chart.contains(e.target)) return;
+      var bar = e.target.closest('div.flex.items-end.gap-3 > div'); if(!bar) return;
+      if(bar.classList.contains("ux-active")){ positionTip(e); return; }
+      sec.classList.add("ux-hovering"); getBars().forEach(function(b){ b.classList.toggle("ux-active", b===bar); }); showFor(bar, e);
+    });
+    sec.addEventListener("mousemove", function(e){ var t = getTip(); if(t.style.display==="block") positionTip(e); });
+    sec.addEventListener("mouseout", function(e){
+      var to = e.relatedTarget; if(to && sec.contains(to)){ var bar = to.closest && to.closest('div.flex.items-end.gap-3 > div'); if(bar) return; }
+      sec.classList.remove("ux-hovering"); getBars().forEach(function(b){ b.classList.remove("ux-active"); }); hideTip();
+    });
+    sec.addEventListener("click", function(e){
+      var bar = e.target.closest && e.target.closest('div.flex.items-end.gap-3 > div'); if(!bar) return;
+      sec.classList.add("ux-hovering"); getBars().forEach(function(b){ b.classList.toggle("ux-active", b===bar); }); showFor(bar, e);
+    });
+  }
+  function init(){ initGenero(); initIdade(); }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded", init); else init();
+  setTimeout(init, 500); setTimeout(init, 1500);
+})();
+</script>
+
 </body>
 </html>
