@@ -1964,6 +1964,10 @@ function wl(){let[a,e]=U.useState("inicio"),[o,n]=U.useState("Verão"),[r,t]=U.u
       sec.classList.add("evo-hovering"); getCols().forEach(function(c){ c.classList.toggle("evo-active", c===col); }); showTip(e, col);
     });
     document.addEventListener("click", function(e){ if(!sec.contains(e.target) && tip.style.display==="block") hideTip(); });
+    // No celular: deslizar ou tocar fora esconde o tooltip (mouseout não dispara no touch)
+    window.addEventListener("scroll", hideTip, {passive:true});
+    document.addEventListener("touchmove", hideTip, {passive:true});
+    document.addEventListener("touchstart", function(e){ if(!sec.contains(e.target)) hideTip(); }, {passive:true});
   }
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded", initEvoHover); else initEvoHover();
   setTimeout(initEvoHover, 500); setTimeout(initEvoHover, 1500);
@@ -2151,6 +2155,14 @@ function wl(){let[a,e]=U.useState("inicio"),[o,n]=U.useState("Verão"),[r,t]=U.u
     t.style.left = x + "px"; t.style.top = y + "px";
   }
   function hideTip(){ var t = getTip(); t.style.display = "none"; }
+  function hideUxAll(){
+    hideTip();
+    ["genero","idade"].forEach(function(id){
+      var s = document.getElementById(id); if(!s) return;
+      s.classList.remove("ux-hovering");
+      s.querySelectorAll(".ux-active").forEach(function(c){ c.classList.remove("ux-active"); });
+    });
+  }
   function initGenero(){
     var sec = document.getElementById("genero"); if(!sec) return;
     function getCols(){ var chart = sec.querySelector('div[role="img"]'); if(!chart) return []; return Array.prototype.slice.call(chart.children); }
@@ -2219,7 +2231,16 @@ function wl(){let[a,e]=U.useState("inicio"),[o,n]=U.useState("Verão"),[r,t]=U.u
       sec.classList.add("ux-hovering"); getBars().forEach(function(b){ b.classList.toggle("ux-active", b===bar); }); showFor(bar, e);
     });
   }
-  function init(){ initGenero(); initIdade(); }
+  function init(){ initGenero(); initIdade();
+    // No celular: deslizar ou tocar fora esconde o tooltip (mouseout não dispara no touch)
+    window.addEventListener("scroll", hideUxAll, {passive:true});
+    document.addEventListener("touchmove", hideUxAll, {passive:true});
+    document.addEventListener("touchstart", function(e){
+      var g = document.getElementById("genero"); var idd = document.getElementById("idade");
+      var inside = (g && g.contains(e.target)) || (idd && idd.contains(e.target));
+      if(!inside) hideUxAll();
+    }, {passive:true});
+  }
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded", init); else init();
   setTimeout(init, 500); setTimeout(init, 1500);
 })();
